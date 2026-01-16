@@ -21,15 +21,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS configuration for production
-const corsOptions = {
-  origin: process.env.FRONTEND_URL || '*',
-  credentials: true,
-  optionsSuccessStatus: 200
-};
-
-// Middleware - allow all origins in development/if FRONTEND_URL not set
-app.use(cors(process.env.FRONTEND_URL ? corsOptions : {}));
+// CORS configuration - allow all origins for now
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
