@@ -2,27 +2,22 @@ import React from 'react';
 import '../styles/EquipmentSelector.css';
 
 const SLOTS = [
-  { key: 'WEAPON', label: 'Weapon', type: 'WEAPON' },
-  { key: 'HELM', label: 'Helm', type: 'HELM' },
-  { key: 'CHEST', label: 'Chest', type: 'CHEST' },
-  { key: 'GLOVES', label: 'Gloves', type: 'GLOVES' },
-  { key: 'PANTS', label: 'Pants', type: 'PANTS' },
-  { key: 'BOOTS', label: 'Boots', type: 'BOOTS' },
-  { key: 'ACCESSORY1', label: 'Accessory 1', type: 'ACCESSORY' },
-  { key: 'ACCESSORY2', label: 'Accessory 2', type: 'ACCESSORY' },
+  { key: 'WEAPON', label: 'Weapon' },
+  { key: 'HELM', label: 'Helm' },
+  { key: 'CHEST', label: 'Chest' },
+  { key: 'GLOVES', label: 'Gloves' },
+  { key: 'PANTS', label: 'Pants' },
+  { key: 'BOOTS', label: 'Boots' },
+  { key: 'ACCESSORY1', label: 'Accessory 1' },
+  { key: 'ACCESSORY2', label: 'Accessory 2' },
 ];
 
 const ICONIC_LEVELS = ['I', 'II', 'IV', 'V'];
 
 function EquipmentSelector({ equipment, allEquipment, onChange }) {
-  const getEquipmentByType = (type) => {
-    return allEquipment.filter(eq => eq.type === type);
-  };
-
   return (
     <div className="equipment-selector">
       {SLOTS.map(slot => {
-        const availableEquipment = getEquipmentByType(slot.type);
         const currentPiece = equipment[slot.key];
 
         return (
@@ -36,7 +31,7 @@ function EquipmentSelector({ equipment, allEquipment, onChange }) {
                 onChange={(e) => onChange(slot.key, 'equipment_id', e.target.value)}
               >
                 <option value="">-- Select {slot.label} --</option>
-                {availableEquipment.map(eq => (
+                {allEquipment.map(eq => (
                   <option key={eq.equipment_id} value={eq.equipment_id}>
                     {eq.name}
                   </option>
