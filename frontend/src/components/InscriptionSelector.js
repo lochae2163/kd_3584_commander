@@ -26,12 +26,6 @@ function InscriptionSelector({
     }
   };
 
-  const isSelected = (inscriptionId) => {
-    return specialInscriptions.includes(inscriptionId) ||
-           rareInscriptions.includes(inscriptionId) ||
-           commonInscriptions.includes(inscriptionId);
-  };
-
   const getSelectionCategory = (inscriptionId) => {
     if (specialInscriptions.includes(inscriptionId)) return 'special';
     if (rareInscriptions.includes(inscriptionId)) return 'rare';
