@@ -41,7 +41,8 @@ const commanderRoleSchema = new mongoose.Schema({
     },
     layer_3: {
       type: scoringScaleSchema,
-      required: true
+      required: false,
+      default: null
     }
   },
   highest_score_reference: {
