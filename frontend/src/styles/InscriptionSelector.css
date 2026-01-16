@@ -1,0 +1,95 @@
+.inscription-selector {
+  margin-top: 1rem;
+}
+
+.inscription-category {
+  margin-bottom: 1.5rem;
+}
+
+.inscription-category h4 {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inscription-category h4 .count {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.inscription-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.inscription-chip {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+/* Special Inscriptions - Gold/Orange */
+.inscription-chip.special {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.inscription-chip.special:hover {
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.inscription-chip.special.selected {
+  background: #ffd700;
+  color: #1a1a2e;
+  border-color: #ffd700;
+}
+
+/* Rare Inscriptions - Purple */
+.inscription-chip.rare {
+  background: rgba(148, 103, 189, 0.1);
+  color: #9467bd;
+  border-color: rgba(148, 103, 189, 0.3);
+}
+
+.inscription-chip.rare:hover {
+  background: rgba(148, 103, 189, 0.2);
+}
+
+.inscription-chip.rare.selected {
+  background: #9467bd;
+  color: #ffffff;
+  border-color: #9467bd;
+}
+
+/* Common Inscriptions - Blue */
+.inscription-chip.common {
+  background: rgba(77, 150, 255, 0.1);
+  color: #4d96ff;
+  border-color: rgba(77, 150, 255, 0.3);
+}
+
+.inscription-chip.common:hover {
+  background: rgba(77, 150, 255, 0.2);
+}
+
+.inscription-chip.common.selected {
+  background: #4d96ff;
+  color: #ffffff;
+  border-color: #4d96ff;
+}
+
+@media (max-width: 600px) {
+  .inscription-chip {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+}

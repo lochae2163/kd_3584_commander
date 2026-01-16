@@ -1,0 +1,212 @@
+[
+  {
+    "role_id": "CAV RALLY - SUBUTAI",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.2,
+        "health": 1.3,
+        "all_dmg": 2.9,
+        "na": 2.5,
+        "ca": 0.7,
+        "skill_dmg": 0,
+        "smite_dmg": 0,
+        "combo_dmg": 1.5
+      },
+      "layer_3": null
+    },
+    "troop_type": "CAVALRY",
+    "role_type": "RALLY",
+    "damage_focus": "SUBUTAI",
+    "highest_score_reference": 566
+  },
+  {
+    "role_id": "CAV RALLY - SKILL DMG",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.1,
+        "health": 1.2,
+        "all_dmg": 2.7,
+        "na": 1.1,
+        "ca": 0.5,
+        "skill_dmg": 1.6,
+        "smite_dmg": 0,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "CAVALRY",
+    "role_type": "RALLY",
+    "damage_focus": "SKILL DMG",
+    "highest_score_reference": 523
+  },
+  {
+    "role_id": "CAV GARRISON - ELEANOR",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.1,
+        "health": 1.1,
+        "all_dmg": 2.7,
+        "na": 1.2,
+        "ca": 1,
+        "skill_dmg": 1.5,
+        "smite_dmg": 0,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "CAVALRY",
+    "role_type": "GARRISON",
+    "damage_focus": "ELEANOR",
+    "highest_score_reference": 485
+  },
+  {
+    "role_id": "CAV GARRISON - DAVID",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 0.9,
+        "health": 1.1,
+        "all_dmg": 2.5,
+        "na": 2.5,
+        "ca": 1,
+        "skill_dmg": 0,
+        "smite_dmg": 0,
+        "combo_dmg": 1.7
+      },
+      "layer_3": null
+    },
+    "troop_type": "CAVALRY",
+    "role_type": "GARRISON",
+    "damage_focus": "DAVID",
+    "highest_score_reference": 510
+  },
+  {
+    "role_id": "ARCHER RALLY - SKILL DMG",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.1,
+        "health": 1.5,
+        "all_dmg": 2.9,
+        "na": 1.1,
+        "ca": 0.5,
+        "skill_dmg": 1.8,
+        "smite_dmg": 0,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "ARCHER",
+    "role_type": "RALLY",
+    "damage_focus": "SKILL DMG",
+    "highest_score_reference": 538
+  },
+  {
+    "role_id": "ARCHER GARRISON - CY",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.1,
+        "health": 1.3,
+        "all_dmg": 2.6,
+        "na": 1.8,
+        "ca": 1,
+        "skill_dmg": 0.8,
+        "smite_dmg": 0,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "ARCHER",
+    "role_type": "GARRISON",
+    "damage_focus": "CY",
+    "highest_score_reference": 490
+  },
+  {
+    "role_id": "INFANTRY RALLY - SMITE DMG",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1,
+        "health": 1.3,
+        "all_dmg": 2.7,
+        "na": 2.7,
+        "ca": 0.45,
+        "skill_dmg": 0,
+        "smite_dmg": 1.7,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "INFANTRY",
+    "role_type": "RALLY",
+    "damage_focus": "SMITE DMG",
+    "highest_score_reference": 529
+  },
+  {
+    "role_id": "INFANTRY RALLY - SMITE/SKILL",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1,
+        "health": 1.3,
+        "all_dmg": 2.8,
+        "na": 1.25,
+        "ca": 0.45,
+        "skill_dmg": 0.9,
+        "smite_dmg": 0.9,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "INFANTRY",
+    "role_type": "RALLY",
+    "damage_focus": "SMITE/SKILL",
+    "highest_score_reference": 495
+  },
+  {
+    "role_id": "INFANTRY GARRISON - GORGO",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1,
+        "health": 1.2,
+        "all_dmg": 2.9,
+        "na": 2.9,
+        "ca": 1,
+        "skill_dmg": 0,
+        "smite_dmg": 1.7,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "INFANTRY",
+    "role_type": "GARRISON",
+    "damage_focus": "GORGO",
+    "highest_score_reference": 532
+  },
+  {
+    "role_id": "LEADERSHIP GARRISON",
+    "scoring_scales": {
+      "layer_1_2": {
+        "attack": 1,
+        "defense": 1.1,
+        "health": 1.2,
+        "all_dmg": 2.9,
+        "na": 1.2,
+        "ca": 1,
+        "skill_dmg": 1.5,
+        "smite_dmg": 0,
+        "combo_dmg": 0
+      },
+      "layer_3": null
+    },
+    "troop_type": "LEADERSHIP",
+    "role_type": "GARRISON",
+    "damage_focus": "STANDARD",
+    "highest_score_reference": 470
+  }
+]

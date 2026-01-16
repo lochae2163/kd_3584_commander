@@ -1,0 +1,30 @@
+[
+  {
+    "tier_name": "POP UP ONLY",
+    "attack": 12.5,
+    "defense": 15,
+    "health": 15,
+    "all_dmg": 4
+  },
+  {
+    "tier_name": "POP UP + 1MW",
+    "attack": 12.5,
+    "defense": 15,
+    "health": 15,
+    "all_dmg": 8
+  },
+  {
+    "tier_name": "POP UP + MW",
+    "attack": 12.5,
+    "defense": 15,
+    "health": 15,
+    "all_dmg": 10
+  },
+  {
+    "tier_name": "POP UP + MW+DAILIES",
+    "attack": 12.5,
+    "defense": 15,
+    "health": 15,
+    "all_dmg": 10
+  }
+]

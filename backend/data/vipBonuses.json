@@ -1,0 +1,72 @@
+[
+  {
+    "vip_level": 10,
+    "attack": 0,
+    "defense": 0,
+    "health": 0,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 11,
+    "attack": 5,
+    "defense": 0,
+    "health": 0,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 12,
+    "attack": 5,
+    "defense": 5,
+    "health": 0,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 13,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 14,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 15,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 16,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 0
+  },
+  {
+    "vip_level": 17,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 5
+  },
+  {
+    "vip_level": 18,
+    "attack": 5,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 5
+  },
+  {
+    "vip_level": 19,
+    "attack": 10,
+    "defense": 5,
+    "health": 5,
+    "all_dmg": 5
+  }
+]

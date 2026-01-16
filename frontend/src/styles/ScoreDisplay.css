@@ -1,0 +1,261 @@
+.score-display {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.score-display.empty {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  text-align: center;
+  color: #6c757d;
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #2d4263;
+}
+
+.placeholder h3 {
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder p {
+  font-size: 0.9rem;
+}
+
+/* Main Score Card */
+.main-score-card {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1a1a2e;
+}
+
+.total-score {
+  margin-top: 1rem;
+}
+
+.score-value {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  line-height: 1;
+}
+
+.score-label {
+  display: block;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.percentage {
+  color: #6bcb77;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.player-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.player-name {
+  display: block;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.role-name {
+  display: block;
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* Layers Breakdown */
+.layers-breakdown h3 {
+  color: #ffd700;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.layer-card {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.layer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.layer-title {
+  color: #ffd700;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.layer-score {
+  color: #6bcb77;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.layer-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.layer-details span {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.set-bonuses {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.set-badge {
+  background: rgba(107, 203, 119, 0.2) !important;
+  color: #6bcb77 !important;
+}
+
+.multipliers {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.multiplier-badge {
+  background: rgba(77, 150, 255, 0.2);
+  color: #4d96ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stat-chip {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.stat-name {
+  color: #a0a0a0;
+  font-size: 0.7rem;
+}
+
+.stat-value {
+  color: #6bcb77;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Score Bar */
+.score-bar-container {
+  margin-top: 1.5rem;
+}
+
+.score-bar-container h3 {
+  color: #ffd700;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.score-bar {
+  height: 24px;
+  background: #16213e;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.5s ease;
+}
+
+.tier-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.score-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #6c757d;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Timestamp */
+.timestamp {
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,4373 @@
+[
+  {
+    "equipment_id": "sacred_dominion",
+    "name": "Sacred Dominion",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 25,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 25,
+          "defense": 2.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 25,
+          "defense": 2.5,
+          "health": 0,
+          "all_dmg": 3,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 25,
+          "defense": 2.5,
+          "health": 0,
+          "all_dmg": 3.92,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "lance_of_hw",
+    "name": "Lance of HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 20,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 20,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 20,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 20,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 2.71,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "hydras_blast",
+    "name": "Hydra's Blast",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 25,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 28,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 28,
+          "health": 0,
+          "all_dmg": 2.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 28,
+          "health": 0,
+          "all_dmg": 3.42,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_bow",
+    "name": "DB Bow",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 20,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 22,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 22,
+          "health": 0,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 22,
+          "health": 0,
+          "all_dmg": 2.71,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "hammer_of_sun_and_moon",
+    "name": "Hammer of Sun and Moon",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 25,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 25,
+          "defense": 0,
+          "health": 2.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 25,
+          "defense": 0,
+          "health": 2.5,
+          "all_dmg": 3,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 25,
+          "defense": 0,
+          "health": 2.5,
+          "all_dmg": 3.92,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "shield_of_ee",
+    "name": "Shield of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 20,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 20,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 20,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 20,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 2.71,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "scepter_of_gg",
+    "name": "Scepter of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 15,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 15,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 15,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 15,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 2.71,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "pride_of_khan",
+    "name": "Pride of Khan",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 15,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1.5,
+          "defense": 15,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1.5,
+          "defense": 15,
+          "health": 0,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1.5,
+          "defense": 15,
+          "health": 0,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.92,
+          "smite_dmg": 0.92,
+          "combo_dmg": 0.92
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "war_helm_of_hw",
+    "name": "War Helm of HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 11,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 11,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 11,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 11,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "ancestral_mask_of_night",
+    "name": "Ancestral Mask of Night",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 15,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 15,
+          "defense": 0,
+          "health": 1.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 15,
+          "defense": 0,
+          "health": 1.5,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 15,
+          "defense": 0,
+          "health": 1.5,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.92,
+          "smite_dmg": 0.92,
+          "combo_dmg": 0.92
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_helm",
+    "name": "DB Helm",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "helm_of_conqueror",
+    "name": "Helm of Conqueror",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 15,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 15,
+          "health": 1.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 15,
+          "health": 1.5,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 15,
+          "health": 1.5,
+          "all_dmg": 1.5,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.92,
+          "smite_dmg": 0.92,
+          "combo_dmg": 0.92
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "gold_helm_of_ee",
+    "name": "Gold Helm of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 11,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 11,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 11,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 11,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "diadem_of_gg",
+    "name": "Diadem of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "heavy_armor_of_hw",
+    "name": "Heavy Armor of HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 11,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 12,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_plate",
+    "name": "DB plate",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 11,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "milky_way",
+    "name": "Milky Way",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 12,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 12,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "plate_of_ee",
+    "name": "Plate of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "hope_cloak",
+    "name": "Hope Cloak",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 12,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 12,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 12,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 12,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "plate_of_gg",
+    "name": "Plate of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0.71,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "navar_control",
+    "name": "Navar Control",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 8,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 8,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 8,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 1,
+          "health": 8,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "armband_of_hw",
+    "name": "Armband of HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_vambraces",
+    "name": "DB Vambraces",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 7.5,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 8.5,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 8.5,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 8.5,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "ians_choice",
+    "name": "Ian's choice",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "vambraces_of_ee",
+    "name": "Vambraces of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "sacred_grips",
+    "name": "Sacred Grips",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "gauntlets_of_gg",
+    "name": "Gauntlets of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 6,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 6,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 6,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 2.94,
+          "defense": 6,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "ash_of_the_dawn",
+    "name": "Ash of the Dawn",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 12,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 14,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 14,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 14,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "tassets_of_the_hw",
+    "name": "Tassets of the HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 2,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_tassets",
+    "name": "DB Tassets",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "tassets_of_the_war_god",
+    "name": "Tassets of the War God",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 12,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "greaves_of_ee",
+    "name": "Greaves of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 11,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "eternal_night",
+    "name": "Eternal Night",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 12,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 12,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 12,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 12,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "chausses_of_gg",
+    "name": "Chausses of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 8,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 9,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 9,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 9,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0.71,
+          "smite_dmg": 0.71,
+          "combo_dmg": 0.71
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "boots_of_hw",
+    "name": "Boots of HW",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 7.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 7.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 7.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 7.5,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "db_boots",
+    "name": "DB Boots",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "commanders_boots",
+    "name": "Commander's Boots",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 8,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 9,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "sturdy_boots_of_ee",
+    "name": "Sturdy Boots of EE",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 7.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 8.5,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "shios_return",
+    "name": "Shio's Return",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 8,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 9,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "greaves_of_gg",
+    "name": "Greaves of GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 6,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 6,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 6,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 1,
+          "defense": 0,
+          "health": 6,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "ring",
+    "name": "Ring",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 7.1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 7.1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 9.1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 9.1,
+          "na": 1.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "horn_rally",
+    "name": "Horn (rally)",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 7,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 7,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 9,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 9,
+          "na": 1.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "horn_garrison",
+    "name": "Horn (garrison)",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 1,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 3,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 3,
+          "na": 1.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "gg",
+    "name": "GG",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 5,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 5,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 5,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 6.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "vengeance_",
+    "name": "Vengeance ",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 8,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 8,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 8,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 1.4,
+          "ca": 8,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "heros_hilt",
+    "name": "Hero's Hilt",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 5.18
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 5.18
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 5.18
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 1,
+          "all_dmg": 2,
+          "na": 1.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 5.18
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  },
+  {
+    "equipment_id": "dagger",
+    "name": "Dagger",
+    "type": "WEAPON",
+    "set_name": null,
+    "iconic_levels": [
+      {
+        "level": "Iconic I",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 6,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic II",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 7,
+          "all_dmg": 0,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic IV",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 7,
+          "all_dmg": 2,
+          "na": 0,
+          "ca": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      },
+      {
+        "level": "Iconic V",
+        "stats": {
+          "attack": 0,
+          "defense": 0,
+          "health": 7,
+          "all_dmg": 2,
+          "na": 1.4,
+          "ca": 0,
+          "skill_dmg": 1.4,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        },
+        "multipliers": {
+          "all_dmg": 0,
+          "na": 0,
+          "skill_dmg": 0,
+          "smite_dmg": 0,
+          "combo_dmg": 0
+        }
+      }
+    ],
+    "special_talent_available": true
+  }
+]

@@ -1,0 +1,2394 @@
+[
+  {
+    "inscription_id": "formation",
+    "name": "FORMATION",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "arch",
+    "name": "ARCH",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "wedge",
+    "name": "WEDGE",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "hollow_square",
+    "name": "HOLLOW SQUARE",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "delta",
+    "name": "DELTA",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 10
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "pincer",
+    "name": "PINCER",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 10,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "common",
+    "name": "COMMON",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "warcrybrutalspikedinfamy",
+    "name": "Warcry/Brutal/Spiked/Infamy",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 3.5,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "well_cladarmoredmetallicsshielded",
+    "name": "Well Clad/Armored/Metallics/Shielded",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 3.5,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "robustfitvitalityhardy",
+    "name": "Robust/Fit/Vitality/Hardy",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 3.5,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "onslaughtwarhungerstrikermilitant",
+    "name": "Onslaught/Warhunger/Striker/Militant",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1.5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "retaliatoryalertrebuffresistant_",
+    "name": "Retaliatory/Alert/Rebuff/Resistant ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 2.5,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "enrageddeviousbrawlerdaring",
+    "name": "Enraged/Devious/Brawler/Daring",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 1,
+      "skill_dmg": 2.5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "valiantfearsomewarflameselite",
+    "name": "Valiant/Fearsome/Warflames/Elite",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "evasive_on_instrument",
+    "name": "Evasive (on instrument)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 2.5,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "evasive_on_emblem_",
+    "name": "Evasive (on Emblem) ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "iron_wall",
+    "name": "Iron Wall",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1.5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "bellicose",
+    "name": "Bellicose",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.07,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "pulverize_",
+    "name": "Pulverize ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1.42,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "breaker",
+    "name": "Breaker",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 3.2,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "furious",
+    "name": "Furious",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1.5,
+      "ca": 0,
+      "skill_dmg": 4,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "ward",
+    "name": "Ward",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.87,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "calm",
+    "name": "Calm",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 2.3,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "requital",
+    "name": "Requital",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1.78,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "respite",
+    "name": "Respite",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.42,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "guarded",
+    "name": "Guarded",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 1.42,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "embattled",
+    "name": "Embattled",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "vengeful_",
+    "name": "Vengeful ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "uplifting_",
+    "name": "Uplifting ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "spirited_",
+    "name": "Spirited ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 1,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "eclipsed",
+    "name": "Eclipsed",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 2.5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "brave",
+    "name": "Brave",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 5,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "strategic",
+    "name": "Strategic",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "desperado_",
+    "name": "Desperado ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "cohesive_",
+    "name": "Cohesive ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "pursuer",
+    "name": "Pursuer",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "assertive_if_rally",
+    "name": "Assertive (if rally)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "siegework_if_rally",
+    "name": "Siegework (if rally)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "sentries_if_garrison",
+    "name": "Sentries (if garrison)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "ballistics",
+    "name": "Ballistics",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 1.5,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "smite_",
+    "name": "Smite ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 2,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "enduring_",
+    "name": "Enduring ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 3,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "artisan",
+    "name": "Artisan",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 1,
+      "skill_dmg": 3,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "raspacious",
+    "name": "Raspacious",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "guardians_",
+    "name": "Guardians ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 2,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "counterer_",
+    "name": "Counterer ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 3,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "deflecter_",
+    "name": "Deflecter ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 3,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "watchmen_",
+    "name": "Watchmen ",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "special",
+    "name": "SPECIAL",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "destructive_if_garrison",
+    "name": "Destructive (if garrison)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.035,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "destructive_if_rally",
+    "name": "Destructive (if rally)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": -5,
+      "smite_dmg": -7,
+      "combo_dmg": -5
+    },
+    "multipliers": {
+      "all_dmg": 0.035,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "straight_to_the_point",
+    "name": "Straight to the Point",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 7.78,
+      "ca": 0,
+      "skill_dmg": -2.14,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.035,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "invincible",
+    "name": "Invincible",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 6,
+      "ca": 0,
+      "skill_dmg": 5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.05,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "fearless",
+    "name": "Fearless",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 8,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.08,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "hunter",
+    "name": "Hunter",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.05,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "unstoppable",
+    "name": "Unstoppable",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 8,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.05,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "balanced",
+    "name": "Balanced",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 3.5,
+      "ca": 0,
+      "skill_dmg": 4,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.035,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "intrepid",
+    "name": "Intrepid",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 10,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.1,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "cocoon",
+    "name": "Cocoon",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 5,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "inviloable",
+    "name": "Inviloable",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 3.75,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "crowned",
+    "name": "Crowned",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "rounded",
+    "name": "Rounded",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "trasher",
+    "name": "Trasher",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 9
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0.035,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "butterfly",
+    "name": "Butterfly",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 3.5
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0.03,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "steelskin",
+    "name": "Steelskin",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 9,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "flurry",
+    "name": "Flurry",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 8
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0.08,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "toppler",
+    "name": "Toppler",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 10,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.05,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "demolisher",
+    "name": "Demolisher",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 3.75,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 5,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.05,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "airtight",
+    "name": "Airtight",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 3.75,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.05,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "thundering",
+    "name": "Thundering",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 10,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.1,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "rare",
+    "name": "RARE",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "battle_ready_if_garrison",
+    "name": "Battle Ready (if garrison)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "battle_ready_if_rally",
+    "name": "Battle Ready (if rally)",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 5,
+      "ca": 0,
+      "skill_dmg": -4.5,
+      "smite_dmg": -6,
+      "combo_dmg": -4.5
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "even_keeled",
+    "name": "Even Keeled",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.07,
+      "na": 1.5,
+      "ca": 0,
+      "skill_dmg": 2.14,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "unswerving",
+    "name": "Unswerving",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 4,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "forceful",
+    "name": "Forceful",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 3,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.03,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "crazed",
+    "name": "Crazed",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "boiling_blood",
+    "name": "Boiling Blood",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 3.15,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.02,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "defiant",
+    "name": "Defiant",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 3,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0.03,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "focus_fire",
+    "name": "Focus Fire",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 4,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0.04,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "self_defense",
+    "name": "Self Defense",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "aegis",
+    "name": "Aegis",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.875,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "reinforced",
+    "name": "Reinforced",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "tenacious",
+    "name": "Tenacious",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 2,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "pummeler",
+    "name": "Pummeler",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 5
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "causative",
+    "name": "Causative",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 1.5
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0.018,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "determined",
+    "name": "Determined",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 1.5,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "relentless",
+    "name": "Relentless",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 3.5
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0.035,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "imploder",
+    "name": "Imploder",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 5,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "raider",
+    "name": "Raider",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 2,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.02,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "hardheaded",
+    "name": "Hardheaded",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  },
+  {
+    "inscription_id": "rattling",
+    "name": "Rattling",
+    "rarity": "COMMON",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "health": 0,
+      "all_dmg": 0,
+      "na": 0,
+      "ca": 0,
+      "skill_dmg": 0,
+      "smite_dmg": 4,
+      "combo_dmg": 0
+    },
+    "multipliers": {
+      "all_dmg": 0,
+      "na": 0,
+      "skill_dmg": 0.04,
+      "smite_dmg": 0,
+      "combo_dmg": 0
+    },
+    "context_specific": false,
+    "context_bonuses": [],
+    "negative_effects": {}
+  }
+]

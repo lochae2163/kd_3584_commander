@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background: #0f0f1a;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d4263;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700;
+}
+
+/* Selection */
+::selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #ffffff;
+}
+
+/* Form element global styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Transitions */
+a, button, input, select {
+  transition: all 0.2s ease;
+}
+
+/* Utility Classes */
+.text-gold {
+  color: #ffd700;
+}
+
+.text-green {
+  color: #6bcb77;
+}
+
+.text-blue {
+  color: #4d96ff;
+}
+
+.text-red {
+  color: #ff6b6b;
+}
+
+.text-muted {
+  color: #6c757d;
+}

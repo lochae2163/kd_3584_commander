@@ -1,0 +1,1216 @@
+[
+  {
+    "name": "Divine Adobe",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Melk Abbey",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Road to Crown",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "City of Power",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Call of Eternity",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Emeraldshade Hall",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Battle's Bloom",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Daedalus Dirigible",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Guilded Pavilion",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 20,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 20,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 20,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 20,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Epic Health",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 0,
+        "health": 5,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Twilight Falls",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      },
+      {
+        "role_id": "LEADERSHIP GARRISON",
+        "attack": 0,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 5
+      }
+    ]
+  },
+  {
+    "name": "Dynasty Conqueror",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "LEADERSHIP GARRISON",
+        "attack": 0,
+        "defense": 8,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Saga of Longship",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "LEADERSHIP GARRISON",
+        "attack": 12,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "On Wings of Sailcloth",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "LEADERSHIP GARRISON",
+        "attack": 0,
+        "defense": 12,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Sands of Time",
+    "bonuses_by_role": [
+      {
+        "role_id": "CAV RALLY - SUBUTAI",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV RALLY - SKILL DMG",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - ELEANOR",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "CAV GARRISON - DAVID",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "LEADERSHIP GARRISON",
+        "attack": 16,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Topkapi Palace",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Flight of the Hieron",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 10,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Amber Fortress",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Star Palace",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Ancient Leisure",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Wat Phra Si Sanphet",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Poseidon's Sanctuary",
+    "bonuses_by_role": [
+      {
+        "role_id": "ARCHER RALLY - SKILL DMG",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "ARCHER GARRISON - CY",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "St Peter Basilica",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Age of Devotion",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Frozen Fortress",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 10,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Atlantis",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 0,
+        "health": 10,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Supreme Warrior",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 15,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Crowning Glory",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 15,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Reign of Rime",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 0,
+        "defense": 0,
+        "health": 15,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Perch",
+    "bonuses_by_role": [
+      {
+        "role_id": "INFANTRY RALLY - SMITE DMG",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY RALLY - SMITE/SKILL",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      },
+      {
+        "role_id": "INFANTRY GARRISON - GORGO",
+        "attack": 20,
+        "defense": 0,
+        "health": 0,
+        "all_dmg": 0,
+        "skill_dmg": 0
+      }
+    ]
+  }
+]

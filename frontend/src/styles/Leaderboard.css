@@ -1,0 +1,272 @@
+.leaderboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.leaderboard-header h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.leaderboard-header p {
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.role-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.role-selector label {
+  color: #a0a0a0;
+  font-weight: 600;
+}
+
+.role-selector select {
+  padding: 0.75rem 1.5rem;
+  background: #16213e;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  color: #ffd700;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 300px;
+}
+
+.role-selector select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #1a1a2e;
+  border-radius: 12px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 215, 0, 0.2);
+  border-top-color: #ffd700;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: #2d4263;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #6c757d;
+}
+
+/* Leaderboard Table */
+.leaderboard-table-container {
+  background: #1a1a2e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th {
+  background: #16213e;
+  color: #ffd700;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.leaderboard-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.leaderboard-table tr.top-three {
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.rank-cell {
+  width: 60px;
+  text-align: center;
+}
+
+.rank-medal {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.rank-number {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.player-cell .player-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.score-cell .score-value {
+  color: #6bcb77;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.tier-cell {
+  width: 80px;
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #1a1a2e;
+}
+
+.percentage-cell {
+  width: 180px;
+}
+
+.percentage-bar {
+  height: 24px;
+  background: #16213e;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.percentage-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.5s ease;
+}
+
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.date-cell {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* Role Stats */
+.role-stats {
+  margin-top: 2rem;
+}
+
+.role-stats h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stat-card {
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card .stat-label {
+  display: block;
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-value {
+  display: block;
+  color: #ffd700;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.error-message {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .role-selector {
+    flex-direction: column;
+  }
+
+  .role-selector select {
+    min-width: 100%;
+  }
+
+  .stats-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leaderboard-table {
+    font-size: 0.85rem;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .percentage-cell {
+    display: none;
+  }
+}

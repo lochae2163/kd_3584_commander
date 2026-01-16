@@ -1,0 +1,132 @@
+[
+  {
+    "set_name": "Hellish Wasteland",
+    "bonus_levels": [
+      {
+        "pieces_required": 2,
+        "stats": {
+          "attack": 2,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 0
+        }
+      },
+      {
+        "pieces_required": 4,
+        "stats": {
+          "attack": 3,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 2
+        }
+      },
+      {
+        "pieces_required": 6,
+        "stats": {
+          "attack": 4,
+          "defense": 0,
+          "health": 3,
+          "all_dmg": 0,
+          "skill_dmg": 3
+        }
+      }
+    ]
+  },
+  {
+    "set_name": "Dragon Breath",
+    "bonus_levels": [
+      {
+        "pieces_required": 2,
+        "stats": {
+          "attack": 2,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 0
+        }
+      },
+      {
+        "pieces_required": 4,
+        "stats": {
+          "attack": 3,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 3
+        }
+      },
+      {
+        "pieces_required": 6,
+        "stats": {
+          "attack": 4,
+          "defense": 0,
+          "health": 3,
+          "all_dmg": 0,
+          "skill_dmg": 4
+        }
+      }
+    ]
+  },
+  {
+    "set_name": "Eternal Empire",
+    "bonus_levels": [
+      {
+        "pieces_required": 2,
+        "stats": {
+          "attack": 0,
+          "defense": 2,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 0
+        }
+      },
+      {
+        "pieces_required": 6,
+        "stats": {
+          "attack": 0,
+          "defense": 4,
+          "health": 3,
+          "all_dmg": 0,
+          "skill_dmg": 3
+        }
+      }
+    ]
+  },
+  {
+    "set_name": "Garb of the Glorious Goddess",
+    "bonus_levels": [
+      {
+        "pieces_required": 2,
+        "stats": {
+          "attack": 2,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 0
+        }
+      },
+      {
+        "pieces_required": 4,
+        "stats": {
+          "attack": 3,
+          "defense": 0,
+          "health": 0,
+          "all_dmg": 0,
+          "skill_dmg": 3
+        }
+      },
+      {
+        "pieces_required": 6,
+        "stats": {
+          "attack": 4,
+          "defense": 0,
+          "health": 3,
+          "all_dmg": 0,
+          "skill_dmg": 4
+        }
+      }
+    ]
+  }
+]
