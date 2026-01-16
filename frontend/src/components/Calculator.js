@@ -36,7 +36,6 @@ function Calculator() {
 
   // Reference data
   const [roles, setRoles] = useState([]);
-  const [vipBonuses, setVipBonuses] = useState([]);
   const [civilisations, setCivilisations] = useState([]);
   const [spendingTiers, setSpendingTiers] = useState([]);
   const [citySkins, setCitySkins] = useState([]);
@@ -56,7 +55,6 @@ function Calculator() {
         setDataLoading(true);
         const [
           rolesRes,
-          vipRes,
           civsRes,
           spendingRes,
           skinsRes,
@@ -64,7 +62,6 @@ function Calculator() {
           inscRes,
         ] = await Promise.all([
           dataService.getRoles(),
-          dataService.getVIPBonuses(),
           dataService.getCivilisations(),
           dataService.getSpendingTiers(),
           dataService.getCitySkins(),
@@ -73,7 +70,6 @@ function Calculator() {
         ]);
 
         setRoles(rolesRes.data.roles || []);
-        setVipBonuses(vipRes.data.bonuses || []);
         setCivilisations(civsRes.data.civilisations || []);
         setSpendingTiers(spendingRes.data.tiers || []);
         setCitySkins(skinsRes.data.citySkins || []);
