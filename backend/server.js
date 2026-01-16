@@ -23,13 +23,13 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration for production
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || '*',
   credentials: true,
   optionsSuccessStatus: 200
 };
 
-// Middleware
-app.use(cors(corsOptions));
+// Middleware - allow all origins in development/if FRONTEND_URL not set
+app.use(cors(process.env.FRONTEND_URL ? corsOptions : {}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
