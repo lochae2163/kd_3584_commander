@@ -22,6 +22,11 @@ const equipmentSlotSchema = new mongoose.Schema({
 }, { _id: false });
 
 const armamentSchema = new mongoose.Schema({
+  armamentType: {
+    type: String,
+    enum: ['arch', 'wedge', 'hollow_square', 'delta', 'pincer'],
+    default: null
+  },
   attack: { type: Number, default: null },
   defense: { type: Number, default: null },
   marchSpeed: { type: Number, default: null },

@@ -18,7 +18,9 @@ function BuildForm() {
   const [governor, setGovernor] = useState(null);
   const [commanders, setCommanders] = useState([]);
   const [equipment, setEquipment] = useState([]);
-  const [inscriptions, setInscriptions] = useState({ special: [], rare: [], common: [] });
+  const [armaments, setArmaments] = useState([]);
+  const [allInscriptions, setAllInscriptions] = useState([]);
+  const [filteredInscriptions, setFilteredInscriptions] = useState({ special: [], rare: [], common: [] });
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
@@ -36,6 +38,7 @@ function BuildForm() {
       accessory: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
     },
     armament: {
+      armamentType: null,
       attack: null,
       defense: null,
       marchSpeed: null,
@@ -53,28 +56,39 @@ function BuildForm() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, buildId, troopType]);
 
+  // Filter inscriptions when armament type changes
+  useEffect(() => {
+    if (formData.armament.armamentType && allInscriptions.length > 0) {
+      const filtered = allInscriptions.filter(
+        (insc) => insc.armamentType === formData.armament.armamentType
+      );
+      setFilteredInscriptions({
+        special: filtered.filter((i) => i.rarity === 'SPECIAL'),
+        rare: filtered.filter((i) => i.rarity === 'RARE'),
+        common: filtered.filter((i) => i.rarity === 'COMMON'),
+      });
+    } else {
+      setFilteredInscriptions({ special: [], rare: [], common: [] });
+    }
+  }, [formData.armament.armamentType, allInscriptions]);
+
   const loadData = async () => {
     try {
       setLoading(true);
 
-      const [govRes, commandersRes, equipmentRes, inscriptionsRes] = await Promise.all([
+      const [govRes, commandersRes, equipmentRes, inscriptionsRes, armamentsRes] = await Promise.all([
         governorService.getById(id),
         dataService.getCommanders(troopType),
         dataService.getEquipment(),
         dataService.getInscriptions(),
+        dataService.getArmaments(),
       ]);
 
       setGovernor(govRes.data.governor);
       setCommanders(commandersRes.data.commanders || []);
       setEquipment(equipmentRes.data.equipment || []);
-
-      // Organize inscriptions by rarity
-      const inscs = inscriptionsRes.data.inscriptions || [];
-      setInscriptions({
-        special: inscs.filter((i) => i.rarity === 'SPECIAL'),
-        rare: inscs.filter((i) => i.rarity === 'RARE'),
-        common: inscs.filter((i) => i.rarity === 'COMMON'),
-      });
+      setAllInscriptions(inscriptionsRes.data.inscriptions || []);
+      setArmaments(armamentsRes.data.armaments || []);
 
       // If editing, load existing build
       if (buildId) {
@@ -107,7 +121,16 @@ function BuildForm() {
     }));
   };
 
-  const handleArmamentChange = (field, value) => {
+  const handleArmamentTypeChange = (armamentType) => {
+    // When armament type changes, clear selected inscriptions
+    setFormData((prev) => ({
+      ...prev,
+      armament: { ...prev.armament, armamentType: armamentType || null },
+      inscriptions: { special: [], rare: [], common: [] },
+    }));
+  };
+
+  const handleArmamentStatChange = (field, value) => {
     const numValue = value === '' ? null : parseFloat(value);
     setFormData((prev) => ({
       ...prev,
@@ -161,6 +184,8 @@ function BuildForm() {
     return `${tt} ${bt}`;
   };
 
+  const selectedArmament = armaments.find((a) => a.armamentId === formData.armament.armamentType);
+
   return (
     <div className="build-form-page">
       <button className="back-btn" onClick={() => navigate(`/governor/${id}`)}>
@@ -210,7 +235,30 @@ function BuildForm() {
         </section>
 
         <section className="form-section">
-          <h2>Armament Stats</h2>
+          <h2>Armament</h2>
+
+          <div className="armament-type-selector">
+            <label>Formation Type</label>
+            <select
+              value={formData.armament.armamentType || ''}
+              onChange={(e) => handleArmamentTypeChange(e.target.value)}
+            >
+              <option value="">Select Armament Type</option>
+              {armaments.map((arm) => (
+                <option key={arm.armamentId} value={arm.armamentId}>
+                  {arm.name} - {arm.description}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {selectedArmament && (
+            <p className="armament-description">
+              <strong>{selectedArmament.name}:</strong> {selectedArmament.description}
+            </p>
+          )}
+
+          <h3>Armament Stats</h3>
           <p className="hint">Only 3 of 4 stats can have values</p>
           <div className="armament-grid">
             <div className="armament-field">
@@ -219,7 +267,7 @@ function BuildForm() {
                 type="number"
                 step="0.1"
                 value={formData.armament.attack ?? ''}
-                onChange={(e) => handleArmamentChange('attack', e.target.value)}
+                onChange={(e) => handleArmamentStatChange('attack', e.target.value)}
               />
             </div>
             <div className="armament-field">
@@ -228,7 +276,7 @@ function BuildForm() {
                 type="number"
                 step="0.1"
                 value={formData.armament.defense ?? ''}
-                onChange={(e) => handleArmamentChange('defense', e.target.value)}
+                onChange={(e) => handleArmamentStatChange('defense', e.target.value)}
               />
             </div>
             <div className="armament-field">
@@ -237,7 +285,7 @@ function BuildForm() {
                 type="number"
                 step="0.1"
                 value={formData.armament.marchSpeed ?? ''}
-                onChange={(e) => handleArmamentChange('marchSpeed', e.target.value)}
+                onChange={(e) => handleArmamentStatChange('marchSpeed', e.target.value)}
               />
             </div>
             <div className="armament-field">
@@ -246,7 +294,7 @@ function BuildForm() {
                 type="number"
                 step="0.1"
                 value={formData.armament.allDamage ?? ''}
-                onChange={(e) => handleArmamentChange('allDamage', e.target.value)}
+                onChange={(e) => handleArmamentStatChange('allDamage', e.target.value)}
               />
             </div>
           </div>
@@ -255,53 +303,78 @@ function BuildForm() {
         <section className="form-section">
           <h2>Inscriptions</h2>
 
-          <div className="inscription-category">
-            <h3>Special (up to 2)</h3>
-            <div className="inscription-options">
-              {inscriptions.special.map((insc) => (
-                <label key={insc.inscription_id} className="inscription-checkbox">
-                  <input
-                    type="checkbox"
-                    checked={formData.inscriptions.special.includes(insc.name)}
-                    onChange={() => handleInscriptionToggle('special', insc.name)}
-                  />
-                  {insc.name}
-                </label>
-              ))}
-            </div>
-          </div>
+          {!formData.armament.armamentType ? (
+            <p className="hint">Select an armament type above to see available inscriptions</p>
+          ) : (
+            <>
+              <p className="hint">
+                Showing inscriptions for <strong>{selectedArmament?.name}</strong> formation
+              </p>
 
-          <div className="inscription-category">
-            <h3>Rare (up to 4)</h3>
-            <div className="inscription-options">
-              {inscriptions.rare.map((insc) => (
-                <label key={insc.inscription_id} className="inscription-checkbox">
-                  <input
-                    type="checkbox"
-                    checked={formData.inscriptions.rare.includes(insc.name)}
-                    onChange={() => handleInscriptionToggle('rare', insc.name)}
-                  />
-                  {insc.name}
-                </label>
-              ))}
-            </div>
-          </div>
+              <div className="inscription-category">
+                <h3>Special (up to 2)</h3>
+                <div className="inscription-options">
+                  {filteredInscriptions.special.length === 0 ? (
+                    <span className="no-inscriptions">No special inscriptions available</span>
+                  ) : (
+                    filteredInscriptions.special.map((insc) => (
+                      <label key={insc.inscriptionId} className="inscription-checkbox" title={insc.effect}>
+                        <input
+                          type="checkbox"
+                          checked={formData.inscriptions.special.includes(insc.name)}
+                          onChange={() => handleInscriptionToggle('special', insc.name)}
+                        />
+                        <span className="inscription-name">{insc.name}</span>
+                        <span className="inscription-effect">{insc.effect}</span>
+                      </label>
+                    ))
+                  )}
+                </div>
+              </div>
 
-          <div className="inscription-category">
-            <h3>Common (up to 8)</h3>
-            <div className="inscription-options">
-              {inscriptions.common.map((insc) => (
-                <label key={insc.inscription_id} className="inscription-checkbox">
-                  <input
-                    type="checkbox"
-                    checked={formData.inscriptions.common.includes(insc.name)}
-                    onChange={() => handleInscriptionToggle('common', insc.name)}
-                  />
-                  {insc.name}
-                </label>
-              ))}
-            </div>
-          </div>
+              <div className="inscription-category">
+                <h3>Rare (up to 4)</h3>
+                <div className="inscription-options">
+                  {filteredInscriptions.rare.length === 0 ? (
+                    <span className="no-inscriptions">No rare inscriptions available</span>
+                  ) : (
+                    filteredInscriptions.rare.map((insc) => (
+                      <label key={insc.inscriptionId} className="inscription-checkbox" title={insc.effect}>
+                        <input
+                          type="checkbox"
+                          checked={formData.inscriptions.rare.includes(insc.name)}
+                          onChange={() => handleInscriptionToggle('rare', insc.name)}
+                        />
+                        <span className="inscription-name">{insc.name}</span>
+                        <span className="inscription-effect">{insc.effect}</span>
+                      </label>
+                    ))
+                  )}
+                </div>
+              </div>
+
+              <div className="inscription-category">
+                <h3>Common (up to 8)</h3>
+                <div className="inscription-options">
+                  {filteredInscriptions.common.length === 0 ? (
+                    <span className="no-inscriptions">No common inscriptions available</span>
+                  ) : (
+                    filteredInscriptions.common.map((insc) => (
+                      <label key={insc.inscriptionId} className="inscription-checkbox" title={insc.effect}>
+                        <input
+                          type="checkbox"
+                          checked={formData.inscriptions.common.includes(insc.name)}
+                          onChange={() => handleInscriptionToggle('common', insc.name)}
+                        />
+                        <span className="inscription-name">{insc.name}</span>
+                        <span className="inscription-effect">{insc.effect}</span>
+                      </label>
+                    ))
+                  )}
+                </div>
+              </div>
+            </>
+          )}
         </section>
 
         <div className="form-actions">

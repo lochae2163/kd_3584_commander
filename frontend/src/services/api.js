@@ -61,8 +61,10 @@ export const dataService = {
     api.get('/data/commanders', { params: { troopType, role } }),
   getEquipment: (type = null) =>
     api.get('/data/equipment', { params: type ? { type } : {} }),
-  getInscriptions: (rarity = null) =>
-    api.get('/data/inscriptions', { params: rarity ? { rarity } : {} }),
+  getInscriptions: (armamentType = null) =>
+    api.get('/data/inscriptions', { params: armamentType ? { armamentType } : {} }),
+  getArmaments: () =>
+    api.get('/data/armaments'),
 };
 
 export default api;

@@ -1,0 +1,37 @@
+[
+  {
+    "armamentId": "arch",
+    "name": "Arch",
+    "description": "Troops deal 5% more attack damage",
+    "damageType": "normal_attack",
+    "baseStats": ["attack", "defense", "marchSpeed", "allDamage"]
+  },
+  {
+    "armamentId": "wedge",
+    "name": "Wedge",
+    "description": "Troops deal 5% more skill damage",
+    "damageType": "skill",
+    "baseStats": ["attack", "defense", "marchSpeed", "allDamage"]
+  },
+  {
+    "armamentId": "hollow_square",
+    "name": "Hollow Square",
+    "description": "Reduces all troop damage taken by 2%",
+    "damageType": "defense",
+    "baseStats": ["attack", "defense", "marchSpeed", "allDamage"]
+  },
+  {
+    "armamentId": "delta",
+    "name": "Delta",
+    "description": "Provides 10% increased combo attack damage",
+    "damageType": "combo",
+    "baseStats": ["attack", "defense", "marchSpeed", "allDamage"]
+  },
+  {
+    "armamentId": "pincer",
+    "name": "Pincer",
+    "description": "Grants 10% additional smite damage",
+    "damageType": "smite",
+    "baseStats": ["attack", "defense", "marchSpeed", "allDamage"]
+  }
+]

@@ -1,6 +1,7 @@
 import Commander from '../models/Commander.js';
 import Equipment from '../models/Equipment.js';
 import Inscription from '../models/Inscription.js';
+import Armament from '../models/Armament.js';
 
 /**
  * Get all commanders
@@ -43,17 +44,38 @@ export const getAllEquipment = async (req, res) => {
 };
 
 /**
- * Get all inscriptions
+ * Get all inscriptions (optionally filter by rarity and/or armamentType)
  */
 export const getAllInscriptions = async (req, res) => {
   try {
-    const { rarity } = req.query;
-    const query = rarity ? { rarity: rarity.toUpperCase() } : {};
+    const { rarity, armamentType } = req.query;
+    let query = {};
+
+    if (rarity) {
+      query.rarity = rarity.toUpperCase();
+    }
+
+    if (armamentType) {
+      query.armamentType = armamentType.toLowerCase();
+    }
 
     const inscriptions = await Inscription.find(query).sort({ rarity: 1, name: 1 });
     res.status(200).json({ success: true, count: inscriptions.length, inscriptions });
   } catch (error) {
     console.error('Error fetching inscriptions:', error);
     res.status(500).json({ error: 'Failed to fetch inscriptions' });
+  }
+};
+
+/**
+ * Get all armaments
+ */
+export const getAllArmaments = async (req, res) => {
+  try {
+    const armaments = await Armament.find().sort({ name: 1 });
+    res.status(200).json({ success: true, count: armaments.length, armaments });
+  } catch (error) {
+    console.error('Error fetching armaments:', error);
+    res.status(500).json({ error: 'Failed to fetch armaments' });
   }
 };

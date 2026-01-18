@@ -10,6 +10,7 @@ import dataRoutes from './routes/dataRoutes.js';
 import Commander from './models/Commander.js';
 import Equipment from './models/Equipment.js';
 import Inscription from './models/Inscription.js';
+import Armament from './models/Armament.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -51,7 +52,8 @@ app.get('/api/seed', async (req, res) => {
         counts: {
           commanders: existingCommanders,
           equipment: await Equipment.countDocuments(),
-          inscriptions: await Inscription.countDocuments()
+          inscriptions: await Inscription.countDocuments(),
+          armaments: await Armament.countDocuments()
         }
       });
     }
@@ -70,13 +72,18 @@ app.get('/api/seed', async (req, res) => {
     const inscriptionsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'inscriptions.json'), 'utf8'));
     await Inscription.insertMany(inscriptionsData);
 
+    // Seed Armaments
+    const armamentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'armaments.json'), 'utf8'));
+    await Armament.insertMany(armamentsData);
+
     res.status(200).json({
       success: true,
       message: 'Database seeded successfully!',
       counts: {
         commanders: commandersData.length,
         equipment: equipmentData.length,
-        inscriptions: inscriptionsData.length
+        inscriptions: inscriptionsData.length,
+        armaments: armamentsData.length
       }
     });
   } catch (error) {
@@ -101,6 +108,7 @@ app.get('/api/reseed', async (req, res) => {
     await Commander.deleteMany({});
     await Equipment.deleteMany({});
     await Inscription.deleteMany({});
+    await Armament.deleteMany({});
 
     console.log('Re-seeding database...');
 
@@ -116,13 +124,18 @@ app.get('/api/reseed', async (req, res) => {
     const inscriptionsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'inscriptions.json'), 'utf8'));
     await Inscription.insertMany(inscriptionsData);
 
+    // Seed Armaments
+    const armamentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'armaments.json'), 'utf8'));
+    await Armament.insertMany(armamentsData);
+
     res.status(200).json({
       success: true,
       message: 'Database re-seeded successfully!',
       counts: {
         commanders: commandersData.length,
         equipment: equipmentData.length,
-        inscriptions: inscriptionsData.length
+        inscriptions: inscriptionsData.length,
+        armaments: armamentsData.length
       }
     });
   } catch (error) {
