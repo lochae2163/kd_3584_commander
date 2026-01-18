@@ -104,11 +104,23 @@ app.get('/api/reseed', async (req, res) => {
 
     console.log('Clearing database...');
 
-    // Clear reference data collections (keep governors and builds)
-    await Commander.deleteMany({});
-    await Equipment.deleteMany({});
-    await Inscription.deleteMany({});
-    await Armament.deleteMany({});
+    // Drop collections entirely to remove old indexes
+    const db = Commander.db;
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map(c => c.name);
+
+    if (collectionNames.includes('commanders')) {
+      await db.dropCollection('commanders');
+    }
+    if (collectionNames.includes('equipment')) {
+      await db.dropCollection('equipment');
+    }
+    if (collectionNames.includes('inscriptions')) {
+      await db.dropCollection('inscriptions');
+    }
+    if (collectionNames.includes('armaments')) {
+      await db.dropCollection('armaments');
+    }
 
     console.log('Re-seeding database...');
 
