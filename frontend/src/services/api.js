@@ -48,6 +48,8 @@ export const governorService = {
 
 // Build service
 export const buildService = {
+  getAll: (troopType = null, buildType = null) =>
+    api.get('/governors/builds', { params: { troopType, buildType } }),
   getByGovernor: (governorId) => api.get(`/governors/${governorId}/builds`),
   getById: (governorId, buildId) => api.get(`/governors/${governorId}/builds/${buildId}`),
   create: (governorId, data) => api.post(`/governors/${governorId}/builds`, data),

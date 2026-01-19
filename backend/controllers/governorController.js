@@ -2,6 +2,49 @@ import Governor from '../models/Governor.js';
 import GovernorBuild from '../models/GovernorBuild.js';
 
 /**
+ * Get all builds across all governors (with optional filters)
+ */
+export const getAllBuilds = async (req, res) => {
+  try {
+    const { troopType, buildType } = req.query;
+
+    let query = {};
+    if (troopType) {
+      query.troopType = troopType.toLowerCase();
+    }
+    if (buildType) {
+      query.buildType = buildType.toLowerCase();
+    }
+
+    const builds = await GovernorBuild.find(query)
+      .sort({ updatedAt: -1 })
+      .lean();
+
+    // Get governor names for each build
+    const governorIds = [...new Set(builds.map(b => b.governorId.toString()))];
+    const governors = await Governor.find({ _id: { $in: governorIds } }).lean();
+    const governorMap = governors.reduce((acc, g) => {
+      acc[g._id.toString()] = g.name;
+      return acc;
+    }, {});
+
+    const buildsWithGovernor = builds.map(build => ({
+      ...build,
+      governorName: governorMap[build.governorId.toString()] || 'Unknown'
+    }));
+
+    res.status(200).json({
+      success: true,
+      count: buildsWithGovernor.length,
+      builds: buildsWithGovernor
+    });
+  } catch (error) {
+    console.error('Error fetching all builds:', error);
+    res.status(500).json({ error: 'Failed to fetch builds' });
+  }
+};
+
+/**
  * Get all governors
  */
 export const getAllGovernors = async (req, res) => {
