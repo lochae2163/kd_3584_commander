@@ -52,6 +52,14 @@ function BuildForm() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, buildId, troopType]);
 
+  // Set page title
+  useEffect(() => {
+    const action = buildId ? 'Edit' : 'Create';
+    const tt = troopType ? troopType.charAt(0).toUpperCase() + troopType.slice(1) : '';
+    const bt = buildType ? buildType.charAt(0).toUpperCase() + buildType.slice(1) : '';
+    document.title = `${action} ${tt} ${bt} Build - 3584 Commanders`;
+  }, [buildId, troopType, buildType]);
+
   const loadData = async () => {
     try {
       setLoading(true);

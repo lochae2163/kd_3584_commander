@@ -29,6 +29,13 @@ function GovernorDetail() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
+  // Set page title when governor loads
+  useEffect(() => {
+    if (governor) {
+      document.title = `${governor.name} - 3584 Commanders`;
+    }
+  }, [governor]);
+
   const loadData = async () => {
     try {
       setLoading(true);
@@ -84,7 +91,7 @@ function GovernorDetail() {
   return (
     <div className="governor-detail">
       <button className="back-btn" onClick={() => navigate('/')}>
-        &larr; Back to Governors
+        &larr; Back to Dashboard
       </button>
 
       <div className="governor-header">

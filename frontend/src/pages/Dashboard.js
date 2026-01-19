@@ -8,6 +8,10 @@ const TROOP_TYPES = ['infantry', 'cavalry', 'archer', 'leadership'];
 const BUILD_TYPES = ['rally', 'garrison'];
 
 function Dashboard() {
+  // Set page title
+  useEffect(() => {
+    document.title = '3584 Commanders - Dashboard';
+  }, []);
   const [builds, setBuilds] = useState([]);
   const [governors, setGovernors] = useState([]);
   const [loading, setLoading] = useState(true);

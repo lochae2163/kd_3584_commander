@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { authService, setAuthPassword } from '../services/api';
 import '../styles/Login.css';
 
@@ -6,6 +6,11 @@ function Login({ onLogin }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  // Set page title
+  useEffect(() => {
+    document.title = '3584 Commanders - Login';
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +31,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>ROK Data Keeper</h1>
+        <h1>3584 Commanders</h1>
         <p>Alliance Build Tracker</p>
 
         <form onSubmit={handleSubmit}>
