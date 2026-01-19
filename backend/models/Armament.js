@@ -10,18 +10,9 @@ const armamentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  description: {
+  slots: [{
     type: String,
-    default: ''
-  },
-  damageType: {
-    type: String,
-    required: true,
-    enum: ['normal_attack', 'skill', 'defense', 'combo', 'smite']
-  },
-  baseStats: [{
-    type: String,
-    enum: ['attack', 'defense', 'marchSpeed', 'allDamage']
+    enum: ['emblem', 'flag', 'instrument', 'scroll']
   }]
 }, { timestamps: true });
 
