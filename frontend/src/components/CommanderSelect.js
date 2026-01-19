@@ -8,9 +8,9 @@ function CommanderSelect({ label, commanders, value, onChange, filterRole, build
     if (filterRole === 'primary') {
       return cmd.roles.includes(buildType);
     }
-    // For secondary, show all commanders with 'secondary' role or the buildType role
+    // For secondary, show ALL commanders (any commander can be secondary)
     if (filterRole === 'secondary') {
-      return cmd.roles.includes('secondary') || cmd.roles.includes(buildType);
+      return true;
     }
     return true;
   });
