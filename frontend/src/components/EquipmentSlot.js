@@ -8,7 +8,8 @@ const SLOT_LABELS = {
   gloves: 'Gloves',
   legs: 'Legs',
   boots: 'Boots',
-  accessory: 'Accessory',
+  accessory1: 'Accessory 1',
+  accessory2: 'Accessory 2',
 };
 
 const SLOT_TYPE_MAP = {
@@ -18,7 +19,8 @@ const SLOT_TYPE_MAP = {
   gloves: 'GLOVES',
   legs: 'LEGS',
   boots: 'BOOTS',
-  accessory: 'ACCESSORY',
+  accessory1: 'ACCESSORY',
+  accessory2: 'ACCESSORY',
 };
 
 function EquipmentSlot({ slot, equipment, value, onChange }) {

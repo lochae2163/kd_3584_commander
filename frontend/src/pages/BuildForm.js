@@ -5,7 +5,7 @@ import CommanderSelect from '../components/CommanderSelect';
 import EquipmentSlot from '../components/EquipmentSlot';
 import '../styles/BuildForm.css';
 
-const EQUIPMENT_SLOTS = ['weapon', 'helmet', 'chest', 'gloves', 'legs', 'boots', 'accessory'];
+const EQUIPMENT_SLOTS = ['weapon', 'helmet', 'chest', 'gloves', 'legs', 'boots', 'accessory1', 'accessory2'];
 const ARMAMENT_SLOTS = ['emblem', 'flag', 'instrument', 'scroll'];
 const TIER_ORDER = ['S', 'A', 'B', 'C'];
 
@@ -37,7 +37,8 @@ function BuildForm() {
       gloves: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
       legs: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
       boots: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
-      accessory: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
+      accessory1: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
+      accessory2: { equipmentId: null, name: null, iconicLevel: null, hasCrit: false },
     },
     armament: {
       formation: null,

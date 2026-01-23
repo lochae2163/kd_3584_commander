@@ -286,7 +286,7 @@ function Dashboard() {
                           </div>
                         </td>
                         <td>{getFormationName(build.armament?.formation)}</td>
-                        <td className="count-cell">{equipCount}/7</td>
+                        <td className="count-cell">{equipCount}/8</td>
                         <td className="count-cell">
                           {iconicCount > 0 ? (
                             <span className="iconic-info">

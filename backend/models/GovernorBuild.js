@@ -70,7 +70,8 @@ const governorBuildSchema = new mongoose.Schema({
     gloves: { type: equipmentSlotSchema, default: () => ({}) },
     legs: { type: equipmentSlotSchema, default: () => ({}) },
     boots: { type: equipmentSlotSchema, default: () => ({}) },
-    accessory: { type: equipmentSlotSchema, default: () => ({}) }
+    accessory1: { type: equipmentSlotSchema, default: () => ({}) },
+    accessory2: { type: equipmentSlotSchema, default: () => ({}) }
   },
   armament: {
     type: armamentSchema,
