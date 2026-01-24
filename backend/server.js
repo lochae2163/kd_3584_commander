@@ -29,8 +29,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/governors', governorRoutes);
 app.use('/api/data', dataRoutes);
 
-// Health check endpoint
+// Health check endpoints
 app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'ROK Data Keeper API is running', version: '2.0' });
+});
+
+app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'ROK Data Keeper API is running', version: '2.0' });
 });
 
@@ -150,10 +154,60 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
+// Auto-seed database if empty
+const autoSeedIfEmpty = async () => {
+  try {
+    const DATA_DIR = path.join(__dirname, 'data');
+
+    // Check if data files exist
+    if (!fs.existsSync(path.join(DATA_DIR, 'commanders.json'))) {
+      console.log('⚠️  Data files not found, skipping auto-seed');
+      return;
+    }
+
+    const commanderCount = await Commander.countDocuments();
+    const equipmentCount = await Equipment.countDocuments();
+
+    if (commanderCount === 0 || equipmentCount === 0) {
+      console.log('🌱 Database empty, auto-seeding...');
+
+      // Clear any partial data
+      await Commander.deleteMany({});
+      await Equipment.deleteMany({});
+      await Inscription.deleteMany({});
+      await Armament.deleteMany({});
+
+      // Seed all data
+      const commandersData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'commanders.json'), 'utf8'));
+      await Commander.insertMany(commandersData);
+      console.log(`   ✅ Seeded ${commandersData.length} commanders`);
+
+      const equipmentData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'equipment.json'), 'utf8'));
+      await Equipment.insertMany(equipmentData);
+      console.log(`   ✅ Seeded ${equipmentData.length} equipment items`);
+
+      const inscriptionsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'inscriptions.json'), 'utf8'));
+      await Inscription.insertMany(inscriptionsData);
+      console.log(`   ✅ Seeded ${inscriptionsData.length} inscriptions`);
+
+      const armamentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'armaments.json'), 'utf8'));
+      await Armament.insertMany(armamentsData);
+      console.log(`   ✅ Seeded ${armamentsData.length} armaments`);
+
+      console.log('🎉 Auto-seed completed!\n');
+    } else {
+      console.log(`📊 Database has ${commanderCount} commanders, ${equipmentCount} equipment items`);
+    }
+  } catch (error) {
+    console.error('⚠️  Auto-seed failed:', error.message);
+  }
+};
+
 // Start server
 const startServer = async () => {
   try {
     await connectDB();
+    await autoSeedIfEmpty();
     app.listen(PORT, () => {
       console.log(`\n🚀 Server is running on port ${PORT}`);
       console.log(`📊 API: http://localhost:${PORT}`);

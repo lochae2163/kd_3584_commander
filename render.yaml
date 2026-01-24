@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: rok-commander-backend
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: SITE_PASSWORD
+        sync: false
+    autoDeploy: true
+    healthCheckPath: /api/health
