@@ -183,6 +183,18 @@ function BuildForm() {
     return grouped;
   };
 
+  // Calculate equipment stats - must be before any conditional returns
+  const equipmentStats = useMemo(() => {
+    return calculateEquipmentStats(formData.equipment, equipment, troopType);
+  }, [formData.equipment, equipment, troopType]);
+
+  // Calculate set bonuses - must be before any conditional returns
+  const { setCounts, activeBonuses } = useMemo(() => {
+    const counts = countSetPieces(formData.equipment, equipment);
+    const bonuses = getActiveSetBonuses(counts);
+    return { setCounts: counts, activeBonuses: bonuses };
+  }, [formData.equipment, equipment]);
+
   if (loading) {
     return <div className="loading">Loading...</div>;
   }
@@ -194,18 +206,6 @@ function BuildForm() {
   };
 
   const selectedFormation = armaments.find((a) => a.armamentId === formData.armament.formation);
-
-  // Calculate equipment stats
-  const equipmentStats = useMemo(() => {
-    return calculateEquipmentStats(formData.equipment, equipment, troopType);
-  }, [formData.equipment, equipment, troopType]);
-
-  // Calculate set bonuses
-  const { setCounts, activeBonuses } = useMemo(() => {
-    const counts = countSetPieces(formData.equipment, equipment);
-    const bonuses = getActiveSetBonuses(counts);
-    return { setCounts: counts, activeBonuses: bonuses };
-  }, [formData.equipment, equipment]);
 
   return (
     <div className="build-form-page">
