@@ -9,13 +9,13 @@ jobs:
   reseed-database:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Railway deployment
-        run: sleep 60
+      - name: Wait for Render deployment
+        run: sleep 120  # Render takes longer to deploy
 
       - name: Reseed database
         run: |
           echo "Triggering database reseed..."
-          response=$(curl -s -w "\n%{http_code}" "https://kd3584commander-production.up.railway.app/api/reseed")
+          response=$(curl -s -w "\n%{http_code}" "https://kd3584-commander-backend.onrender.com/api/reseed")
           http_code=$(echo "$response" | tail -n1)
           body=$(echo "$response" | sed '$d')
           echo "Response: $body"
