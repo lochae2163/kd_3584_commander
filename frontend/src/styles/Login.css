@@ -74,6 +74,34 @@
   font-size: 0.9rem;
 }
 
+.login-box .help-text {
+  color: #64748b;
+  font-size: 0.8rem;
+  margin: -0.5rem 0 0.5rem;
+  text-align: left;
+}
+
+.toggle-mode {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-button {
+  background: transparent;
+  border: none;
+  color: #4d96ff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.link-button:hover {
+  color: #6ba8ff;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .login-box {

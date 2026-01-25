@@ -1,5 +1,17 @@
 import Governor from '../models/Governor.js';
 import GovernorBuild from '../models/GovernorBuild.js';
+import User from '../models/User.js';
+
+/**
+ * Check if user owns the governor or is admin
+ */
+const checkOwnership = (governor, user) => {
+  if (!user) return false;
+  // Admins can do anything
+  if (user.role === 'admin') return true;
+  // User must own the governor
+  return governor.userId && governor.userId.toString() === user._id.toString();
+};
 
 /**
  * Get all builds across all governors (with optional filters)
@@ -113,6 +125,11 @@ export const createGovernor = async (req, res) => {
       return res.status(400).json({ error: 'Governor name is required' });
     }
 
+    // Check if user already has a governor (non-admins can only have one)
+    if (req.user.role !== 'admin' && req.user.governorId) {
+      return res.status(400).json({ error: 'You already have a governor profile' });
+    }
+
     // Check if governor already exists
     const existing = await Governor.findOne({ name: { $regex: `^${name}$`, $options: 'i' } });
     if (existing) {
@@ -121,8 +138,14 @@ export const createGovernor = async (req, res) => {
 
     const governor = await Governor.create({
       name,
-      vipLevel: vipLevel || 0
+      vipLevel: vipLevel || 0,
+      userId: req.user._id  // Link to current user
     });
+
+    // Update user's governorId (for non-admins)
+    if (req.user.role !== 'admin') {
+      await User.findByIdAndUpdate(req.user._id, { governorId: governor._id });
+    }
 
     res.status(201).json({
       success: true,
@@ -145,6 +168,11 @@ export const updateGovernor = async (req, res) => {
     const governor = await Governor.findById(id);
     if (!governor) {
       return res.status(404).json({ error: 'Governor not found' });
+    }
+
+    // Check ownership
+    if (!checkOwnership(governor, req.user)) {
+      return res.status(403).json({ error: 'You can only edit your own governor' });
     }
 
     // If name is changing, check it doesn't conflict
@@ -187,8 +215,18 @@ export const deleteGovernor = async (req, res) => {
       return res.status(404).json({ error: 'Governor not found' });
     }
 
+    // Check ownership
+    if (!checkOwnership(governor, req.user)) {
+      return res.status(403).json({ error: 'You can only delete your own governor' });
+    }
+
     // Delete all builds for this governor
     await GovernorBuild.deleteMany({ governorId: id });
+
+    // Clear user's governorId if linked
+    if (governor.userId) {
+      await User.findByIdAndUpdate(governor.userId, { governorId: null });
+    }
 
     // Delete the governor
     await Governor.findByIdAndDelete(id);
@@ -319,6 +357,11 @@ export const createBuild = async (req, res) => {
       return res.status(404).json({ error: 'Governor not found' });
     }
 
+    // Check ownership
+    if (!checkOwnership(governor, req.user)) {
+      return res.status(403).json({ error: 'You can only create builds for your own governor' });
+    }
+
     if (!troopType || !buildType) {
       return res.status(400).json({ error: 'Troop type and build type are required' });
     }
@@ -377,6 +420,16 @@ export const updateBuild = async (req, res) => {
     const { id, buildId } = req.params;
     const updates = req.body;
 
+    const governor = await Governor.findById(id);
+    if (!governor) {
+      return res.status(404).json({ error: 'Governor not found' });
+    }
+
+    // Check ownership
+    if (!checkOwnership(governor, req.user)) {
+      return res.status(403).json({ error: 'You can only update your own builds' });
+    }
+
     const build = await GovernorBuild.findOne({ _id: buildId, governorId: id });
     if (!build) {
       return res.status(404).json({ error: 'Build not found' });
@@ -423,6 +476,16 @@ export const updateBuild = async (req, res) => {
 export const deleteBuild = async (req, res) => {
   try {
     const { id, buildId } = req.params;
+
+    const governor = await Governor.findById(id);
+    if (!governor) {
+      return res.status(404).json({ error: 'Governor not found' });
+    }
+
+    // Check ownership
+    if (!checkOwnership(governor, req.user)) {
+      return res.status(403).json({ error: 'You can only delete your own builds' });
+    }
 
     const build = await GovernorBuild.findOneAndDelete({ _id: buildId, governorId: id });
     if (!build) {

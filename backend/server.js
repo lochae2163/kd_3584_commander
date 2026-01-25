@@ -5,6 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import connectDB from './config/database.js';
+import authRoutes from './routes/authRoutes.js';
 import governorRoutes from './routes/governorRoutes.js';
 import dataRoutes from './routes/dataRoutes.js';
 import Commander from './models/Commander.js';
@@ -26,6 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.use('/api/auth', authRoutes);
 app.use('/api/governors', governorRoutes);
 app.use('/api/data', dataRoutes);
 

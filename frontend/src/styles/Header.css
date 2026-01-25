@@ -30,6 +30,62 @@
   margin-top: 0.25rem;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.user-info .username {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.user-info .governor-name {
+  color: #6bcb77;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.user-info .governor-name:hover {
+  color: #8dd98d;
+}
+
+.user-info .admin-badge {
+  background: #e94560;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.my-builds-btn {
+  background: transparent;
+  border: 2px solid #6bcb77;
+  color: #6bcb77;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.my-builds-btn:hover {
+  background: #6bcb77;
+  color: #0f0f1a;
+}
+
 .logout-btn {
   background: transparent;
   border: 2px solid #e94560;
@@ -55,5 +111,15 @@
 
   .logo h1 {
     font-size: 1.4rem;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user-info {
+    width: 100%;
+    justify-content: center;
   }
 }

@@ -12,9 +12,15 @@ const governorSchema = new mongoose.Schema({
     min: 0,
     max: 18,
     default: 0
+  },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    default: null  // null = unclaimed (for migration of existing data)
   }
 }, { timestamps: true });
 
 // Note: name field already has an index due to unique: true
+governorSchema.index({ userId: 1 });
 
 export default mongoose.model('Governor', governorSchema);

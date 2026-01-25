@@ -9,30 +9,37 @@ const api = axios.create({
   },
 });
 
-// Set auth password for all requests
-export const setAuthPassword = (password) => {
-  if (password) {
-    api.defaults.headers.common['Authorization'] = password;
-    localStorage.setItem('rokPassword', password);
-  } else {
-    delete api.defaults.headers.common['Authorization'];
-    localStorage.removeItem('rokPassword');
+// Add JWT token to requests
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('rokToken');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
   }
-};
+  return config;
+});
 
-// Initialize password from localStorage
-const savedPassword = localStorage.getItem('rokPassword');
-if (savedPassword) {
-  api.defaults.headers.common['Authorization'] = savedPassword;
-}
+// Handle 401 errors (token expired or invalid)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('rokToken');
+      // Don't redirect here, let the AuthContext handle it
+    }
+    return Promise.reject(error);
+  }
+);
 
 // Auth service
 export const authService = {
-  verifyPassword: (password) => api.post('/governors/auth/verify', { password }),
-  isAuthenticated: () => !!localStorage.getItem('rokPassword'),
+  login: (login, password) => api.post('/auth/login', { login, password }),
+  register: (data) => api.post('/auth/register', data),
+  getMe: () => api.get('/auth/me'),
+  linkGovernor: (governorId) => api.post('/auth/link-governor', { governorId }),
+  getUnclaimedGovernors: () => api.get('/auth/unclaimed-governors'),
+  isAuthenticated: () => !!localStorage.getItem('rokToken'),
   logout: () => {
-    localStorage.removeItem('rokPassword');
-    delete api.defaults.headers.common['Authorization'];
+    localStorage.removeItem('rokToken');
   },
 };
 
@@ -70,8 +77,7 @@ export const dataService = {
     if (tier) params.tier = tier;
     return api.get('/data/inscriptions', { params });
   },
-  getArmaments: () =>
-    api.get('/data/armaments'),
+  getArmaments: () => api.get('/data/armaments'),
 };
 
 export default api;

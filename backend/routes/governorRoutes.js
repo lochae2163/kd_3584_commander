@@ -1,5 +1,5 @@
 import express from 'express';
-import { authMiddleware, verifyPassword } from '../middleware/auth.js';
+import { authMiddleware, optionalAuth, verifyPassword } from '../middleware/auth.js';
 import {
   getAllBuilds,
   getAllGovernors,
@@ -16,23 +16,21 @@ import {
 
 const router = express.Router();
 
-// Auth route (no middleware)
+// Legacy auth route (for backwards compatibility)
 router.post('/auth/verify', verifyPassword);
 
-// All builds route (must come before /:id to avoid conflict)
-router.get('/builds', authMiddleware, getAllBuilds);
+// Public read routes (anyone can view, optionalAuth attaches user if logged in)
+router.get('/builds', optionalAuth, getAllBuilds);
+router.get('/', optionalAuth, getAllGovernors);
+router.get('/:id', optionalAuth, getGovernorById);
+router.get('/:id/builds', optionalAuth, getGovernorBuilds);
+router.get('/:id/builds/:buildId', optionalAuth, getBuildById);
 
-// Governor routes (all protected)
-router.get('/', authMiddleware, getAllGovernors);
+// Protected write routes (require authentication + ownership)
 router.post('/', authMiddleware, createGovernor);
-router.get('/:id', authMiddleware, getGovernorById);
 router.put('/:id', authMiddleware, updateGovernor);
 router.delete('/:id', authMiddleware, deleteGovernor);
-
-// Build routes (nested under governor)
-router.get('/:id/builds', authMiddleware, getGovernorBuilds);
 router.post('/:id/builds', authMiddleware, createBuild);
-router.get('/:id/builds/:buildId', authMiddleware, getBuildById);
 router.put('/:id/builds/:buildId', authMiddleware, updateBuild);
 router.delete('/:id/builds/:buildId', authMiddleware, deleteBuild);
 
