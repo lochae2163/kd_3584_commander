@@ -178,7 +178,7 @@ function BuildForm() {
 
     try {
       const response = await uploadService.uploadScreenshot(id, buildId, file);
-      setScreenshots(response.data.screenshots);
+      setScreenshots(response.data.screenshots || []);
       // Reset the file input
       e.target.value = '';
     } catch (err) {
@@ -196,7 +196,7 @@ function BuildForm() {
 
     try {
       const response = await uploadService.deleteScreenshot(id, buildId, publicId);
-      setScreenshots(response.data.screenshots);
+      setScreenshots(response.data.screenshots || []);
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to delete screenshot');
     } finally {
@@ -414,8 +414,8 @@ function BuildForm() {
                     </h3>
 
                     {TIER_ORDER.map((tier) => {
-                      const tierInscriptions = groupedInscriptions[tier];
-                      if (tierInscriptions.length === 0) return null;
+                      const tierInscriptions = groupedInscriptions[tier] || [];
+                      if (!tierInscriptions.length) return null;
 
                       return (
                         <div key={tier} className={`tier-group tier-${tier.toLowerCase()}`}>
@@ -444,10 +444,10 @@ function BuildForm() {
 
         {buildId && (
           <section className="form-section">
-            <h2>Screenshots ({screenshots.length}/5)</h2>
+            <h2>Screenshots ({(screenshots || []).length}/5)</h2>
             <p className="hint">Upload screenshots of your commander's equipment from the game</p>
 
-            {screenshots.length > 0 && (
+            {screenshots && screenshots.length > 0 && (
               <div className="screenshots-gallery">
                 {screenshots.map((screenshot, index) => (
                   <div key={screenshot.publicId} className="screenshot-item">
@@ -465,7 +465,7 @@ function BuildForm() {
               </div>
             )}
 
-            {screenshots.length < 5 && (
+            {(!screenshots || screenshots.length < 5) && (
               <div className="screenshot-upload">
                 <label className="upload-label">
                   <input
