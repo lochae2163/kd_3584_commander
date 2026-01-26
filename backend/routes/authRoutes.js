@@ -214,6 +214,32 @@ router.get('/users', authMiddleware, adminMiddleware, async (req, res) => {
 });
 
 /**
+ * POST /api/auth/reset-users
+ * Drop the users collection to clear old indexes (one-time migration)
+ */
+router.post('/reset-users', async (req, res) => {
+  try {
+    const { adminSecret } = req.body;
+    const expectedSecret = process.env.ADMIN_SECRET || 'rok3584admin';
+    if (adminSecret !== expectedSecret) {
+      return res.status(403).json({ error: 'Invalid admin secret' });
+    }
+
+    // Drop the users collection entirely
+    try {
+      await User.collection.drop();
+    } catch (e) {
+      // Collection may not exist
+    }
+
+    res.json({ success: true, message: 'Users collection reset successfully' });
+  } catch (error) {
+    console.error('Reset users error:', error);
+    res.status(500).json({ error: 'Failed to reset users' });
+  }
+});
+
+/**
  * POST /api/auth/create-admin
  * Create admin user (only works if no admin exists)
  */
