@@ -189,16 +189,14 @@ function EquipmentSlot({ slot, value, onChange }) {
             </div>
           </div>
 
-          {selectedEquipment.specialStats?.length > 0 && (
-            <label className="special-talent-toggle">
-              <input
-                type="checkbox"
-                checked={value?.hasSpecialTalent || false}
-                onChange={handleSpecialTalentChange}
-              />
-              <span>Special Talent</span>
-            </label>
-          )}
+          <label className="special-talent-toggle">
+            <input
+              type="checkbox"
+              checked={value?.hasSpecialTalent || false}
+              onChange={handleSpecialTalentChange}
+            />
+            <span>Special Talent (+30%)</span>
+          </label>
         </div>
       )}
 
