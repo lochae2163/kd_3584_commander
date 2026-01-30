@@ -3,7 +3,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { governorService, buildService, dataService, uploadService } from '../services/api';
 import CommanderSelect from '../components/CommanderSelect';
 import EquipmentSlot from '../components/EquipmentSlot';
-import { calculateEquipmentStats, countSetPieces, getActiveSetBonuses, formatStat } from '../utils/statsCalculator';
+import { calculateEquipmentStats, countSetPieces, getActiveSetBonuses, formatStat, calculateArmamentStats, calculateTotalStats } from '../utils/statsCalculator';
 import '../styles/BuildForm.css';
 
 const EQUIPMENT_SLOTS = ['weapon', 'helmet', 'chest', 'gloves', 'legs', 'boots', 'accessory1', 'accessory2'];
@@ -223,6 +223,16 @@ function BuildForm() {
     return calculateEquipmentStats(formData.equipment, troopType);
   }, [formData.equipment, troopType]);
 
+  // Calculate armament/inscription stats
+  const armamentStats = useMemo(() => {
+    return calculateArmamentStats(formData.armament, allInscriptions);
+  }, [formData.armament, allInscriptions]);
+
+  // Calculate combined total stats
+  const totalStats = useMemo(() => {
+    return calculateTotalStats(equipmentStats, armamentStats);
+  }, [equipmentStats, armamentStats]);
+
   // Calculate set bonuses - must be before any conditional returns
   const { setCounts, activeBonuses } = useMemo(() => {
     const counts = countSetPieces(formData.equipment);
@@ -288,50 +298,68 @@ function BuildForm() {
             ))}
           </div>
 
-          {/* Stats Summary Box */}
-          <div className="stats-summary-box">
-            <h3>Equipment Stats Summary</h3>
+          {/* Total Stats Summary Box (Equipment + Armaments) */}
+          <div className="stats-summary-box total-stats-box">
+            <h3>Total Stats (Equipment + Armaments)</h3>
             <div className="stats-grid">
               <div className="stat-item">
                 <span className="stat-label">Attack</span>
-                <span className="stat-value attack">{formatStat(equipmentStats.attack) || '0%'}</span>
+                <span className="stat-value attack">{formatStat(totalStats.attack) || '0%'}</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">Defense</span>
-                <span className="stat-value defense">{formatStat(equipmentStats.defense) || '0%'}</span>
+                <span className="stat-value defense">{formatStat(totalStats.defense) || '0%'}</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">Health</span>
-                <span className="stat-value health">{formatStat(equipmentStats.health) || '0%'}</span>
+                <span className="stat-value health">{formatStat(totalStats.health) || '0%'}</span>
               </div>
-              {equipmentStats.all_dmg > 0 && (
+              {totalStats.allDamage > 0 && (
                 <div className="stat-item">
                   <span className="stat-label">All Damage</span>
-                  <span className="stat-value damage">{formatStat(equipmentStats.all_dmg)}</span>
+                  <span className="stat-value damage">{formatStat(totalStats.allDamage)}</span>
                 </div>
               )}
-              {equipmentStats.skill_dmg > 0 && (
+              {totalStats.skillDamage > 0 && (
                 <div className="stat-item">
                   <span className="stat-label">Skill Damage</span>
-                  <span className="stat-value damage">{formatStat(equipmentStats.skill_dmg, false)}</span>
+                  <span className="stat-value damage">{formatStat(totalStats.skillDamage, false)}</span>
                 </div>
               )}
-              {equipmentStats.counterattack > 0 && (
+              {totalStats.normalAttack > 0 && (
+                <div className="stat-item">
+                  <span className="stat-label">Normal Attack</span>
+                  <span className="stat-value damage">{formatStat(totalStats.normalAttack, false)}</span>
+                </div>
+              )}
+              {totalStats.counterattack > 0 && (
                 <div className="stat-item">
                   <span className="stat-label">Counterattack</span>
-                  <span className="stat-value damage">{formatStat(equipmentStats.counterattack, false)}</span>
+                  <span className="stat-value damage">{formatStat(totalStats.counterattack, false)}</span>
                 </div>
               )}
-              {equipmentStats.marchSpeed > 0 && (
+              {totalStats.smiteDamage > 0 && (
+                <div className="stat-item">
+                  <span className="stat-label">Smite Damage</span>
+                  <span className="stat-value damage">{formatStat(totalStats.smiteDamage, false)}</span>
+                </div>
+              )}
+              {totalStats.comboDamage > 0 && (
+                <div className="stat-item">
+                  <span className="stat-label">Combo Damage</span>
+                  <span className="stat-value damage">{formatStat(totalStats.comboDamage, false)}</span>
+                </div>
+              )}
+              {totalStats.marchSpeed > 0 && (
                 <div className="stat-item">
                   <span className="stat-label">March Speed</span>
-                  <span className="stat-value">{formatStat(equipmentStats.marchSpeed)}</span>
+                  <span className="stat-value">{formatStat(totalStats.marchSpeed)}</span>
                 </div>
               )}
-              {equipmentStats.skill_dmg_reduction > 0 && (
+              {totalStats.skillDmgReduction > 0 && (
                 <div className="stat-item">
                   <span className="stat-label">Skill Dmg Reduction</span>
-                  <span className="stat-value">{formatStat(equipmentStats.skill_dmg_reduction, false)}</span>
+                  <span className="stat-value">{formatStat(totalStats.skillDmgReduction, false)}</span>
                 </div>
               )}
             </div>

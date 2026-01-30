@@ -1,4 +1,5 @@
 import { equipmentData } from '../data/equipmentData';
+import { INSCRIPTION_STATS, FORMATIONS } from '../data/inscriptionData';
 
 // Set bonus definitions (based on equipment set names)
 export const SET_BONUSES = {
@@ -284,4 +285,92 @@ export function calculateTotalMaterials(equipment) {
   });
 
   return totals;
+}
+
+// Calculate armament/inscription stats
+export function calculateArmamentStats(armament, allInscriptions) {
+  const stats = {
+    attack: 0,
+    defense: 0,
+    health: 0,
+    allDamage: 0,
+    skillDamage: 0,
+    normalAttack: 0,
+    counterattack: 0,
+    smiteDamage: 0,
+    comboDamage: 0,
+  };
+
+  if (!armament) return stats;
+
+  // Add formation bonus
+  const formation = armament.formation;
+  if (formation) {
+    const formationData = FORMATIONS.find(f =>
+      f.id === formation ||
+      f.name.toLowerCase().replace(' ', '_') === formation.toLowerCase()
+    );
+    if (formationData?.bonus) {
+      Object.entries(formationData.bonus).forEach(([stat, value]) => {
+        if (stat === 'na') stats.normalAttack += value;
+        else if (stat === 'ca') stats.counterattack += value;
+        else if (stats.hasOwnProperty(stat)) stats[stat] += value;
+      });
+    }
+  }
+
+  // Add inscription bonuses from all slots
+  const armamentSlots = ['emblem', 'flag', 'instrument', 'scroll'];
+  armamentSlots.forEach(slot => {
+    const slotData = armament[slot];
+    if (slotData?.inscriptions && Array.isArray(slotData.inscriptions)) {
+      slotData.inscriptions.forEach(inscriptionId => {
+        // Find inscription name from allInscriptions or try direct name lookup
+        let inscriptionName = inscriptionId;
+
+        // If we have allInscriptions data, look up the name
+        if (allInscriptions && allInscriptions.length > 0) {
+          const inscData = allInscriptions.find(i => i.inscriptionId === inscriptionId);
+          if (inscData) {
+            inscriptionName = inscData.name;
+          }
+        }
+
+        // Get stats for this inscription
+        const inscStats = INSCRIPTION_STATS[inscriptionName];
+        if (inscStats) {
+          Object.entries(inscStats).forEach(([stat, value]) => {
+            if (stat === 'attack') stats.attack += value;
+            else if (stat === 'defense') stats.defense += value;
+            else if (stat === 'health') stats.health += value;
+            else if (stat === 'allDamage') stats.allDamage += value;
+            else if (stat === 'skillDamage') stats.skillDamage += value;
+            else if (stat === 'na') stats.normalAttack += value;
+            else if (stat === 'ca') stats.counterattack += value;
+            else if (stat === 'smiteDamage') stats.smiteDamage += value;
+            else if (stat === 'comboDamage') stats.comboDamage += value;
+          });
+        }
+      });
+    }
+  });
+
+  return stats;
+}
+
+// Calculate combined total stats (equipment + armament)
+export function calculateTotalStats(equipmentStats, armamentStats) {
+  return {
+    attack: (equipmentStats?.attack || 0) + (armamentStats?.attack || 0),
+    defense: (equipmentStats?.defense || 0) + (armamentStats?.defense || 0),
+    health: (equipmentStats?.health || 0) + (armamentStats?.health || 0),
+    marchSpeed: equipmentStats?.marchSpeed || 0,
+    allDamage: (equipmentStats?.all_dmg || 0) + (armamentStats?.allDamage || 0),
+    skillDamage: (equipmentStats?.skill_dmg || 0) + (armamentStats?.skillDamage || 0),
+    normalAttack: armamentStats?.normalAttack || 0,
+    counterattack: (equipmentStats?.counterattack || 0) + (armamentStats?.counterattack || 0),
+    smiteDamage: armamentStats?.smiteDamage || 0,
+    comboDamage: armamentStats?.comboDamage || 0,
+    skillDmgReduction: equipmentStats?.skill_dmg_reduction || 0,
+  };
 }
