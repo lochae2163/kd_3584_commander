@@ -3,7 +3,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { governorService, buildService, dataService, uploadService } from '../services/api';
 import CommanderSelect from '../components/CommanderSelect';
 import EquipmentSlot from '../components/EquipmentSlot';
-import { calculateEquipmentStats, countSetPieces, getActiveSetBonuses, formatStat, calculateArmamentStats, calculateTotalStats, calculateAllTroopStats } from '../utils/statsCalculator';
+import { countSetPieces, getActiveSetBonuses, calculateArmamentStats, calculateAllTroopStats } from '../utils/statsCalculator';
 import { TIER_COLORS, INSCRIPTION_DESCRIPTIONS } from '../data/inscriptionData';
 import '../styles/BuildForm.css';
 
@@ -243,28 +243,10 @@ function BuildForm() {
     return grouped;
   };
 
-  // Calculate equipment stats - must be before any conditional returns
-  const equipmentStats = useMemo(() => {
-    return calculateEquipmentStats(formData.equipment, troopType);
-  }, [formData.equipment, troopType]);
-
   // Calculate armament/inscription stats
   const armamentStats = useMemo(() => {
     return calculateArmamentStats(formData.armament, allInscriptions);
   }, [formData.armament, allInscriptions]);
-
-  // Calculate combined total stats (including manual stats)
-  const totalStats = useMemo(() => {
-    const baseStats = calculateTotalStats(equipmentStats, armamentStats);
-    return {
-      ...baseStats,
-      attack: baseStats.attack + (formData.manualStats?.attack || 0),
-      defense: baseStats.defense + (formData.manualStats?.defense || 0),
-      health: baseStats.health + (formData.manualStats?.health || 0),
-      marchSpeed: baseStats.marchSpeed + (formData.manualStats?.marchSpeed || 0),
-      allDamage: baseStats.allDamage + (formData.manualStats?.allDamage || 0),
-    };
-  }, [equipmentStats, armamentStats, formData.manualStats]);
 
   // Calculate set bonuses - must be before any conditional returns
   const { setCounts, activeBonuses } = useMemo(() => {
@@ -479,6 +461,22 @@ function BuildForm() {
                   {armamentStats.counterattack > 0 && <span className="armament-stat">Counterattack +{armamentStats.counterattack.toFixed(1)}%</span>}
                   {armamentStats.smiteDamage > 0 && <span className="armament-stat">Smite Damage +{armamentStats.smiteDamage.toFixed(1)}%</span>}
                   {armamentStats.comboDamage > 0 && <span className="armament-stat">Combo Damage +{armamentStats.comboDamage.toFixed(1)}%</span>}
+                </div>
+              </div>
+            )}
+
+            {/* Manual Stats (from talents, VIP, etc.) */}
+            {(formData.manualStats?.attack > 0 || formData.manualStats?.defense > 0 ||
+              formData.manualStats?.health > 0 || formData.manualStats?.marchSpeed > 0 ||
+              formData.manualStats?.allDamage > 0) && (
+              <div className="manual-stats-section">
+                <h4>Additional Stats (Talents, VIP, etc.)</h4>
+                <div className="manual-stats-display">
+                  {formData.manualStats?.attack > 0 && <span className="manual-stat">Attack +{formData.manualStats.attack}%</span>}
+                  {formData.manualStats?.defense > 0 && <span className="manual-stat">Defense +{formData.manualStats.defense}%</span>}
+                  {formData.manualStats?.health > 0 && <span className="manual-stat">Health +{formData.manualStats.health}%</span>}
+                  {formData.manualStats?.marchSpeed > 0 && <span className="manual-stat">March Speed +{formData.manualStats.marchSpeed}%</span>}
+                  {formData.manualStats?.allDamage > 0 && <span className="manual-stat">All Damage +{formData.manualStats.allDamage}%</span>}
                 </div>
               </div>
             )}

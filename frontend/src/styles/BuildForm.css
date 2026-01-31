@@ -582,6 +582,36 @@
   color: #4ade80;
 }
 
+/* Manual Stats Display Section */
+.manual-stats-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(96, 165, 250, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.manual-stats-section h4 {
+  color: #60a5fa;
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.manual-stats-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.manual-stat {
+  background: rgba(96, 165, 250, 0.2);
+  color: #93c5fd;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 /* Armament Stats Section */
 .armament-stats-section {
   margin-bottom: 1.5rem;
