@@ -449,7 +449,8 @@ export const updateBuild = async (req, res) => {
       'secondaryCommander',
       'equipment',
       'armament',
-      'inscriptions'
+      'inscriptions',
+      'manualStats'
     ];
 
     allowedUpdates.forEach(field => {

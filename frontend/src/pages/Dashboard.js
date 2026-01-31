@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { governorService, buildService, dataService } from '../services/api';
 import GovernorForm from '../components/GovernorForm';
 import GovernorCard from '../components/GovernorCard';
-import { calculateEquipmentStats, formatStat } from '../utils/statsCalculator';
+import { calculateEquipmentStats, calculateArmamentStats, formatStat } from '../utils/statsCalculator';
 import '../styles/Dashboard.css';
 
 const TROOP_TYPES = ['infantry', 'cavalry', 'archer', 'leadership'];
@@ -19,6 +19,7 @@ function Dashboard() {
   const [builds, setBuilds] = useState([]);
   const [governors, setGovernors] = useState([]);
   const [equipment, setEquipment] = useState([]);
+  const [inscriptions, setInscriptions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showForm, setShowForm] = useState(false);
@@ -31,14 +32,16 @@ function Dashboard() {
     try {
       setLoading(true);
       setError('');
-      const [buildsRes, governorsRes, equipmentRes] = await Promise.all([
+      const [buildsRes, governorsRes, equipmentRes, inscriptionsRes] = await Promise.all([
         buildService.getAll(troopFilter || null, buildTypeFilter || null),
         governorService.getAll(),
-        dataService.getEquipment()
+        dataService.getEquipment(),
+        dataService.getInscriptions()
       ]);
       setBuilds(buildsRes.data.builds || []);
       setGovernors(governorsRes.data.governors || []);
       setEquipment(equipmentRes.data.equipment || []);
+      setInscriptions(inscriptionsRes.data.inscriptions || []);
     } catch (err) {
       setError('Failed to load data. Please try again.');
       console.error(err);
@@ -207,7 +210,20 @@ function Dashboard() {
                     const avgIconic = getAverageIconicLevel(build.equipment);
 
                     // Calculate equipment stats
-                    const stats = calculateEquipmentStats(build.equipment || {}, equipment, build.troopType);
+                    const equipStats = calculateEquipmentStats(build.equipment || {}, equipment, build.troopType);
+
+                    // Calculate armament stats
+                    const armStats = calculateArmamentStats(build.armament || {}, inscriptions);
+
+                    // Get manual stats
+                    const manualStats = build.manualStats || {};
+
+                    // Calculate total stats (equipment + armament + manual)
+                    const stats = {
+                      attack: (equipStats.attack || 0) + (armStats.attack || 0) + (manualStats.attack || 0),
+                      defense: (equipStats.defense || 0) + (armStats.defense || 0) + (manualStats.defense || 0),
+                      health: (equipStats.health || 0) + (armStats.health || 0) + (manualStats.health || 0),
+                    };
 
                     return (
                       <tr
