@@ -374,3 +374,100 @@ export function calculateTotalStats(equipmentStats, armamentStats) {
     skillDmgReduction: equipmentStats?.skill_dmg_reduction || 0,
   };
 }
+
+// Calculate stats for ALL troop types (for display like codexhelper)
+export function calculateAllTroopStats(equipment) {
+  const stats = {
+    infantry: { attack: 0, defense: 0, health: 0, marchSpeed: 0 },
+    cavalry: { attack: 0, defense: 0, health: 0, marchSpeed: 0 },
+    archer: { attack: 0, defense: 0, health: 0, marchSpeed: 0 },
+    siege: { attack: 0, defense: 0, health: 0, marchSpeed: 0 },
+    extraBonuses: [],
+  };
+
+  const slots = ['weapon', 'helmet', 'chest', 'gloves', 'legs', 'boots', 'accessory1', 'accessory2'];
+
+  slots.forEach(slot => {
+    const slotData = equipment[slot];
+    if (slotData?.id || slotData?.name) {
+      const equipItem = slotData.id
+        ? getEquipmentById(slotData.id)
+        : equipmentData.find(eq => eq.name === slotData.name);
+
+      if (equipItem && equipItem.stats) {
+        const iconicLevel = slotData.iconicLevel || 1;
+        const hasSpecialTalent = slotData.hasSpecialTalent || slotData.hasCrit || false;
+        const iconicMultiplier = 1 + (iconicLevel - 1) * 0.15;
+        const talentMultiplier = hasSpecialTalent ? 1.3 : 1;
+        const totalMultiplier = iconicMultiplier * talentMultiplier;
+
+        const eqStats = equipItem.stats;
+
+        // Infantry stats
+        if (eqStats.infantryAttack) stats.infantry.attack += eqStats.infantryAttack * totalMultiplier;
+        if (eqStats.infantryDefense) stats.infantry.defense += eqStats.infantryDefense * totalMultiplier;
+        if (eqStats.infantryHealth) stats.infantry.health += eqStats.infantryHealth * totalMultiplier;
+        if (eqStats.infantryMarchSpeed) stats.infantry.marchSpeed += eqStats.infantryMarchSpeed * totalMultiplier;
+
+        // Cavalry stats
+        if (eqStats.cavalryAttack) stats.cavalry.attack += eqStats.cavalryAttack * totalMultiplier;
+        if (eqStats.cavalryDefense) stats.cavalry.defense += eqStats.cavalryDefense * totalMultiplier;
+        if (eqStats.cavalryHealth) stats.cavalry.health += eqStats.cavalryHealth * totalMultiplier;
+        if (eqStats.cavalryMarchSpeed) stats.cavalry.marchSpeed += eqStats.cavalryMarchSpeed * totalMultiplier;
+
+        // Archer stats
+        if (eqStats.archerAttack) stats.archer.attack += eqStats.archerAttack * totalMultiplier;
+        if (eqStats.archerDefense) stats.archer.defense += eqStats.archerDefense * totalMultiplier;
+        if (eqStats.archerHealth) stats.archer.health += eqStats.archerHealth * totalMultiplier;
+        if (eqStats.archerMarchSpeed) stats.archer.marchSpeed += eqStats.archerMarchSpeed * totalMultiplier;
+
+        // Siege stats
+        if (eqStats.siegeAttack) stats.siege.attack += eqStats.siegeAttack * totalMultiplier;
+        if (eqStats.siegeDefense) stats.siege.defense += eqStats.siegeDefense * totalMultiplier;
+        if (eqStats.siegeHealth) stats.siege.health += eqStats.siegeHealth * totalMultiplier;
+        if (eqStats.siegeMarchSpeed) stats.siege.marchSpeed += eqStats.siegeMarchSpeed * totalMultiplier;
+
+        // Universal troop stats (add to all)
+        if (eqStats.troopAttack) {
+          const val = eqStats.troopAttack * totalMultiplier;
+          stats.infantry.attack += val;
+          stats.cavalry.attack += val;
+          stats.archer.attack += val;
+          stats.siege.attack += val;
+        }
+        if (eqStats.troopDefense) {
+          const val = eqStats.troopDefense * totalMultiplier;
+          stats.infantry.defense += val;
+          stats.cavalry.defense += val;
+          stats.archer.defense += val;
+          stats.siege.defense += val;
+        }
+        if (eqStats.troopHealth) {
+          const val = eqStats.troopHealth * totalMultiplier;
+          stats.infantry.health += val;
+          stats.cavalry.health += val;
+          stats.archer.health += val;
+          stats.siege.health += val;
+        }
+        if (eqStats.troopMarchSpeed) {
+          const val = eqStats.troopMarchSpeed * totalMultiplier;
+          stats.infantry.marchSpeed += val;
+          stats.cavalry.marchSpeed += val;
+          stats.archer.marchSpeed += val;
+          stats.siege.marchSpeed += val;
+        }
+
+        // Extra bonuses (special stats)
+        if (equipItem.specialStats && equipItem.specialStats.length > 0) {
+          equipItem.specialStats.forEach(bonus => {
+            if (!stats.extraBonuses.includes(bonus)) {
+              stats.extraBonuses.push(bonus);
+            }
+          });
+        }
+      }
+    }
+  });
+
+  return stats;
+}

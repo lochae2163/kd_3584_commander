@@ -3,7 +3,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { governorService, buildService, dataService, uploadService } from '../services/api';
 import CommanderSelect from '../components/CommanderSelect';
 import EquipmentSlot from '../components/EquipmentSlot';
-import { calculateEquipmentStats, countSetPieces, getActiveSetBonuses, formatStat, calculateArmamentStats, calculateTotalStats } from '../utils/statsCalculator';
+import { calculateEquipmentStats, countSetPieces, getActiveSetBonuses, formatStat, calculateArmamentStats, calculateTotalStats, calculateAllTroopStats } from '../utils/statsCalculator';
 import { TIER_COLORS, INSCRIPTION_DESCRIPTIONS } from '../data/inscriptionData';
 import '../styles/BuildForm.css';
 
@@ -273,6 +273,11 @@ function BuildForm() {
     return { setCounts: counts, activeBonuses: bonuses };
   }, [formData.equipment]);
 
+  // Calculate all troop type stats (for display like codexhelper)
+  const allTroopStats = useMemo(() => {
+    return calculateAllTroopStats(formData.equipment);
+  }, [formData.equipment]);
+
   if (loading) {
     return <div className="loading">Loading...</div>;
   }
@@ -331,71 +336,164 @@ function BuildForm() {
             ))}
           </div>
 
-          {/* Total Stats Summary Box (Equipment + Armaments) */}
-          <div className="stats-summary-box total-stats-box">
-            <h3>Total Stats (Equipment + Armaments)</h3>
-            <div className="stats-grid">
-              <div className="stat-item">
-                <span className="stat-label">Attack</span>
-                <span className="stat-value attack">{formatStat(totalStats.attack) || '0%'}</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-label">Defense</span>
-                <span className="stat-value defense">{formatStat(totalStats.defense) || '0%'}</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-label">Health</span>
-                <span className="stat-value health">{formatStat(totalStats.health) || '0%'}</span>
-              </div>
-              {totalStats.allDamage > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">All Damage</span>
-                  <span className="stat-value damage">{formatStat(totalStats.allDamage)}</span>
+          {/* Loadout Stats - Grouped by troop type like codexhelper */}
+          <div className="loadout-stats-box">
+            <h3>Loadout Stats</h3>
+            <p className="stats-hint">Universal Troop Stats are automatically converted into specific troop type stats for all types.</p>
+
+            <div className="troop-stats-grid">
+              {/* Infantry */}
+              {(allTroopStats.infantry.attack > 0 || allTroopStats.infantry.defense > 0 || allTroopStats.infantry.health > 0) && (
+                <div className="troop-type-section infantry">
+                  <div className="troop-type-header">
+                    <img src="/images/icons/infantry.svg" alt="Infantry" className="troop-icon" />
+                    <span>Infantry</span>
+                  </div>
+                  <div className="troop-stats-list">
+                    {allTroopStats.infantry.attack > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Infantry Attack</span>
+                        <span className="stat-value attack">+{allTroopStats.infantry.attack.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.infantry.defense > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Infantry Defense</span>
+                        <span className="stat-value defense">+{allTroopStats.infantry.defense.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.infantry.health > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Infantry Health</span>
+                        <span className="stat-value health">+{allTroopStats.infantry.health.toFixed(1)}%</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
-              {totalStats.skillDamage > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Skill Damage</span>
-                  <span className="stat-value damage">{formatStat(totalStats.skillDamage, false)}</span>
+
+              {/* Cavalry */}
+              {(allTroopStats.cavalry.attack > 0 || allTroopStats.cavalry.defense > 0 || allTroopStats.cavalry.health > 0) && (
+                <div className="troop-type-section cavalry">
+                  <div className="troop-type-header">
+                    <img src="/images/icons/cavalry.svg" alt="Cavalry" className="troop-icon" />
+                    <span>Cavalry</span>
+                  </div>
+                  <div className="troop-stats-list">
+                    {allTroopStats.cavalry.attack > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Cavalry Attack</span>
+                        <span className="stat-value attack">+{allTroopStats.cavalry.attack.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.cavalry.defense > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Cavalry Defense</span>
+                        <span className="stat-value defense">+{allTroopStats.cavalry.defense.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.cavalry.health > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Cavalry Health</span>
+                        <span className="stat-value health">+{allTroopStats.cavalry.health.toFixed(1)}%</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
-              {totalStats.normalAttack > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Normal Attack</span>
-                  <span className="stat-value damage">{formatStat(totalStats.normalAttack, false)}</span>
+
+              {/* Archer */}
+              {(allTroopStats.archer.attack > 0 || allTroopStats.archer.defense > 0 || allTroopStats.archer.health > 0) && (
+                <div className="troop-type-section archer">
+                  <div className="troop-type-header">
+                    <img src="/images/icons/archer.svg" alt="Archer" className="troop-icon" />
+                    <span>Archer</span>
+                  </div>
+                  <div className="troop-stats-list">
+                    {allTroopStats.archer.attack > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Archer Attack</span>
+                        <span className="stat-value attack">+{allTroopStats.archer.attack.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.archer.defense > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Archer Defense</span>
+                        <span className="stat-value defense">+{allTroopStats.archer.defense.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.archer.health > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Archer Health</span>
+                        <span className="stat-value health">+{allTroopStats.archer.health.toFixed(1)}%</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
-              {totalStats.counterattack > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Counterattack</span>
-                  <span className="stat-value damage">{formatStat(totalStats.counterattack, false)}</span>
-                </div>
-              )}
-              {totalStats.smiteDamage > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Smite Damage</span>
-                  <span className="stat-value damage">{formatStat(totalStats.smiteDamage, false)}</span>
-                </div>
-              )}
-              {totalStats.comboDamage > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Combo Damage</span>
-                  <span className="stat-value damage">{formatStat(totalStats.comboDamage, false)}</span>
-                </div>
-              )}
-              {totalStats.marchSpeed > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">March Speed</span>
-                  <span className="stat-value">{formatStat(totalStats.marchSpeed)}</span>
-                </div>
-              )}
-              {totalStats.skillDmgReduction > 0 && (
-                <div className="stat-item">
-                  <span className="stat-label">Skill Dmg Reduction</span>
-                  <span className="stat-value">{formatStat(totalStats.skillDmgReduction, false)}</span>
+
+              {/* Siege */}
+              {(allTroopStats.siege.attack > 0 || allTroopStats.siege.defense > 0 || allTroopStats.siege.health > 0) && (
+                <div className="troop-type-section siege">
+                  <div className="troop-type-header">
+                    <img src="/images/icons/siege.svg" alt="Siege" className="troop-icon" />
+                    <span>Siege</span>
+                  </div>
+                  <div className="troop-stats-list">
+                    {allTroopStats.siege.attack > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Siege Attack</span>
+                        <span className="stat-value attack">+{allTroopStats.siege.attack.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.siege.defense > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Siege Defense</span>
+                        <span className="stat-value defense">+{allTroopStats.siege.defense.toFixed(1)}%</span>
+                      </div>
+                    )}
+                    {allTroopStats.siege.health > 0 && (
+                      <div className="troop-stat-row">
+                        <span className="stat-name">Siege Health</span>
+                        <span className="stat-value health">+{allTroopStats.siege.health.toFixed(1)}%</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
+
+            {/* Armament Stats */}
+            {(armamentStats.attack > 0 || armamentStats.defense > 0 || armamentStats.health > 0 ||
+              armamentStats.allDamage > 0 || armamentStats.skillDamage > 0 || armamentStats.normalAttack > 0 ||
+              armamentStats.counterattack > 0 || armamentStats.smiteDamage > 0 || armamentStats.comboDamage > 0) && (
+              <div className="armament-stats-section">
+                <h4>Armament Bonuses</h4>
+                <div className="armament-stats-grid">
+                  {armamentStats.attack > 0 && <span className="armament-stat">Attack +{armamentStats.attack.toFixed(1)}%</span>}
+                  {armamentStats.defense > 0 && <span className="armament-stat">Defense +{armamentStats.defense.toFixed(1)}%</span>}
+                  {armamentStats.health > 0 && <span className="armament-stat">Health +{armamentStats.health.toFixed(1)}%</span>}
+                  {armamentStats.allDamage > 0 && <span className="armament-stat">All Damage +{armamentStats.allDamage.toFixed(1)}%</span>}
+                  {armamentStats.skillDamage > 0 && <span className="armament-stat">Skill Damage +{armamentStats.skillDamage.toFixed(1)}%</span>}
+                  {armamentStats.normalAttack > 0 && <span className="armament-stat">Normal Attack +{armamentStats.normalAttack.toFixed(1)}%</span>}
+                  {armamentStats.counterattack > 0 && <span className="armament-stat">Counterattack +{armamentStats.counterattack.toFixed(1)}%</span>}
+                  {armamentStats.smiteDamage > 0 && <span className="armament-stat">Smite Damage +{armamentStats.smiteDamage.toFixed(1)}%</span>}
+                  {armamentStats.comboDamage > 0 && <span className="armament-stat">Combo Damage +{armamentStats.comboDamage.toFixed(1)}%</span>}
+                </div>
+              </div>
+            )}
+
+            {/* Extra Bonuses (Special Stats) */}
+            {allTroopStats.extraBonuses.length > 0 && (
+              <div className="extra-bonuses-section">
+                <h4>Extra Bonuses</h4>
+                <div className="extra-bonuses-list">
+                  {allTroopStats.extraBonuses.map((bonus, idx) => (
+                    <div key={idx} className="extra-bonus-item">{bonus}</div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Set Bonuses */}
             {activeBonuses.length > 0 && (

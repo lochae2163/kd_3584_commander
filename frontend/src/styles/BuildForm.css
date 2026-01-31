@@ -465,7 +465,184 @@
   margin-bottom: 1rem;
 }
 
-/* Stats Summary Box */
+/* Loadout Stats Box - Grouped by troop type like codexhelper */
+.loadout-stats-box {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  border: 1px solid #e94560;
+}
+
+.loadout-stats-box h3 {
+  color: #e94560;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.stats-hint {
+  color: #64748b;
+  font-size: 0.8rem;
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+}
+
+.troop-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.troop-type-section {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  border-left: 4px solid;
+}
+
+.troop-type-section.infantry {
+  border-color: #f97316;
+}
+
+.troop-type-section.cavalry {
+  border-color: #3b82f6;
+}
+
+.troop-type-section.archer {
+  border-color: #22c55e;
+}
+
+.troop-type-section.siege {
+  border-color: #a855f7;
+}
+
+.troop-type-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.troop-type-header .troop-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.troop-type-section.infantry .troop-type-header {
+  color: #f97316;
+}
+
+.troop-type-section.cavalry .troop-type-header {
+  color: #3b82f6;
+}
+
+.troop-type-section.archer .troop-type-header {
+  color: #22c55e;
+}
+
+.troop-type-section.siege .troop-type-header {
+  color: #a855f7;
+}
+
+.troop-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.troop-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+}
+
+.troop-stat-row .stat-name {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.troop-stat-row .stat-value {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.troop-stat-row .stat-value.attack {
+  color: #ff6b6b;
+}
+
+.troop-stat-row .stat-value.defense {
+  color: #60a5fa;
+}
+
+.troop-stat-row .stat-value.health {
+  color: #4ade80;
+}
+
+/* Armament Stats Section */
+.armament-stats-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(233, 69, 96, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+.armament-stats-section h4 {
+  color: #e94560;
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.armament-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.armament-stat {
+  background: rgba(233, 69, 96, 0.2);
+  color: #fbbf24;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Extra Bonuses Section */
+.extra-bonuses-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.extra-bonuses-section h4 {
+  color: #ffd700;
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.extra-bonuses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.extra-bonus-item {
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 215, 0, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #ffd700;
+}
+
+/* Stats Summary Box - Legacy */
 .stats-summary-box {
   margin-top: 1.5rem;
   padding: 1.25rem;
