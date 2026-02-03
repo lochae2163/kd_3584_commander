@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { governorService, buildService, dataService } from '../services/api';
 import GovernorForm from '../components/GovernorForm';
 import GovernorCard from '../components/GovernorCard';
@@ -27,6 +28,7 @@ function Dashboard() {
   const [buildTypeFilter, setBuildTypeFilter] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
+  const { isAdmin } = useAuth();
 
   const loadData = useCallback(async () => {
     try {
@@ -118,9 +120,11 @@ function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-header">
         <h1>3584 Commanders</h1>
-        <button className="btn-primary" onClick={() => setShowForm(true)}>
-          + Add Governor
-        </button>
+        {isAdmin && (
+          <button className="btn-primary" onClick={() => setShowForm(true)}>
+            + Add Governor
+          </button>
+        )}
       </div>
 
       {/* Tab Navigation - Builds first, Governors second */}
