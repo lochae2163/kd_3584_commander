@@ -2,6 +2,7 @@ import express from 'express';
 import { body, validationResult } from 'express-validator';
 import User from '../models/User.js';
 import Governor from '../models/Governor.js';
+import VerifiedGovernor from '../models/VerifiedGovernor.js';
 import { generateToken, authMiddleware, adminMiddleware } from '../middleware/auth.js';
 
 const router = express.Router();
@@ -31,6 +32,19 @@ router.post('/register', [
     const existingUser = await User.findOne({ visibleGovernorId });
     if (existingUser) {
       return res.status(400).json({ error: 'This Governor ID is already registered' });
+    }
+
+    // Check if governor ID is in the verified whitelist
+    const verifiedCount = await VerifiedGovernor.countDocuments();
+    if (verifiedCount > 0) {
+      // Whitelist exists, check if this ID is verified
+      const isVerified = await VerifiedGovernor.isVerified(visibleGovernorId);
+      if (!isVerified) {
+        return res.status(403).json({
+          error: 'Governor ID not found in KD 3584 member list. Please contact leadership if you believe this is an error.',
+          code: 'NOT_VERIFIED'
+        });
+      }
     }
 
     // Check if governor name already exists
@@ -77,6 +91,48 @@ router.post('/register', [
   } catch (error) {
     console.error('Registration error:', error);
     res.status(500).json({ error: 'Registration failed' });
+  }
+});
+
+/**
+ * GET /api/auth/check-verification/:governorId
+ * Check if a governor ID is in the verified whitelist (public endpoint)
+ */
+router.get('/check-verification/:governorId', async (req, res) => {
+  try {
+    const { governorId } = req.params;
+
+    // Check if whitelist is enabled (has any entries)
+    const verifiedCount = await VerifiedGovernor.countDocuments();
+    if (verifiedCount === 0) {
+      // No whitelist, verification not required
+      return res.json({
+        success: true,
+        whitelistEnabled: false,
+        isVerified: true,
+        message: 'Verification not required'
+      });
+    }
+
+    const verifiedGovernor = await VerifiedGovernor.getVerifiedInfo(governorId);
+    if (verifiedGovernor) {
+      return res.json({
+        success: true,
+        whitelistEnabled: true,
+        isVerified: true,
+        governorName: verifiedGovernor.governorName
+      });
+    }
+
+    return res.json({
+      success: true,
+      whitelistEnabled: true,
+      isVerified: false,
+      message: 'Governor ID not found in KD 3584 member list'
+    });
+  } catch (error) {
+    console.error('Check verification error:', error);
+    res.status(500).json({ error: 'Failed to check verification' });
   }
 });
 

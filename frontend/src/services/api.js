@@ -41,10 +41,29 @@ export const authService = {
   changePassword: (currentPassword, newPassword) => api.put('/auth/change-password', { currentPassword, newPassword }),
   updateGovernorName: (newName) => api.put('/auth/update-governor-name', { newName }),
   deleteAccount: (password, deleteGovernor = false) => api.delete('/auth/delete-account', { data: { password, deleteGovernor } }),
+  checkVerification: (governorId) => api.get(`/auth/check-verification/${governorId}`),
   isAuthenticated: () => !!localStorage.getItem('rokToken'),
   logout: () => {
     localStorage.removeItem('rokToken');
   },
+};
+
+// Admin service
+export const adminService = {
+  uploadWhitelist: (file) => {
+    const formData = new FormData();
+    formData.append('whitelist', file);
+    return api.post('/admin/upload-whitelist', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' }
+    });
+  },
+  getWhitelist: (page = 1, limit = 50, search = '') =>
+    api.get('/admin/whitelist', { params: { page, limit, search } }),
+  getWhitelistStats: () => api.get('/admin/whitelist/stats'),
+  addToWhitelist: (visibleGovernorId, governorName) =>
+    api.post('/admin/whitelist/add', { visibleGovernorId, governorName }),
+  removeFromWhitelist: (id) => api.delete(`/admin/whitelist/${id}`),
+  getUsers: () => api.get('/admin/users'),
 };
 
 // Governor service

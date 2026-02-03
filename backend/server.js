@@ -9,6 +9,7 @@ import authRoutes from './routes/authRoutes.js';
 import governorRoutes from './routes/governorRoutes.js';
 import dataRoutes from './routes/dataRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
 import Commander from './models/Commander.js';
 import Equipment from './models/Equipment.js';
 import Inscription from './models/Inscription.js';
@@ -32,6 +33,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/governors', governorRoutes);
 app.use('/api/data', dataRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Health check endpoints
 app.get('/health', (req, res) => {

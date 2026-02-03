@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { authService } from '../services/api';
 import '../styles/Login.css';
 
 function Login() {
@@ -13,6 +14,10 @@ function Login() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // Verification status
+  const [verificationStatus, setVerificationStatus] = useState(null);
+  const [checkingVerification, setCheckingVerification] = useState(false);
+
   const { login, register } = useAuth();
 
   useEffect(() => {
@@ -20,6 +25,35 @@ function Login() {
       ? '3584 Commanders - Register'
       : '3584 Commanders - Login';
   }, [isRegistering]);
+
+  // Check verification status when governor ID changes (debounced)
+  const checkVerification = useCallback(async (governorId) => {
+    if (!governorId || governorId.length < 5) {
+      setVerificationStatus(null);
+      return;
+    }
+
+    setCheckingVerification(true);
+    try {
+      const res = await authService.checkVerification(governorId);
+      setVerificationStatus(res.data);
+    } catch (err) {
+      setVerificationStatus(null);
+    } finally {
+      setCheckingVerification(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isRegistering && formData.visibleGovernorId) {
+      const timer = setTimeout(() => {
+        checkVerification(formData.visibleGovernorId);
+      }, 500); // Debounce 500ms
+      return () => clearTimeout(timer);
+    } else {
+      setVerificationStatus(null);
+    }
+  }, [formData.visibleGovernorId, isRegistering, checkVerification]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -84,10 +118,35 @@ function Login() {
                   onChange={handleChange}
                   disabled={loading}
                   required
+                  className={verificationStatus ? (verificationStatus.isVerified ? 'verified' : 'not-verified') : ''}
                 />
                 <p className="help-text">
                   Found in game: Profile → tap your avatar → ID shown below your name
                 </p>
+
+                {/* Verification Status */}
+                {checkingVerification && (
+                  <div className="verification-status checking">
+                    Checking verification...
+                  </div>
+                )}
+                {!checkingVerification && verificationStatus && (
+                  <div className={`verification-status ${verificationStatus.isVerified ? 'verified' : 'not-verified'}`}>
+                    {verificationStatus.isVerified ? (
+                      <>
+                        <span className="status-icon">✓</span>
+                        {verificationStatus.whitelistEnabled
+                          ? `Verified KD 3584 member: ${verificationStatus.governorName}`
+                          : 'Registration open (no whitelist configured)'}
+                      </>
+                    ) : (
+                      <>
+                        <span className="status-icon">✗</span>
+                        Governor ID not found in KD 3584 member list. Contact leadership if you believe this is an error.
+                      </>
+                    )}
+                  </div>
+                )}
               </div>
 
               <div className="form-group">
@@ -128,7 +187,7 @@ function Login() {
 
               <div className="registration-note">
                 <strong>Note:</strong> Registration is for KD 3584 governors only.
-                Your registration will be verified by leadership.
+                Your Governor ID must be in our member list to register.
               </div>
             </>
           ) : (
@@ -198,6 +257,7 @@ function Login() {
               setIsRegistering(!isRegistering);
               setError('');
               setShowPassword(false);
+              setVerificationStatus(null);
               setFormData({
                 visibleGovernorId: '',
                 password: '',

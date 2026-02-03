@@ -120,6 +120,23 @@
   color: #fff;
 }
 
+.admin-btn {
+  background: transparent;
+  border: 2px solid #9b59b6;
+  color: #9b59b6;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: #9b59b6;
+  color: #fff;
+}
+
 .logout-btn {
   background: transparent;
   border: 2px solid #e94560;

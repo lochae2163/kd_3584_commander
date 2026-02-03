@@ -51,6 +51,15 @@ function Header() {
             Profile
           </button>
 
+          {isAdmin && (
+            <button
+              className="admin-btn"
+              onClick={() => navigate('/admin')}
+            >
+              Admin Panel
+            </button>
+          )}
+
           <button className="logout-btn" onClick={logout}>
             Logout
           </button>
