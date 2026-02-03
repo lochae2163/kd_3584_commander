@@ -44,6 +44,13 @@ function Header() {
             </button>
           )}
 
+          <button
+            className="profile-btn"
+            onClick={() => navigate('/profile')}
+          >
+            Profile
+          </button>
+
           <button className="logout-btn" onClick={logout}>
             Logout
           </button>

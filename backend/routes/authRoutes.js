@@ -202,6 +202,120 @@ router.get('/unclaimed-governors', authMiddleware, async (req, res) => {
 });
 
 /**
+ * PUT /api/auth/change-password
+ * Change user's password
+ */
+router.put('/change-password', authMiddleware, [
+  body('currentPassword').notEmpty().withMessage('Current password is required'),
+  body('newPassword').isLength({ min: 6 }).withMessage('New password must be at least 6 characters')
+], validate, async (req, res) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    const user = await User.findById(req.user._id);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Verify current password
+    const isMatch = await user.comparePassword(currentPassword);
+    if (!isMatch) {
+      return res.status(400).json({ error: 'Current password is incorrect' });
+    }
+
+    // Update password
+    user.password = newPassword;
+    await user.save();
+
+    res.json({ success: true, message: 'Password changed successfully' });
+  } catch (error) {
+    console.error('Change password error:', error);
+    res.status(500).json({ error: 'Failed to change password' });
+  }
+});
+
+/**
+ * PUT /api/auth/update-governor-name
+ * Update linked governor's name
+ */
+router.put('/update-governor-name', authMiddleware, [
+  body('newName').trim().isLength({ min: 2, max: 50 }).withMessage('Governor name must be 2-50 characters')
+], validate, async (req, res) => {
+  try {
+    const { newName } = req.body;
+
+    if (!req.user.governorId) {
+      return res.status(400).json({ error: 'No governor linked to this account' });
+    }
+
+    // Check if name is taken by another governor
+    const existingGovernor = await Governor.findOne({
+      name: { $regex: `^${newName}$`, $options: 'i' },
+      _id: { $ne: req.user.governorId }
+    });
+
+    if (existingGovernor) {
+      return res.status(400).json({ error: 'This governor name is already taken' });
+    }
+
+    const governor = await Governor.findByIdAndUpdate(
+      req.user.governorId,
+      { name: newName },
+      { new: true }
+    );
+
+    res.json({ success: true, governor, message: 'Governor name updated successfully' });
+  } catch (error) {
+    console.error('Update governor name error:', error);
+    res.status(500).json({ error: 'Failed to update governor name' });
+  }
+});
+
+/**
+ * DELETE /api/auth/delete-account
+ * Delete user account and optionally their governor profile
+ */
+router.delete('/delete-account', authMiddleware, [
+  body('password').notEmpty().withMessage('Password is required to confirm deletion')
+], validate, async (req, res) => {
+  try {
+    const { password, deleteGovernor } = req.body;
+
+    const user = await User.findById(req.user._id);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Verify password
+    const isMatch = await user.comparePassword(password);
+    if (!isMatch) {
+      return res.status(400).json({ error: 'Incorrect password' });
+    }
+
+    // If user has a linked governor
+    if (user.governorId) {
+      if (deleteGovernor) {
+        // Delete governor and all their builds
+        const GovernorBuild = (await import('../models/GovernorBuild.js')).default;
+        await GovernorBuild.deleteMany({ governorId: user.governorId });
+        await Governor.findByIdAndDelete(user.governorId);
+      } else {
+        // Just unlink the governor (allow someone else to claim)
+        await Governor.findByIdAndUpdate(user.governorId, { userId: null });
+      }
+    }
+
+    // Delete user
+    await User.findByIdAndDelete(req.user._id);
+
+    res.json({ success: true, message: 'Account deleted successfully' });
+  } catch (error) {
+    console.error('Delete account error:', error);
+    res.status(500).json({ error: 'Failed to delete account' });
+  }
+});
+
+/**
  * Admin: Get all users
  */
 router.get('/users', authMiddleware, adminMiddleware, async (req, res) => {

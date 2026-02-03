@@ -103,6 +103,23 @@
   color: #0f0f1a;
 }
 
+.profile-btn {
+  background: transparent;
+  border: 2px solid #4d96ff;
+  color: #4d96ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background: #4d96ff;
+  color: #fff;
+}
+
 .logout-btn {
   background: transparent;
   border: 2px solid #e94560;

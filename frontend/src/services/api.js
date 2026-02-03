@@ -38,6 +38,9 @@ export const authService = {
   linkGovernor: (governorId) => api.post('/auth/link-governor', { governorId }),
   getUnclaimedGovernors: () => api.get('/auth/unclaimed-governors'),
   createAdmin: (data) => api.post('/auth/create-admin', data),
+  changePassword: (currentPassword, newPassword) => api.put('/auth/change-password', { currentPassword, newPassword }),
+  updateGovernorName: (newName) => api.put('/auth/update-governor-name', { newName }),
+  deleteAccount: (password, deleteGovernor = false) => api.delete('/auth/delete-account', { data: { password, deleteGovernor } }),
   isAuthenticated: () => !!localStorage.getItem('rokToken'),
   logout: () => {
     localStorage.removeItem('rokToken');
