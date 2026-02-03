@@ -14,6 +14,7 @@ import Commander from './models/Commander.js';
 import Equipment from './models/Equipment.js';
 import Inscription from './models/Inscription.js';
 import Armament from './models/Armament.js';
+import User from './models/User.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -209,10 +210,28 @@ const autoSeedIfEmpty = async () => {
   }
 };
 
+// Drop old indexes that cause issues
+const dropOldIndexes = async () => {
+  try {
+    const indexes = ['username_1', 'email_1'];
+    for (const indexName of indexes) {
+      try {
+        await User.collection.dropIndex(indexName);
+        console.log(`🗑️  Dropped old index: ${indexName}`);
+      } catch (e) {
+        // Index doesn't exist, that's fine
+      }
+    }
+  } catch (error) {
+    console.error('Index cleanup error:', error.message);
+  }
+};
+
 // Start server
 const startServer = async () => {
   try {
     await connectDB();
+    await dropOldIndexes();
     await autoSeedIfEmpty();
     app.listen(PORT, () => {
       console.log(`\n🚀 Server is running on port ${PORT}`);
