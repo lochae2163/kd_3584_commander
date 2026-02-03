@@ -13,14 +13,13 @@ const SLOT_TYPES = [
   { value: 'ACCESSORY', label: 'Accessory' }
 ];
 
-const QUALITY_TYPES = [
-  { value: '', label: 'All Quality' },
-  { value: 'legendary', label: 'Legendary' },
-  { value: 'epic', label: 'Epic' },
-  { value: 'elite', label: 'Elite' },
-  { value: 'advanced', label: 'Advanced' },
-  { value: 'normal', label: 'Normal' }
-];
+// Material icons
+const MATERIAL_ICONS = {
+  leather: '/images/icons/leather_legendary.DsLa4syF_ZKpG3m.webp',
+  iron: '/images/icons/ore_legendary.BxwcR2DF_Z1l4iYV.webp',
+  ebony: '/images/icons/ebony_legendary.DGQlnZge_10uOYp.webp',
+  bone: '/images/icons/bone_legendary.BrTCZy26_ZE1r9e.webp'
+};
 
 // Stat display names
 const STAT_NAMES = {
@@ -56,8 +55,10 @@ const STAT_COLORS = {
 
 function EquipmentBrowser() {
   const [slotFilter, setSlotFilter] = useState('');
-  const [qualityFilter, setQualityFilter] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+
+  // Only show legendary equipment
+  const qualityFilter = 'legendary';
 
   // Filter equipment
   const filteredEquipment = useMemo(() => {
@@ -94,8 +95,8 @@ function EquipmentBrowser() {
   return (
     <div className="equipment-browser">
       <div className="browser-header">
-        <h1>Equipment Database</h1>
-        <p className="subtitle">Browse all ROK equipment with complete stats for calculations</p>
+        <h1>Legendary Equipment</h1>
+        <p className="subtitle">Browse legendary ROK equipment with complete stats</p>
       </div>
 
       <div className="filters-section">
@@ -119,14 +120,6 @@ function EquipmentBrowser() {
           </select>
         </div>
 
-        <div className="filter-group">
-          <label>Quality</label>
-          <select value={qualityFilter} onChange={(e) => setQualityFilter(e.target.value)}>
-            {QUALITY_TYPES.map(qt => (
-              <option key={qt.value} value={qt.value}>{qt.label}</option>
-            ))}
-          </select>
-        </div>
       </div>
 
       <div className="results-count">
@@ -207,27 +200,32 @@ function EquipmentCard({ equipment }) {
         <div className="materials-section">
           {materials.leather > 0 && (
             <span className="material leather">
-              <span className="material-icon">🟤</span> {materials.leather}
+              <img src={MATERIAL_ICONS.leather} alt="Leather" className="material-icon" />
+              <span>{materials.leather}</span>
             </span>
           )}
           {materials.iron > 0 && (
             <span className="material iron">
-              <span className="material-icon">⚫</span> {materials.iron}
+              <img src={MATERIAL_ICONS.iron} alt="Ore" className="material-icon" />
+              <span>{materials.iron}</span>
             </span>
           )}
           {materials.ebony > 0 && (
             <span className="material ebony">
-              <span className="material-icon">🟣</span> {materials.ebony}
+              <img src={MATERIAL_ICONS.ebony} alt="Ebony" className="material-icon" />
+              <span>{materials.ebony}</span>
             </span>
           )}
           {materials.bone > 0 && (
             <span className="material bone">
-              <span className="material-icon">🦴</span> {materials.bone}
+              <img src={MATERIAL_ICONS.bone} alt="Bone" className="material-icon" />
+              <span>{materials.bone}</span>
             </span>
           )}
           {goldCost > 0 && (
             <span className="material gold">
-              <span className="material-icon">💰</span> {formatGold(goldCost)}
+              <span className="gold-icon">G</span>
+              <span>{formatGold(goldCost)}</span>
             </span>
           )}
         </div>
