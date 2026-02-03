@@ -384,6 +384,49 @@ router.get('/users', authMiddleware, adminMiddleware, async (req, res) => {
 });
 
 /**
+ * POST /api/auth/cleanup-user
+ * Delete a broken user record (user exists but governor doesn't)
+ */
+router.post('/cleanup-user', async (req, res) => {
+  try {
+    const { adminSecret, visibleGovernorId } = req.body;
+    const expectedSecret = process.env.ADMIN_SECRET || 'rok3584admin';
+    if (adminSecret !== expectedSecret) {
+      return res.status(403).json({ error: 'Invalid admin secret' });
+    }
+
+    if (!visibleGovernorId) {
+      return res.status(400).json({ error: 'Governor ID required' });
+    }
+
+    // Find and delete the user
+    const user = await User.findOne({ visibleGovernorId });
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Check if their governor exists
+    if (user.governorId) {
+      const governor = await Governor.findById(user.governorId);
+      if (!governor) {
+        // Governor doesn't exist - delete the broken user
+        await User.findByIdAndDelete(user._id);
+        return res.json({ success: true, message: 'Broken user record deleted. You can now re-register.' });
+      } else {
+        return res.status(400).json({ error: 'User has a valid governor. Use delete-account instead.' });
+      }
+    } else {
+      // No governor linked - delete user
+      await User.findByIdAndDelete(user._id);
+      return res.json({ success: true, message: 'User without governor deleted. You can now re-register.' });
+    }
+  } catch (error) {
+    console.error('Cleanup user error:', error);
+    res.status(500).json({ error: 'Failed to cleanup user' });
+  }
+});
+
+/**
  * POST /api/auth/reset-users
  * Drop the users collection to clear old indexes (one-time migration)
  */
