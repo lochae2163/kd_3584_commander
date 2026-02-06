@@ -36,10 +36,21 @@
 
 .governor-card-body {
   color: #94a3b8;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .build-count {
   font-size: 0.9rem;
+}
+
+.marches-count {
+  font-size: 0.9rem;
+  color: #4d96ff;
+  background: rgba(77, 150, 255, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
 }
 
 .delete-btn {

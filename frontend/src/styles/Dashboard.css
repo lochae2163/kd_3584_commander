@@ -189,6 +189,12 @@
   color: #e94560 !important;
 }
 
+.marches-cell {
+  text-align: center;
+  color: #4d96ff !important;
+  font-weight: 600;
+}
+
 .troop-badge,
 .build-type-badge {
   display: inline-block;

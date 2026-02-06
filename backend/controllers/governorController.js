@@ -32,18 +32,25 @@ export const getAllBuilds = async (req, res) => {
       .sort({ updatedAt: -1 })
       .lean();
 
-    // Get governor names for each build
+    // Get governor info for each build
     const governorIds = [...new Set(builds.map(b => b.governorId.toString()))];
     const governors = await Governor.find({ _id: { $in: governorIds } }).lean();
     const governorMap = governors.reduce((acc, g) => {
-      acc[g._id.toString()] = g.name;
+      acc[g._id.toString()] = {
+        name: g.name,
+        totalMarches: g.totalMarches || 1
+      };
       return acc;
     }, {});
 
-    const buildsWithGovernor = builds.map(build => ({
-      ...build,
-      governorName: governorMap[build.governorId.toString()] || 'Unknown'
-    }));
+    const buildsWithGovernor = builds.map(build => {
+      const govInfo = governorMap[build.governorId.toString()] || { name: 'Unknown', totalMarches: 1 };
+      return {
+        ...build,
+        governorName: govInfo.name,
+        totalMarches: govInfo.totalMarches
+      };
+    });
 
     res.status(200).json({
       success: true,
@@ -163,7 +170,7 @@ export const createGovernor = async (req, res) => {
 export const updateGovernor = async (req, res) => {
   try {
     const { id } = req.params;
-    const { name, vipLevel } = req.body;
+    const { name, vipLevel, totalMarches } = req.body;
 
     const governor = await Governor.findById(id);
     if (!governor) {
@@ -189,6 +196,10 @@ export const updateGovernor = async (req, res) => {
 
     if (vipLevel !== undefined) {
       governor.vipLevel = vipLevel;
+    }
+
+    if (totalMarches !== undefined) {
+      governor.totalMarches = Math.min(7, Math.max(1, totalMarches));
     }
 
     await governor.save();

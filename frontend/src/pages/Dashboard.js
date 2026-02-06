@@ -195,6 +195,7 @@ function Dashboard() {
                 <thead>
                   <tr>
                     <th>Governor</th>
+                    <th>Marches</th>
                     <th>Build</th>
                     <th>Commanders</th>
                     <th className="stat-header attack">ATK</th>
@@ -236,6 +237,7 @@ function Dashboard() {
                         className="build-row"
                       >
                         <td className="governor-name">{build.governorName}</td>
+                        <td className="marches-cell">{build.totalMarches || 1}</td>
                         <td>
                           <div className="build-type-cell">
                             <span className={`troop-badge ${build.troopType}`}>

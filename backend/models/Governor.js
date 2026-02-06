@@ -13,6 +13,12 @@ const governorSchema = new mongoose.Schema({
     max: 18,
     default: 0
   },
+  totalMarches: {
+    type: Number,
+    min: 1,
+    max: 7,
+    default: 1
+  },
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',

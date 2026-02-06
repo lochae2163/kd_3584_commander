@@ -17,6 +17,9 @@ function GovernorCard({ governor, onClick, onDelete }) {
         <span className="build-count">
           {governor.buildCount || 0} build{governor.buildCount !== 1 ? 's' : ''}
         </span>
+        <span className="marches-count">
+          {governor.totalMarches || 1} march{(governor.totalMarches || 1) !== 1 ? 'es' : ''}
+        </span>
       </div>
       <button className="delete-btn" onClick={handleDelete} title="Delete">
         &times;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { authService } from '../services/api';
+import { authService, governorService } from '../services/api';
 import '../styles/Profile.css';
 
 function Profile() {
@@ -36,6 +36,10 @@ function Profile() {
     confirmText: ''
   });
 
+  // Total marches
+  const [totalMarches, setTotalMarches] = useState(governor?.totalMarches || 1);
+  const [savingMarches, setSavingMarches] = useState(false);
+
   useEffect(() => {
     document.title = '3584 Commanders - Profile';
   }, []);
@@ -43,8 +47,25 @@ function Profile() {
   useEffect(() => {
     if (governor) {
       setNameForm({ newName: governor.name });
+      setTotalMarches(governor.totalMarches || 1);
     }
   }, [governor]);
+
+  const handleMarchesChange = async (newValue) => {
+    const value = parseInt(newValue, 10);
+    setTotalMarches(value);
+    setSavingMarches(true);
+    try {
+      const response = await governorService.update(governor._id, { totalMarches: value });
+      updateGovernor(response.data.governor);
+      showMessage('success', 'Total marches updated');
+    } catch (err) {
+      showMessage('error', 'Failed to update total marches');
+      setTotalMarches(governor?.totalMarches || 1);
+    } finally {
+      setSavingMarches(false);
+    }
+  };
 
   const showMessage = (type, text) => {
     setMessage({ type, text });
@@ -201,6 +222,24 @@ function Profile() {
               <div className="info-item">
                 <label>Account Created</label>
                 <span>{user?.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'N/A'}</span>
+              </div>
+            </div>
+
+            <div className="marches-section">
+              <h3>Total Marches</h3>
+              <p className="help-text">How many total marches do you have? (Including rally/garrison)</p>
+              <div className="marches-select-wrapper">
+                <select
+                  value={totalMarches}
+                  onChange={(e) => handleMarchesChange(e.target.value)}
+                  disabled={savingMarches}
+                  className="marches-select"
+                >
+                  {[1, 2, 3, 4, 5, 6, 7].map(num => (
+                    <option key={num} value={num}>{num} March{num > 1 ? 'es' : ''}</option>
+                  ))}
+                </select>
+                {savingMarches && <span className="saving-indicator">Saving...</span>}
               </div>
             </div>
           </div>
