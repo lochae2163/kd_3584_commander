@@ -1,0 +1,79 @@
+{
+  "pageTitle": "3584 Commanders - Admin Panel",
+  "backToDashboard": "Back to Dashboard",
+  "title": "Admin Panel",
+
+  "tabs": {
+    "whitelist": "Whitelist Management",
+    "users": "Registered Users"
+  },
+
+  "stats": {
+    "verifiedMembers": "Verified Members",
+    "registered": "Have Registered",
+    "notRegistered": "Not Yet Registered",
+    "totalUsers": "Total Users"
+  },
+
+  "upload": {
+    "title": "Upload Member List",
+    "description": "Upload an Excel file (.xlsx) containing KD 3584 member data.",
+    "hint": "The file should have columns: Governor ID, Governor Name",
+    "button": "Choose Excel File",
+    "lastUpload": "Last upload: {{date}}"
+  },
+
+  "addGovernor": {
+    "title": "Manually Add Governor",
+    "governorId": "Governor ID",
+    "governorName": "Governor Name (optional)",
+    "submit": "Add"
+  },
+
+  "search": {
+    "placeholder": "Search by ID or name..."
+  },
+
+  "table": {
+    "governorId": "Governor ID",
+    "name": "Name",
+    "power": "Power",
+    "alliance": "Alliance",
+    "killPoints": "Kill Points",
+    "actions": "Actions",
+    "role": "Role",
+    "verified": "Verified",
+    "registeredDate": "Registered"
+  },
+
+  "verified": {
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "pagination": {
+    "page": "Page {{current}} of {{total}}"
+  },
+
+  "empty": {
+    "noGovernors": "No verified governors found. Upload an Excel file to add members.",
+    "noUsers": "No registered users found."
+  },
+
+  "confirm": {
+    "removeGovernor": "Remove this governor from the whitelist?"
+  },
+
+  "messages": {
+    "governorAdded": "Governor added to whitelist",
+    "governorRemoved": "Governor removed from whitelist"
+  },
+
+  "errors": {
+    "failedToLoadWhitelist": "Failed to load whitelist",
+    "failedToLoadUsers": "Failed to load users",
+    "failedToAdd": "Failed to add governor",
+    "failedToRemove": "Failed to remove governor",
+    "failedToUpload": "Failed to upload whitelist"
+  }
+}

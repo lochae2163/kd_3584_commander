@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import './i18n';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import GovernorDetail from './pages/GovernorDetail';
@@ -14,12 +16,13 @@ import './App.css';
 
 function AppContent() {
   const { isAuthenticated, loading } = useAuth();
+  const { t } = useTranslation();
 
   if (loading) {
     return (
       <div className="loading-screen">
         <div className="loading-spinner"></div>
-        <span>Loading...</span>
+        <span>{t('status.loading')}</span>
       </div>
     );
   }
@@ -47,7 +50,7 @@ function AppContent() {
         </main>
 
         <footer className="footer">
-          <p>3584 Rally/Garrison Data Keeper</p>
+          <p>{t('footer.copyright')}</p>
         </footer>
       </div>
     </Router>

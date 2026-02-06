@@ -1,20 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
+import LanguageSwitcher from './LanguageSwitcher';
 import '../styles/Header.css';
 
 function Header() {
   const navigate = useNavigate();
   const { user, governor, logout, isAdmin } = useAuth();
+  const { t } = useTranslation();
 
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <h1>3584 Rally/Garrison Data Keeper</h1>
+          <h1>{t('appName')}</h1>
         </div>
 
         <div className="header-right">
+          <LanguageSwitcher />
+
           <div className="user-info">
             {governor && (
               <span
@@ -24,15 +29,15 @@ function Header() {
                 {governor.name}
               </span>
             )}
-            <span className="governor-id">ID: {user?.visibleGovernorId}</span>
-            {isAdmin && <span className="admin-badge">Admin</span>}
+            <span className="governor-id">{t('labels.governorId')}: {user?.visibleGovernorId}</span>
+            {isAdmin && <span className="admin-badge">{t('labels.admin')}</span>}
           </div>
 
           <button
             className="equipment-btn"
             onClick={() => navigate('/equipment')}
           >
-            Equipment
+            {t('nav.equipment')}
           </button>
 
           {governor && (
@@ -40,7 +45,7 @@ function Header() {
               className="my-builds-btn"
               onClick={() => navigate(`/governor/${governor._id}`)}
             >
-              My Builds
+              {t('nav.myBuilds')}
             </button>
           )}
 
@@ -48,7 +53,7 @@ function Header() {
             className="profile-btn"
             onClick={() => navigate('/profile')}
           >
-            Profile
+            {t('nav.profile')}
           </button>
 
           {isAdmin && (
@@ -56,12 +61,12 @@ function Header() {
               className="admin-btn"
               onClick={() => navigate('/admin')}
             >
-              Admin Panel
+              {t('nav.adminPanel')}
             </button>
           )}
 
           <button className="logout-btn" onClick={logout}>
-            Logout
+            {t('nav.logout')}
           </button>
         </div>
       </div>

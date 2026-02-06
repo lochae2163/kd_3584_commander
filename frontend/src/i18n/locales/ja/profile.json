@@ -1,0 +1,79 @@
+{
+  "pageTitle": "3584 コマンダー - プロフィール",
+  "backToDashboard": "ダッシュボードに戻る",
+  "title": "プロフィール設定",
+
+  "tabs": {
+    "info": "アカウント情報",
+    "password": "パスワード変更",
+    "name": "名前変更",
+    "danger": "アカウント削除"
+  },
+
+  "info": {
+    "title": "アカウント情報",
+    "governorId": "総督ID",
+    "governorName": "総督名",
+    "accountType": "アカウントタイプ",
+    "accountCreated": "アカウント作成日",
+    "notLinked": "未リンク",
+    "notRegistered": "未登録",
+    "na": "N/A"
+  },
+
+  "roles": {
+    "user": "ユーザー",
+    "admin": "管理者"
+  },
+
+  "marches": {
+    "title": "行軍数",
+    "help": "行軍は何本持っていますか？（ラリー/駐屯を含む）",
+    "march": "{{count}} 行軍",
+    "marches": "{{count}} 行軍"
+  },
+
+  "password": {
+    "title": "パスワード変更",
+    "current": "現在のパスワード",
+    "new": "新しいパスワード",
+    "confirm": "新しいパスワード（確認）",
+    "minLength": "6文字以上",
+    "submit": "パスワードを変更"
+  },
+
+  "name": {
+    "title": "総督名の変更",
+    "new": "新しい総督名",
+    "help": "ゲーム内の総督名と一致させてください",
+    "submit": "名前を更新"
+  },
+
+  "danger": {
+    "title": "アカウント削除",
+    "warning": "警告：この操作は取り消せません。アカウントは完全に削除されます。",
+    "password": "パスワード",
+    "passwordPlaceholder": "確認のためパスワードを入力",
+    "deleteGovernor": "総督プロフィールと全ビルドも削除する",
+    "deleteGovernorHelp": "チェックを外すと、総督プロフィールはリンク解除され、他のユーザーが登録できるようになります。",
+    "confirmText": "確認のためDELETEと入力",
+    "submit": "アカウントを削除"
+  },
+
+  "messages": {
+    "passwordChanged": "パスワードが変更されました",
+    "nameUpdated": "総督名が更新されました",
+    "marchesUpdated": "行軍数が更新されました"
+  },
+
+  "errors": {
+    "passwordsMismatch": "新しいパスワードが一致しません",
+    "passwordTooShort": "新しいパスワードは6文字以上必要です",
+    "failedToChangePassword": "パスワードの変更に失敗しました",
+    "nameTooShort": "名前は2文字以上必要です",
+    "failedToUpdateName": "名前の更新に失敗しました",
+    "typeDeleteToConfirm": "確認のためDELETEと入力してください",
+    "failedToDeleteAccount": "アカウントの削除に失敗しました",
+    "failedToUpdateMarches": "行軍数の更新に失敗しました"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "pageTitle": "3584 コマンダー - 管理パネル",
+  "backToDashboard": "ダッシュボードに戻る",
+  "title": "管理パネル",
+
+  "tabs": {
+    "whitelist": "ホワイトリスト管理",
+    "users": "登録ユーザー"
+  },
+
+  "stats": {
+    "verifiedMembers": "認証済みメンバー",
+    "registered": "登録済み",
+    "notRegistered": "未登録",
+    "totalUsers": "総ユーザー数"
+  },
+
+  "upload": {
+    "title": "メンバーリストをアップロード",
+    "description": "KD 3584メンバーデータを含むExcelファイル（.xlsx）をアップロードしてください。",
+    "hint": "ファイルには総督ID、総督名の列が必要です",
+    "button": "Excelファイルを選択",
+    "lastUpload": "最終アップロード：{{date}}"
+  },
+
+  "addGovernor": {
+    "title": "手動で総督を追加",
+    "governorId": "総督ID",
+    "governorName": "総督名（任意）",
+    "submit": "追加"
+  },
+
+  "search": {
+    "placeholder": "IDまたは名前で検索..."
+  },
+
+  "table": {
+    "governorId": "総督ID",
+    "name": "名前",
+    "power": "戦力",
+    "alliance": "同盟",
+    "killPoints": "撃破ポイント",
+    "actions": "操作",
+    "role": "権限",
+    "verified": "認証",
+    "registeredDate": "登録日"
+  },
+
+  "verified": {
+    "yes": "済",
+    "no": "未"
+  },
+
+  "pagination": {
+    "page": "ページ {{current}} / {{total}}"
+  },
+
+  "empty": {
+    "noGovernors": "認証済み総督が見つかりません。Excelファイルをアップロードしてメンバーを追加してください。",
+    "noUsers": "登録ユーザーが見つかりません。"
+  },
+
+  "confirm": {
+    "removeGovernor": "この総督をホワイトリストから削除しますか？"
+  },
+
+  "messages": {
+    "governorAdded": "総督がホワイトリストに追加されました",
+    "governorRemoved": "総督がホワイトリストから削除されました"
+  },
+
+  "errors": {
+    "failedToLoadWhitelist": "ホワイトリストの読み込みに失敗しました",
+    "failedToLoadUsers": "ユーザーの読み込みに失敗しました",
+    "failedToAdd": "総督の追加に失敗しました",
+    "failedToRemove": "総督の削除に失敗しました",
+    "failedToUpload": "ホワイトリストのアップロードに失敗しました"
+  }
+}

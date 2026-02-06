@@ -1,0 +1,69 @@
+{
+  "pageTitle": "レジェンダリー装備 - 3584 コマンダー",
+  "title": "レジェンダリー装備",
+  "subtitle": "完全なステータス付きのROKレジェンダリー装備を閲覧",
+
+  "search": {
+    "label": "検索",
+    "placeholder": "装備を検索..."
+  },
+
+  "filters": {
+    "slotType": "スロットタイプ",
+    "allSlots": "全スロット",
+    "allQuality": "全品質"
+  },
+
+  "results": {
+    "showing": "{{count}}件の装備を表示中",
+    "count": "({{count}})"
+  },
+
+  "slots": {
+    "weapon": "武器",
+    "helmet": "兜",
+    "chest": "鎧",
+    "gloves": "手袋",
+    "legs": "脚甲",
+    "boots": "靴",
+    "accessory": "アクセサリー"
+  },
+
+  "stats": {
+    "infantryAttack": "歩兵攻撃力",
+    "infantryDefense": "歩兵防御力",
+    "infantryHealth": "歩兵体力",
+    "infantryMarchSpeed": "歩兵行軍速度",
+    "cavalryAttack": "騎兵攻撃力",
+    "cavalryDefense": "騎兵防御力",
+    "cavalryHealth": "騎兵体力",
+    "cavalryMarchSpeed": "騎兵行軍速度",
+    "archerAttack": "弓兵攻撃力",
+    "archerDefense": "弓兵防御力",
+    "archerHealth": "弓兵体力",
+    "archerMarchSpeed": "弓兵行軍速度",
+    "siegeAttack": "攻城兵器攻撃力",
+    "siegeDefense": "攻城兵器防御力",
+    "siegeHealth": "攻城兵器体力",
+    "siegeMarchSpeed": "攻城兵器行軍速度",
+    "troopAttack": "全兵種攻撃力",
+    "troopDefense": "全兵種防御力",
+    "troopHealth": "全兵種体力",
+    "troopMarchSpeed": "全兵種行軍速度",
+    "rallyAttack": "ラリー攻撃力",
+    "rallyDefense": "ラリー防御力",
+    "rallyHealth": "ラリー体力",
+    "garrisonAttack": "駐屯攻撃力",
+    "garrisonDefense": "駐屯防御力",
+    "garrisonHealth": "駐屯体力"
+  },
+
+  "material": {
+    "gold": "ゴールド"
+  },
+
+  "modal": {
+    "selectEquipment": "{{slot}}を選択",
+    "none": "なし"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "pageTitle": "3584 Commanders - Profile",
+  "backToDashboard": "Back to Dashboard",
+  "title": "Profile Settings",
+
+  "tabs": {
+    "info": "Account Info",
+    "password": "Change Password",
+    "name": "Change Name",
+    "danger": "Delete Account"
+  },
+
+  "info": {
+    "title": "Account Information",
+    "governorId": "Governor ID",
+    "governorName": "Governor Name",
+    "accountType": "Account Type",
+    "accountCreated": "Account Created",
+    "notLinked": "Not linked",
+    "notRegistered": "Not Yet Registered",
+    "na": "N/A"
+  },
+
+  "roles": {
+    "user": "user",
+    "admin": "admin"
+  },
+
+  "marches": {
+    "title": "Total Marches",
+    "help": "How many total marches do you have? (Including rally/garrison)",
+    "march": "{{count}} March",
+    "marches": "{{count}} Marches"
+  },
+
+  "password": {
+    "title": "Change Password",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm New Password",
+    "minLength": "Minimum 6 characters",
+    "submit": "Change Password"
+  },
+
+  "name": {
+    "title": "Change Governor Name",
+    "new": "New Governor Name",
+    "help": "This should match your in-game governor name",
+    "submit": "Update Name"
+  },
+
+  "danger": {
+    "title": "Delete Account",
+    "warning": "Warning: This action cannot be undone. Your account will be permanently deleted.",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password to confirm",
+    "deleteGovernor": "Also delete my governor profile and all builds",
+    "deleteGovernorHelp": "If unchecked, your governor profile will be unlinked and can be claimed by another user.",
+    "confirmText": "Type DELETE to confirm",
+    "submit": "Delete My Account"
+  },
+
+  "messages": {
+    "passwordChanged": "Password changed successfully",
+    "nameUpdated": "Governor name updated successfully",
+    "marchesUpdated": "Total marches updated"
+  },
+
+  "errors": {
+    "passwordsMismatch": "New passwords do not match",
+    "passwordTooShort": "New password must be at least 6 characters",
+    "failedToChangePassword": "Failed to change password",
+    "nameTooShort": "Name must be at least 2 characters",
+    "failedToUpdateName": "Failed to update name",
+    "typeDeleteToConfirm": "Please type DELETE to confirm",
+    "failedToDeleteAccount": "Failed to delete account",
+    "failedToUpdateMarches": "Failed to update total marches"
+  }
+}

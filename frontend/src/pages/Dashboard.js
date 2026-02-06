@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { governorService, buildService, dataService } from '../services/api';
 import GovernorForm from '../components/GovernorForm';
@@ -11,10 +12,12 @@ const TROOP_TYPES = ['infantry', 'cavalry', 'archer', 'leadership'];
 const BUILD_TYPES = ['rally', 'garrison'];
 
 function Dashboard() {
+  const { t, i18n } = useTranslation('dashboard');
+
   // Set page title
   useEffect(() => {
-    document.title = '3584 Commanders - Dashboard';
-  }, []);
+    document.title = t('pageTitle');
+  }, [t]);
 
   const [activeTab, setActiveTab] = useState('builds');  // Default to builds tab
   const [builds, setBuilds] = useState([]);
@@ -45,12 +48,12 @@ function Dashboard() {
       setEquipment(equipmentRes.data.equipment || []);
       setInscriptions(inscriptionsRes.data.inscriptions || []);
     } catch (err) {
-      setError('Failed to load data. Please try again.');
+      setError(t('errors.failedToLoad'));
       console.error(err);
     } finally {
       setLoading(false);
     }
-  }, [troopFilter, buildTypeFilter]);
+  }, [troopFilter, buildTypeFilter, t]);
 
   useEffect(() => {
     loadData();
@@ -67,19 +70,19 @@ function Dashboard() {
   };
 
   const handleDeleteGovernor = async (governorId) => {
-    if (!window.confirm('Delete this governor and all their builds?')) return;
+    if (!window.confirm(t('confirm.deleteGovernor'))) return;
 
     try {
       await governorService.delete(governorId);
       loadData();
     } catch (err) {
-      setError('Failed to delete governor');
+      setError(t('errors.failedToDelete'));
     }
   };
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
+    return date.toLocaleDateString(i18n.language === 'ja' ? 'ja-JP' : 'en-US', {
       month: 'short',
       day: 'numeric',
       year: 'numeric'
@@ -119,10 +122,10 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h1>3584 Commanders</h1>
+        <h1>{t('title')}</h1>
         {isAdmin && (
           <button className="btn-primary" onClick={() => setShowForm(true)}>
-            + Add Governor
+            {t('addGovernor')}
           </button>
         )}
       </div>
@@ -133,13 +136,13 @@ function Dashboard() {
           className={`tab ${activeTab === 'builds' ? 'active' : ''}`}
           onClick={() => setActiveTab('builds')}
         >
-          All Builds ({builds.length})
+          {t('tabs.allBuilds', { count: builds.length })}
         </button>
         <button
           className={`tab ${activeTab === 'governors' ? 'active' : ''}`}
           onClick={() => setActiveTab('governors')}
         >
-          Governors ({governors.length})
+          {t('tabs.governors', { count: governors.length })}
         </button>
       </div>
 
@@ -150,61 +153,61 @@ function Dashboard() {
         <>
           <div className="filters-bar">
             <div className="filter-group">
-              <label>Troop Type</label>
+              <label>{t('filters.troopType')}</label>
               <select value={troopFilter} onChange={(e) => setTroopFilter(e.target.value)}>
-                <option value="">All Troops</option>
+                <option value="">{t('filters.allTroops')}</option>
                 {TROOP_TYPES.map((type) => (
                   <option key={type} value={type}>
-                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                    {t(`common:troopTypes.${type}`)}
                   </option>
                 ))}
               </select>
             </div>
 
             <div className="filter-group">
-              <label>Build Type</label>
+              <label>{t('filters.buildType')}</label>
               <select value={buildTypeFilter} onChange={(e) => setBuildTypeFilter(e.target.value)}>
-                <option value="">All Types</option>
+                <option value="">{t('filters.allTypes')}</option>
                 {BUILD_TYPES.map((type) => (
                   <option key={type} value={type}>
-                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                    {t(`common:buildTypes.${type}`)}
                   </option>
                 ))}
               </select>
             </div>
 
             <div className="filter-stats">
-              <span>{builds.length} builds</span>
+              <span>{t('filters.buildsCount', { count: builds.length })}</span>
             </div>
           </div>
 
           {loading ? (
             <div className="loading">
               <div className="loading-spinner"></div>
-              <span>Loading builds...</span>
+              <span>{t('loading.builds')}</span>
             </div>
           ) : builds.length === 0 ? (
             <div className="no-results">
               {troopFilter || buildTypeFilter
-                ? 'No builds match your filters'
-                : 'No builds yet. Add a governor and create builds to get started!'}
+                ? t('empty.noBuildsWithFilters')
+                : t('empty.noBuilds')}
             </div>
           ) : (
             <div className="builds-table-container">
               <table className="builds-table">
                 <thead>
                   <tr>
-                    <th>Governor</th>
-                    <th>Marches</th>
-                    <th>Build</th>
-                    <th>Commanders</th>
-                    <th className="stat-header attack">ATK</th>
-                    <th className="stat-header defense">DEF</th>
-                    <th className="stat-header health">HP</th>
-                    <th>Equipment</th>
-                    <th>Iconic</th>
-                    <th>Crit</th>
-                    <th>Updated</th>
+                    <th>{t('table.governor')}</th>
+                    <th>{t('table.marches')}</th>
+                    <th>{t('table.build')}</th>
+                    <th>{t('table.commanders')}</th>
+                    <th className="stat-header attack">{t('common:stats.atk')}</th>
+                    <th className="stat-header defense">{t('common:stats.def')}</th>
+                    <th className="stat-header health">{t('common:stats.hp')}</th>
+                    <th>{t('table.equipment')}</th>
+                    <th>{t('table.iconic')}</th>
+                    <th>{t('table.crit')}</th>
+                    <th>{t('table.updated')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -241,10 +244,10 @@ function Dashboard() {
                         <td>
                           <div className="build-type-cell">
                             <span className={`troop-badge ${build.troopType}`}>
-                              {build.troopType}
+                              {t(`common:troopTypes.${build.troopType}`)}
                             </span>
                             <span className={`build-type-badge ${build.buildType}`}>
-                              {build.buildType}
+                              {t(`common:buildTypes.${build.buildType}`)}
                             </span>
                           </div>
                         </td>
@@ -262,7 +265,7 @@ function Dashboard() {
                         <td className="count-cell">
                           {iconicCount > 0 ? (
                             <span className="iconic-info">
-                              {iconicCount} <span className="avg-level">(avg {avgIconic})</span>
+                              {iconicCount} <span className="avg-level">({t('table.avg', { value: avgIconic })})</span>
                             </span>
                           ) : '-'}
                         </td>
@@ -288,7 +291,7 @@ function Dashboard() {
           <div className="search-bar">
             <input
               type="text"
-              placeholder="Search governors..."
+              placeholder={t('search.placeholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -297,13 +300,13 @@ function Dashboard() {
           {loading ? (
             <div className="loading">
               <div className="loading-spinner"></div>
-              <span>Loading governors...</span>
+              <span>{t('loading.governors')}</span>
             </div>
           ) : filteredGovernors.length === 0 ? (
             <div className="no-results">
               {searchQuery
-                ? `No governors found matching "${searchQuery}"`
-                : 'No governors yet. Click "Add Governor" to get started!'}
+                ? t('empty.noGovernorsWithSearch', { query: searchQuery })
+                : t('empty.noGovernors')}
             </div>
           ) : (
             <div className="governors-grid">

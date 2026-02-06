@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../styles/BuildCard.css';
 
 function BuildCard({ label, troopType, buildType, build, governorId, onDelete }) {
   const navigate = useNavigate();
+  const { t } = useTranslation('build');
 
   const handleClick = () => {
     if (build) {
@@ -22,12 +24,14 @@ function BuildCard({ label, troopType, buildType, build, governorId, onDelete })
     return `troop-${troopType}`;
   };
 
+  const equipmentCount = Object.entries(build?.equipment || {}).filter(([_, eq]) => eq?.name).length;
+
   return (
     <div className={`build-card ${getTroopTypeClass()} ${build ? 'has-build' : 'empty'}`} onClick={handleClick}>
       <div className="build-card-header">
         <h3>{label}</h3>
         {build && onDelete && (
-          <button className="delete-btn" onClick={handleDelete} title="Delete">
+          <button className="delete-btn" onClick={handleDelete} title={t('common:buttons.delete')}>
             &times;
           </button>
         )}
@@ -37,23 +41,23 @@ function BuildCard({ label, troopType, buildType, build, governorId, onDelete })
         <div className="build-card-content">
           <div className="commanders">
             <div className="commander primary">
-              <span className="commander-label">Primary:</span>
-              <span className="commander-name">{build.primaryCommander || 'Not set'}</span>
+              <span className="commander-label">{t('card.primary')}</span>
+              <span className="commander-name">{build.primaryCommander || t('card.notSet')}</span>
             </div>
             <div className="commander secondary">
-              <span className="commander-label">Secondary:</span>
-              <span className="commander-name">{build.secondaryCommander || 'Not set'}</span>
+              <span className="commander-label">{t('card.secondary')}</span>
+              <span className="commander-name">{build.secondaryCommander || t('card.notSet')}</span>
             </div>
           </div>
 
           <div className="equipment-summary">
-            {Object.entries(build.equipment || {}).filter(([_, eq]) => eq?.name).length}/7 Equipment
+            {t('card.equipmentCount', { count: equipmentCount })}
           </div>
         </div>
       ) : (
         <div className="build-card-empty">
           <span className="plus-icon">+</span>
-          <span>Add Build</span>
+          <span>{t('card.addBuild')}</span>
         </div>
       )}
     </div>

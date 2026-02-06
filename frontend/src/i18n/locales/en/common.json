@@ -1,0 +1,111 @@
+{
+  "appName": "3584 Rally/Garrison Data Keeper",
+  "appTitle": "3584 Commanders",
+
+  "nav": {
+    "equipment": "Equipment",
+    "myBuilds": "My Builds",
+    "profile": "Profile",
+    "adminPanel": "Admin Panel",
+    "logout": "Logout"
+  },
+
+  "labels": {
+    "governorId": "Governor ID",
+    "governorName": "Governor Name",
+    "admin": "Admin",
+    "vip": "VIP"
+  },
+
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "back": "Back",
+    "backToDashboard": "Back to Dashboard",
+    "confirm": "Confirm",
+    "remove": "Remove",
+    "previous": "Previous",
+    "next": "Next",
+    "goToDashboard": "Go to Dashboard"
+  },
+
+  "status": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "pleaseWait": "Please wait...",
+    "uploading": "Uploading...",
+    "deleting": "Deleting..."
+  },
+
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "tryRefreshing": "Please try refreshing the page or going back to the dashboard.",
+    "failedToLoad": "Failed to load data. Please try again.",
+    "authenticationFailed": "Authentication failed"
+  },
+
+  "troopTypes": {
+    "infantry": "Infantry",
+    "cavalry": "Cavalry",
+    "archer": "Archer",
+    "leadership": "Leadership",
+    "siege": "Siege"
+  },
+
+  "buildTypes": {
+    "rally": "Rally",
+    "garrison": "Garrison"
+  },
+
+  "stats": {
+    "attack": "Attack",
+    "defense": "Defense",
+    "health": "Health",
+    "atk": "ATK",
+    "def": "DEF",
+    "hp": "HP",
+    "marchSpeed": "March Speed",
+    "allDamage": "All Damage",
+    "skillDamage": "Skill Damage",
+    "normalAttack": "Normal Attack",
+    "counterattack": "Counterattack",
+    "smiteDamage": "Smite Damage",
+    "comboDamage": "Combo Damage"
+  },
+
+  "equipment": {
+    "weapon": "Weapon",
+    "helmet": "Helmet",
+    "chest": "Chest",
+    "gloves": "Gloves",
+    "legs": "Legs",
+    "boots": "Boots",
+    "accessory": "Accessory",
+    "accessory1": "Accessory 1",
+    "accessory2": "Accessory 2",
+    "iconic": "Iconic",
+    "crit": "Crit",
+    "specialTalent": "Special Talent (+30%)"
+  },
+
+  "quality": {
+    "legendary": "Legendary",
+    "epic": "Epic",
+    "elite": "Elite",
+    "advanced": "Advanced",
+    "normal": "Normal"
+  },
+
+  "footer": {
+    "copyright": "3584 Rally/Garrison Data Keeper"
+  },
+
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "{{count}} days ago"
+  }
+}

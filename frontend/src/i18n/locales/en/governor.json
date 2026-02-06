@@ -1,0 +1,48 @@
+{
+  "pageTitle": "{{name}} - 3584 Commanders",
+  "backToDashboard": "Back to Dashboard",
+  "editGovernor": "Edit Governor",
+
+  "sections": {
+    "builds": "Builds"
+  },
+
+  "buildLabels": {
+    "infantryRally": "Infantry Rally",
+    "infantryGarrison": "Infantry Garrison",
+    "cavalryRally": "Cavalry Rally",
+    "cavalryGarrison": "Cavalry Garrison",
+    "archerRally": "Archer Rally",
+    "archerGarrison": "Archer Garrison",
+    "leadershipGarrison": "Leadership Garrison"
+  },
+
+  "loading": "Loading governor...",
+  "notFound": "Governor not found",
+
+  "form": {
+    "addTitle": "Add Governor",
+    "editTitle": "Edit Governor",
+    "governorName": "Governor Name",
+    "governorNamePlaceholder": "Enter governor name",
+    "vipLevel": "VIP Level",
+    "nameRequired": "Name is required"
+  },
+
+  "card": {
+    "builds": "{{count}} build",
+    "builds_plural": "{{count}} builds",
+    "marches": "{{count}} march",
+    "marches_plural": "{{count}} marches"
+  },
+
+  "confirm": {
+    "deleteBuild": "Delete this build?"
+  },
+
+  "errors": {
+    "failedToLoad": "Failed to load governor data",
+    "failedToDelete": "Failed to delete build",
+    "failedToSave": "Failed to save"
+  }
+}

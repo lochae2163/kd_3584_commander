@@ -1,0 +1,55 @@
+{
+  "pageTitle": "3584 Commanders - Dashboard",
+  "title": "3584 Commanders",
+  "addGovernor": "+ Add Governor",
+
+  "tabs": {
+    "allBuilds": "All Builds ({{count}})",
+    "governors": "Governors ({{count}})"
+  },
+
+  "filters": {
+    "troopType": "Troop Type",
+    "allTroops": "All Troops",
+    "buildType": "Build Type",
+    "allTypes": "All Types",
+    "buildsCount": "{{count}} builds"
+  },
+
+  "search": {
+    "placeholder": "Search governors..."
+  },
+
+  "table": {
+    "governor": "Governor",
+    "marches": "Marches",
+    "build": "Build",
+    "commanders": "Commanders",
+    "equipment": "Equipment",
+    "iconic": "Iconic",
+    "crit": "Crit",
+    "updated": "Updated",
+    "avg": "avg {{value}}"
+  },
+
+  "loading": {
+    "builds": "Loading builds...",
+    "governors": "Loading governors..."
+  },
+
+  "empty": {
+    "noBuildsWithFilters": "No builds match your filters",
+    "noBuilds": "No builds yet. Add a governor and create builds to get started!",
+    "noGovernorsWithSearch": "No governors found matching \"{{query}}\"",
+    "noGovernors": "No governors yet. Click \"Add Governor\" to get started!"
+  },
+
+  "confirm": {
+    "deleteGovernor": "Delete this governor and all their builds?"
+  },
+
+  "errors": {
+    "failedToLoad": "Failed to load data. Please try again.",
+    "failedToDelete": "Failed to delete governor"
+  }
+}

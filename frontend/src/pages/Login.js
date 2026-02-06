@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { authService } from '../services/api';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 import '../styles/Login.css';
 
 function Login() {
+  const { t } = useTranslation('auth');
   const [isRegistering, setIsRegistering] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -22,9 +25,9 @@ function Login() {
 
   useEffect(() => {
     document.title = isRegistering
-      ? '3584 Commanders - Register'
-      : '3584 Commanders - Login';
-  }, [isRegistering]);
+      ? t('pageTitle.register')
+      : t('pageTitle.login');
+  }, [isRegistering, t]);
 
   // Check verification status when governor ID changes (debounced)
   const checkVerification = useCallback(async (governorId) => {
@@ -75,7 +78,7 @@ function Login() {
         await login(formData.visibleGovernorId, formData.password);
       }
     } catch (err) {
-      setError(err.response?.data?.error || err.response?.data?.errors?.[0]?.msg || 'Authentication failed');
+      setError(err.response?.data?.error || err.response?.data?.errors?.[0]?.msg || t('common:errors.authenticationFailed'));
     } finally {
       setLoading(false);
     }
@@ -83,20 +86,24 @@ function Login() {
 
   return (
     <div className="login-container">
+      <div className="login-language-switcher">
+        <LanguageSwitcher />
+      </div>
+
       <div className="login-box">
-        <h1>3584 Rally/Garrison</h1>
-        <p className="subtitle">Data Keeper</p>
+        <h1>{t('login.title')}</h1>
+        <p className="subtitle">{t('login.subtitle')}</p>
 
         <form onSubmit={handleSubmit}>
           {isRegistering ? (
             <>
               <div className="form-group">
-                <label htmlFor="governorName">Governor Name</label>
+                <label htmlFor="governorName">{t('form.governorName')}</label>
                 <input
                   type="text"
                   id="governorName"
                   name="governorName"
-                  placeholder="Enter your in-game name"
+                  placeholder={t('form.governorNamePlaceholder')}
                   value={formData.governorName}
                   onChange={handleChange}
                   disabled={loading}
@@ -104,30 +111,28 @@ function Login() {
                   minLength={2}
                   maxLength={50}
                 />
-                <p className="help-text">Your exact in-game governor name</p>
+                <p className="help-text">{t('form.governorNameHelp')}</p>
               </div>
 
               <div className="form-group">
-                <label htmlFor="visibleGovernorId">Governor ID</label>
+                <label htmlFor="visibleGovernorId">{t('form.governorId')}</label>
                 <input
                   type="text"
                   id="visibleGovernorId"
                   name="visibleGovernorId"
-                  placeholder="e.g., 12345678"
+                  placeholder={t('form.governorIdPlaceholder')}
                   value={formData.visibleGovernorId}
                   onChange={handleChange}
                   disabled={loading}
                   required
                   className={verificationStatus ? (verificationStatus.isVerified ? 'verified' : 'not-verified') : ''}
                 />
-                <p className="help-text">
-                  Found in game: Profile → tap your avatar → ID shown below your name
-                </p>
+                <p className="help-text">{t('form.governorIdHelp')}</p>
 
                 {/* Verification Status */}
                 {checkingVerification && (
                   <div className="verification-status checking">
-                    Checking verification...
+                    {t('verification.checking')}
                   </div>
                 )}
                 {!checkingVerification && verificationStatus && (
@@ -136,13 +141,13 @@ function Login() {
                       <>
                         <span className="status-icon">✓</span>
                         {verificationStatus.whitelistEnabled
-                          ? `Verified KD 3584 member: ${verificationStatus.governorName}`
-                          : 'Registration open (no whitelist configured)'}
+                          ? t('verification.verified', { name: verificationStatus.governorName })
+                          : t('verification.verifiedNoWhitelist')}
                       </>
                     ) : (
                       <>
                         <span className="status-icon">✗</span>
-                        Governor ID not found in KD 3584 member list. Contact leadership if you believe this is an error.
+                        {t('verification.notVerified')}
                       </>
                     )}
                   </div>
@@ -150,13 +155,13 @@ function Login() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">{t('form.password')}</label>
                 <div className="password-input-wrapper">
                   <input
                     type={showPassword ? 'text' : 'password'}
                     id="password"
                     name="password"
-                    placeholder="Create a password (min 6 characters)"
+                    placeholder={t('form.passwordPlaceholder')}
                     value={formData.password}
                     onChange={handleChange}
                     disabled={loading}
@@ -182,23 +187,22 @@ function Login() {
                     )}
                   </button>
                 </div>
-                <p className="help-text">Choose a secure password you'll remember</p>
+                <p className="help-text">{t('form.passwordHelp')}</p>
               </div>
 
               <div className="registration-note">
-                <strong>Note:</strong> Registration is for KD 3584 governors only.
-                Your Governor ID must be in our member list to register.
+                <strong>{t('register.note')}</strong> {t('register.noteDetail')}
               </div>
             </>
           ) : (
             <>
               <div className="form-group">
-                <label htmlFor="visibleGovernorId">Governor ID</label>
+                <label htmlFor="visibleGovernorId">{t('form.governorId')}</label>
                 <input
                   type="text"
                   id="visibleGovernorId"
                   name="visibleGovernorId"
-                  placeholder="Enter your Governor ID"
+                  placeholder={t('form.governorIdPlaceholder')}
                   value={formData.visibleGovernorId}
                   onChange={handleChange}
                   disabled={loading}
@@ -207,13 +211,13 @@ function Login() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">{t('form.password')}</label>
                 <div className="password-input-wrapper">
                   <input
                     type={showPassword ? 'text' : 'password'}
                     id="password"
                     name="password"
-                    placeholder="Enter your password"
+                    placeholder={t('form.passwordLoginPlaceholder')}
                     value={formData.password}
                     onChange={handleChange}
                     disabled={loading}
@@ -245,7 +249,7 @@ function Login() {
           {error && <div className="error">{error}</div>}
 
           <button type="submit" className="submit-btn" disabled={loading}>
-            {loading ? 'Please wait...' : (isRegistering ? 'Register' : 'Login')}
+            {loading ? t('common:status.pleaseWait') : (isRegistering ? t('register.submit') : t('login.submit'))}
           </button>
         </form>
 
@@ -266,8 +270,8 @@ function Login() {
             }}
           >
             {isRegistering
-              ? 'Already have an account? Login'
-              : 'Need an account? Register'}
+              ? t('register.switchToLogin')
+              : t('login.switchToRegister')}
           </button>
         </div>
       </div>

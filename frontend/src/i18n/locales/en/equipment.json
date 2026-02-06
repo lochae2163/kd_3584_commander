@@ -1,0 +1,69 @@
+{
+  "pageTitle": "Legendary Equipment - 3584 Commanders",
+  "title": "Legendary Equipment",
+  "subtitle": "Browse legendary ROK equipment with complete stats",
+
+  "search": {
+    "label": "Search",
+    "placeholder": "Search equipment..."
+  },
+
+  "filters": {
+    "slotType": "Slot Type",
+    "allSlots": "All Slots",
+    "allQuality": "All Quality"
+  },
+
+  "results": {
+    "showing": "Showing {{count}} equipment items",
+    "count": "({{count}})"
+  },
+
+  "slots": {
+    "weapon": "Weapon",
+    "helmet": "Helmet",
+    "chest": "Chest",
+    "gloves": "Gloves",
+    "legs": "Legs",
+    "boots": "Boots",
+    "accessory": "Accessory"
+  },
+
+  "stats": {
+    "infantryAttack": "Infantry Attack",
+    "infantryDefense": "Infantry Defense",
+    "infantryHealth": "Infantry Health",
+    "infantryMarchSpeed": "Infantry March Speed",
+    "cavalryAttack": "Cavalry Attack",
+    "cavalryDefense": "Cavalry Defense",
+    "cavalryHealth": "Cavalry Health",
+    "cavalryMarchSpeed": "Cavalry March Speed",
+    "archerAttack": "Archer Attack",
+    "archerDefense": "Archer Defense",
+    "archerHealth": "Archer Health",
+    "archerMarchSpeed": "Archer March Speed",
+    "siegeAttack": "Siege Attack",
+    "siegeDefense": "Siege Defense",
+    "siegeHealth": "Siege Health",
+    "siegeMarchSpeed": "Siege March Speed",
+    "troopAttack": "Troop Attack",
+    "troopDefense": "Troop Defense",
+    "troopHealth": "Troop Health",
+    "troopMarchSpeed": "Troop March Speed",
+    "rallyAttack": "Rally Attack",
+    "rallyDefense": "Rally Defense",
+    "rallyHealth": "Rally Health",
+    "garrisonAttack": "Garrison Attack",
+    "garrisonDefense": "Garrison Defense",
+    "garrisonHealth": "Garrison Health"
+  },
+
+  "material": {
+    "gold": "Gold"
+  },
+
+  "modal": {
+    "selectEquipment": "Select {{slot}}",
+    "none": "None"
+  }
+}

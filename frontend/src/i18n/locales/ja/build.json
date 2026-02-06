@@ -1,0 +1,97 @@
+{
+  "pageTitle": {
+    "create": "ビルド作成 - 3584 コマンダー",
+    "edit": "ビルド編集 - 3584 コマンダー"
+  },
+
+  "title": {
+    "create": "{{label}}ビルドを作成",
+    "edit": "{{label}}ビルドを編集"
+  },
+
+  "backTo": "{{name}}に戻る",
+
+  "sections": {
+    "commanders": "指揮官",
+    "equipment": "装備",
+    "armament": "アーマメント",
+    "inscriptions": "碑文",
+    "additionalStats": "追加ステータス",
+    "screenshots": "スクリーンショット ({{count}}/5)"
+  },
+
+  "commanders": {
+    "primary": "主将",
+    "secondary": "副将",
+    "selectPlaceholder": "-- 指揮官を選択 --"
+  },
+
+  "loadoutStats": {
+    "title": "装備ステータス",
+    "hint": "全兵種ステータスは自動的に各兵種のステータスに変換されます。",
+    "armamentBonuses": "アーマメントボーナス",
+    "additionalStats": "追加ステータス（アーマメント）",
+    "extraBonuses": "追加ボーナス",
+    "activeSets": "有効なセットボーナス",
+    "setPieces": "セットピース"
+  },
+
+  "armament": {
+    "formation": "陣形",
+    "selectFormation": "陣形を選択",
+    "formationDescription": "選択中：{{name}}陣形（4スロット：紋章、旗、楽器、巻物）",
+    "selectFormationHint": "上で陣形を選択すると、各スロットの碑文が表示されます"
+  },
+
+  "inscriptionSlots": {
+    "emblem": "紋章",
+    "flag": "旗",
+    "instrument": "楽器",
+    "scroll": "巻物"
+  },
+
+  "inscriptions": {
+    "selected": "({{count}}個選択)",
+    "tier": {
+      "special": "スペシャル",
+      "rare": "レア",
+      "common": "コモン"
+    }
+  },
+
+  "manualStats": {
+    "hint": "アーマメントからの追加ステータスを入力してください。",
+    "attack": "攻撃力 (%)",
+    "defense": "防御力 (%)",
+    "health": "体力 (%)",
+    "marchSpeed": "行軍速度 (%)",
+    "allDamage": "全ダメージ (%)"
+  },
+
+  "screenshots": {
+    "hint": "ゲーム内の指揮官装備のスクリーンショットをアップロード",
+    "addScreenshot": "スクリーンショットを追加",
+    "uploadHint": "最大5MB、JPG/PNG/WebP対応"
+  },
+
+  "buttons": {
+    "saveBuild": "ビルドを保存"
+  },
+
+  "loading": "読み込み中...",
+
+  "errors": {
+    "failedToLoad": "データの読み込みに失敗しました",
+    "failedToSave": "ビルドの保存に失敗しました",
+    "failedToUpload": "スクリーンショットのアップロードに失敗しました",
+    "failedToDelete": "スクリーンショットの削除に失敗しました"
+  },
+
+  "card": {
+    "primary": "主将：",
+    "secondary": "副将：",
+    "notSet": "未設定",
+    "equipmentCount": "{{count}}/7 装備",
+    "addBuild": "ビルドを追加"
+  }
+}

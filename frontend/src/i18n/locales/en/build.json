@@ -1,0 +1,97 @@
+{
+  "pageTitle": {
+    "create": "Create Build - 3584 Commanders",
+    "edit": "Edit Build - 3584 Commanders"
+  },
+
+  "title": {
+    "create": "Create {{label}} Build",
+    "edit": "Edit {{label}} Build"
+  },
+
+  "backTo": "Back to {{name}}",
+
+  "sections": {
+    "commanders": "Commanders",
+    "equipment": "Equipment",
+    "armament": "Armament",
+    "inscriptions": "Inscriptions",
+    "additionalStats": "Additional Stats",
+    "screenshots": "Screenshots ({{count}}/5)"
+  },
+
+  "commanders": {
+    "primary": "Primary Commander",
+    "secondary": "Secondary Commander",
+    "selectPlaceholder": "-- Select Commander --"
+  },
+
+  "loadoutStats": {
+    "title": "Loadout Stats",
+    "hint": "Universal Troop Stats are automatically converted into specific troop type stats for all types.",
+    "armamentBonuses": "Armament Bonuses",
+    "additionalStats": "Additional Stats (Armaments)",
+    "extraBonuses": "Extra Bonuses",
+    "activeSets": "Active Set Bonuses",
+    "setPieces": "Set Pieces"
+  },
+
+  "armament": {
+    "formation": "Formation",
+    "selectFormation": "Select Formation",
+    "formationDescription": "Selected: {{name}} formation with 4 slots: Emblem, Flag, Instrument, Scroll",
+    "selectFormationHint": "Select a formation above to see available inscriptions for each slot"
+  },
+
+  "inscriptionSlots": {
+    "emblem": "Emblem",
+    "flag": "Flag",
+    "instrument": "Instrument",
+    "scroll": "Scroll"
+  },
+
+  "inscriptions": {
+    "selected": "({{count}} selected)",
+    "tier": {
+      "special": "Special-Tier",
+      "rare": "Rare-Tier",
+      "common": "Common-Tier"
+    }
+  },
+
+  "manualStats": {
+    "hint": "Add any additional stats from armaments.",
+    "attack": "Attack (%)",
+    "defense": "Defense (%)",
+    "health": "Health (%)",
+    "marchSpeed": "March Speed (%)",
+    "allDamage": "All Damage (%)"
+  },
+
+  "screenshots": {
+    "hint": "Upload screenshots of your commander's equipment from the game",
+    "addScreenshot": "Add Screenshot",
+    "uploadHint": "Max 5MB per image, JPG/PNG/WebP"
+  },
+
+  "buttons": {
+    "saveBuild": "Save Build"
+  },
+
+  "loading": "Loading...",
+
+  "errors": {
+    "failedToLoad": "Failed to load data",
+    "failedToSave": "Failed to save build",
+    "failedToUpload": "Failed to upload screenshot",
+    "failedToDelete": "Failed to delete screenshot"
+  },
+
+  "card": {
+    "primary": "Primary:",
+    "secondary": "Secondary:",
+    "notSet": "Not set",
+    "equipmentCount": "{{count}}/7 Equipment",
+    "addBuild": "Add Build"
+  }
+}

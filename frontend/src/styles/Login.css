@@ -1,9 +1,17 @@
 .login-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  position: relative;
+}
+
+.login-language-switcher {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .login-box {

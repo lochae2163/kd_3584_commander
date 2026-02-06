@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { authService, governorService } from '../services/api';
 import '../styles/Profile.css';
 
 function Profile() {
+  const { t, i18n } = useTranslation('profile');
   const { user, governor, logout, updateGovernor } = useAuth();
   const navigate = useNavigate();
 
@@ -41,8 +43,8 @@ function Profile() {
   const [savingMarches, setSavingMarches] = useState(false);
 
   useEffect(() => {
-    document.title = '3584 Commanders - Profile';
-  }, []);
+    document.title = t('pageTitle');
+  }, [t]);
 
   useEffect(() => {
     if (governor) {
@@ -58,9 +60,9 @@ function Profile() {
     try {
       const response = await governorService.update(governor._id, { totalMarches: value });
       updateGovernor(response.data.governor);
-      showMessage('success', 'Total marches updated');
+      showMessage('success', t('messages.marchesUpdated'));
     } catch (err) {
-      showMessage('error', 'Failed to update total marches');
+      showMessage('error', t('errors.failedToUpdateMarches'));
       setTotalMarches(governor?.totalMarches || 1);
     } finally {
       setSavingMarches(false);
@@ -77,22 +79,22 @@ function Profile() {
     setMessage({ type: '', text: '' });
 
     if (passwordForm.newPassword !== passwordForm.confirmPassword) {
-      showMessage('error', 'New passwords do not match');
+      showMessage('error', t('errors.passwordsMismatch'));
       return;
     }
 
     if (passwordForm.newPassword.length < 6) {
-      showMessage('error', 'New password must be at least 6 characters');
+      showMessage('error', t('errors.passwordTooShort'));
       return;
     }
 
     setLoading(true);
     try {
       await authService.changePassword(passwordForm.currentPassword, passwordForm.newPassword);
-      showMessage('success', 'Password changed successfully');
+      showMessage('success', t('messages.passwordChanged'));
       setPasswordForm({ currentPassword: '', newPassword: '', confirmPassword: '' });
     } catch (err) {
-      showMessage('error', err.response?.data?.error || 'Failed to change password');
+      showMessage('error', err.response?.data?.error || t('errors.failedToChangePassword'));
     } finally {
       setLoading(false);
     }
@@ -103,7 +105,7 @@ function Profile() {
     setMessage({ type: '', text: '' });
 
     if (nameForm.newName.trim().length < 2) {
-      showMessage('error', 'Name must be at least 2 characters');
+      showMessage('error', t('errors.nameTooShort'));
       return;
     }
 
@@ -111,9 +113,9 @@ function Profile() {
     try {
       const response = await authService.updateGovernorName(nameForm.newName);
       updateGovernor(response.data.governor);
-      showMessage('success', 'Governor name updated successfully');
+      showMessage('success', t('messages.nameUpdated'));
     } catch (err) {
-      showMessage('error', err.response?.data?.error || 'Failed to update name');
+      showMessage('error', err.response?.data?.error || t('errors.failedToUpdateName'));
     } finally {
       setLoading(false);
     }
@@ -124,7 +126,7 @@ function Profile() {
     setMessage({ type: '', text: '' });
 
     if (deleteForm.confirmText !== 'DELETE') {
-      showMessage('error', 'Please type DELETE to confirm');
+      showMessage('error', t('errors.typeDeleteToConfirm'));
       return;
     }
 
@@ -134,9 +136,15 @@ function Profile() {
       logout();
       navigate('/');
     } catch (err) {
-      showMessage('error', err.response?.data?.error || 'Failed to delete account');
+      showMessage('error', err.response?.data?.error || t('errors.failedToDeleteAccount'));
       setLoading(false);
     }
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return t('info.na');
+    const date = new Date(dateString);
+    return date.toLocaleDateString(i18n.language === 'ja' ? 'ja-JP' : 'en-US');
   };
 
   const PasswordToggle = ({ field, show, onToggle }) => (
@@ -163,10 +171,10 @@ function Profile() {
   return (
     <div className="profile-page">
       <button className="back-btn" onClick={() => navigate('/')}>
-        &larr; Back to Dashboard
+        &larr; {t('backToDashboard')}
       </button>
 
-      <h1>Profile Settings</h1>
+      <h1>{t('title')}</h1>
 
       {message.text && (
         <div className={`message ${message.type}`}>
@@ -179,25 +187,25 @@ function Profile() {
           className={`tab-btn ${activeTab === 'info' ? 'active' : ''}`}
           onClick={() => setActiveTab('info')}
         >
-          Account Info
+          {t('tabs.info')}
         </button>
         <button
           className={`tab-btn ${activeTab === 'password' ? 'active' : ''}`}
           onClick={() => setActiveTab('password')}
         >
-          Change Password
+          {t('tabs.password')}
         </button>
         <button
           className={`tab-btn ${activeTab === 'name' ? 'active' : ''}`}
           onClick={() => setActiveTab('name')}
         >
-          Change Name
+          {t('tabs.name')}
         </button>
         <button
           className={`tab-btn ${activeTab === 'delete' ? 'active' : ''}`}
           onClick={() => setActiveTab('delete')}
         >
-          Delete Account
+          {t('tabs.danger')}
         </button>
       </div>
 
@@ -205,29 +213,29 @@ function Profile() {
         {/* Account Info Tab */}
         {activeTab === 'info' && (
           <div className="profile-section">
-            <h2>Account Information</h2>
+            <h2>{t('info.title')}</h2>
             <div className="info-grid">
               <div className="info-item">
-                <label>Governor ID</label>
+                <label>{t('info.governorId')}</label>
                 <span>{user?.visibleGovernorId}</span>
               </div>
               <div className="info-item">
-                <label>Governor Name</label>
-                <span>{governor?.name || 'Not linked'}</span>
+                <label>{t('info.governorName')}</label>
+                <span>{governor?.name || t('info.notLinked')}</span>
               </div>
               <div className="info-item">
-                <label>Account Type</label>
-                <span className={`role-badge ${user?.role}`}>{user?.role}</span>
+                <label>{t('info.accountType')}</label>
+                <span className={`role-badge ${user?.role}`}>{t(`roles.${user?.role}`)}</span>
               </div>
               <div className="info-item">
-                <label>Account Created</label>
-                <span>{user?.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'N/A'}</span>
+                <label>{t('info.accountCreated')}</label>
+                <span>{formatDate(user?.createdAt)}</span>
               </div>
             </div>
 
             <div className="marches-section">
-              <h3>Total Marches</h3>
-              <p className="help-text">How many total marches do you have? (Including rally/garrison)</p>
+              <h3>{t('marches.title')}</h3>
+              <p className="help-text">{t('marches.help')}</p>
               <div className="marches-select-wrapper">
                 <select
                   value={totalMarches}
@@ -236,10 +244,12 @@ function Profile() {
                   className="marches-select"
                 >
                   {[1, 2, 3, 4, 5, 6, 7].map(num => (
-                    <option key={num} value={num}>{num} March{num > 1 ? 'es' : ''}</option>
+                    <option key={num} value={num}>
+                      {num > 1 ? t('marches.marches', { count: num }) : t('marches.march', { count: num })}
+                    </option>
                   ))}
                 </select>
-                {savingMarches && <span className="saving-indicator">Saving...</span>}
+                {savingMarches && <span className="saving-indicator">{t('common:status.saving')}</span>}
               </div>
             </div>
           </div>
@@ -248,10 +258,10 @@ function Profile() {
         {/* Change Password Tab */}
         {activeTab === 'password' && (
           <div className="profile-section">
-            <h2>Change Password</h2>
+            <h2>{t('password.title')}</h2>
             <form onSubmit={handleChangePassword}>
               <div className="form-group">
-                <label>Current Password</label>
+                <label>{t('password.current')}</label>
                 <div className="password-input-wrapper">
                   <input
                     type={showPasswords.current ? 'text' : 'password'}
@@ -269,7 +279,7 @@ function Profile() {
               </div>
 
               <div className="form-group">
-                <label>New Password</label>
+                <label>{t('password.new')}</label>
                 <div className="password-input-wrapper">
                   <input
                     type={showPasswords.new ? 'text' : 'password'}
@@ -285,11 +295,11 @@ function Profile() {
                     onToggle={(f) => setShowPasswords({ ...showPasswords, [f]: !showPasswords[f] })}
                   />
                 </div>
-                <p className="help-text">Minimum 6 characters</p>
+                <p className="help-text">{t('password.minLength')}</p>
               </div>
 
               <div className="form-group">
-                <label>Confirm New Password</label>
+                <label>{t('password.confirm')}</label>
                 <div className="password-input-wrapper">
                   <input
                     type={showPasswords.confirm ? 'text' : 'password'}
@@ -307,7 +317,7 @@ function Profile() {
               </div>
 
               <button type="submit" className="btn-primary" disabled={loading}>
-                {loading ? 'Saving...' : 'Change Password'}
+                {loading ? t('common:status.saving') : t('password.submit')}
               </button>
             </form>
           </div>
@@ -316,10 +326,10 @@ function Profile() {
         {/* Change Name Tab */}
         {activeTab === 'name' && (
           <div className="profile-section">
-            <h2>Change Governor Name</h2>
+            <h2>{t('name.title')}</h2>
             <form onSubmit={handleChangeName}>
               <div className="form-group">
-                <label>New Governor Name</label>
+                <label>{t('name.new')}</label>
                 <input
                   type="text"
                   value={nameForm.newName}
@@ -329,11 +339,11 @@ function Profile() {
                   maxLength={50}
                   disabled={loading}
                 />
-                <p className="help-text">This should match your in-game governor name</p>
+                <p className="help-text">{t('name.help')}</p>
               </div>
 
               <button type="submit" className="btn-primary" disabled={loading}>
-                {loading ? 'Saving...' : 'Update Name'}
+                {loading ? t('common:status.saving') : t('name.submit')}
               </button>
             </form>
           </div>
@@ -342,21 +352,21 @@ function Profile() {
         {/* Delete Account Tab */}
         {activeTab === 'delete' && (
           <div className="profile-section danger-zone">
-            <h2>Delete Account</h2>
+            <h2>{t('danger.title')}</h2>
             <div className="warning-box">
-              <strong>Warning:</strong> This action cannot be undone. Your account will be permanently deleted.
+              <strong>{t('danger.warning')}</strong>
             </div>
 
             <form onSubmit={handleDeleteAccount}>
               <div className="form-group">
-                <label>Password</label>
+                <label>{t('danger.password')}</label>
                 <input
                   type="password"
                   value={deleteForm.password}
                   onChange={(e) => setDeleteForm({ ...deleteForm, password: e.target.value })}
                   required
                   disabled={loading}
-                  placeholder="Enter your password to confirm"
+                  placeholder={t('danger.passwordPlaceholder')}
                 />
               </div>
 
@@ -368,15 +378,13 @@ function Profile() {
                     onChange={(e) => setDeleteForm({ ...deleteForm, deleteGovernor: e.target.checked })}
                     disabled={loading}
                   />
-                  <span>Also delete my governor profile and all builds</span>
+                  <span>{t('danger.deleteGovernor')}</span>
                 </label>
-                <p className="help-text">
-                  If unchecked, your governor profile will be unlinked and can be claimed by another user.
-                </p>
+                <p className="help-text">{t('danger.deleteGovernorHelp')}</p>
               </div>
 
               <div className="form-group">
-                <label>Type DELETE to confirm</label>
+                <label>{t('danger.confirmText')}</label>
                 <input
                   type="text"
                   value={deleteForm.confirmText}
@@ -392,7 +400,7 @@ function Profile() {
                 className="btn-danger"
                 disabled={loading || deleteForm.confirmText !== 'DELETE'}
               >
-                {loading ? 'Deleting...' : 'Delete My Account'}
+                {loading ? t('common:status.deleting') : t('danger.submit')}
               </button>
             </form>
           </div>

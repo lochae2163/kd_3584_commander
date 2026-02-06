@@ -1,0 +1,55 @@
+{
+  "pageTitle": "3584 コマンダー - ダッシュボード",
+  "title": "3584 コマンダー",
+  "addGovernor": "+ 総督を追加",
+
+  "tabs": {
+    "allBuilds": "全ビルド ({{count}})",
+    "governors": "総督 ({{count}})"
+  },
+
+  "filters": {
+    "troopType": "兵種",
+    "allTroops": "全兵種",
+    "buildType": "ビルドタイプ",
+    "allTypes": "全タイプ",
+    "buildsCount": "{{count}} ビルド"
+  },
+
+  "search": {
+    "placeholder": "総督を検索..."
+  },
+
+  "table": {
+    "governor": "総督",
+    "marches": "行軍",
+    "build": "ビルド",
+    "commanders": "指揮官",
+    "equipment": "装備",
+    "iconic": "アイコニック",
+    "crit": "会心",
+    "updated": "更新日",
+    "avg": "平均 {{value}}"
+  },
+
+  "loading": {
+    "builds": "ビルドを読み込み中...",
+    "governors": "総督を読み込み中..."
+  },
+
+  "empty": {
+    "noBuildsWithFilters": "フィルターに一致するビルドがありません",
+    "noBuilds": "まだビルドがありません。総督を追加してビルドを作成してください！",
+    "noGovernorsWithSearch": "「{{query}}」に一致する総督が見つかりません",
+    "noGovernors": "まだ総督がいません。「総督を追加」をクリックして始めましょう！"
+  },
+
+  "confirm": {
+    "deleteGovernor": "この総督と全てのビルドを削除しますか？"
+  },
+
+  "errors": {
+    "failedToLoad": "データの読み込みに失敗しました。もう一度お試しください。",
+    "failedToDelete": "総督の削除に失敗しました"
+  }
+}

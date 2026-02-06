@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { governorService, buildService } from '../services/api';
 import BuildCard from '../components/BuildCard';
 import GovernorForm from '../components/GovernorForm';
 import '../styles/GovernorDetail.css';
 
-const BUILD_TYPES = [
-  { troopType: 'infantry', buildType: 'rally', label: 'Infantry Rally' },
-  { troopType: 'infantry', buildType: 'garrison', label: 'Infantry Garrison' },
-  { troopType: 'cavalry', buildType: 'rally', label: 'Cavalry Rally' },
-  { troopType: 'cavalry', buildType: 'garrison', label: 'Cavalry Garrison' },
-  { troopType: 'archer', buildType: 'rally', label: 'Archer Rally' },
-  { troopType: 'archer', buildType: 'garrison', label: 'Archer Garrison' },
-  { troopType: 'leadership', buildType: 'garrison', label: 'Leadership Garrison' },
-];
-
 function GovernorDetail() {
+  const { t } = useTranslation('governor');
   const { id } = useParams();
   const navigate = useNavigate();
   const [governor, setGovernor] = useState(null);
@@ -23,6 +15,16 @@ function GovernorDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showEditForm, setShowEditForm] = useState(false);
+
+  const BUILD_TYPES = [
+    { troopType: 'infantry', buildType: 'rally', labelKey: 'buildLabels.infantryRally' },
+    { troopType: 'infantry', buildType: 'garrison', labelKey: 'buildLabels.infantryGarrison' },
+    { troopType: 'cavalry', buildType: 'rally', labelKey: 'buildLabels.cavalryRally' },
+    { troopType: 'cavalry', buildType: 'garrison', labelKey: 'buildLabels.cavalryGarrison' },
+    { troopType: 'archer', buildType: 'rally', labelKey: 'buildLabels.archerRally' },
+    { troopType: 'archer', buildType: 'garrison', labelKey: 'buildLabels.archerGarrison' },
+    { troopType: 'leadership', buildType: 'garrison', labelKey: 'buildLabels.leadershipGarrison' },
+  ];
 
   useEffect(() => {
     loadData();
@@ -32,9 +34,9 @@ function GovernorDetail() {
   // Set page title when governor loads
   useEffect(() => {
     if (governor) {
-      document.title = `${governor.name} - 3584 Commanders`;
+      document.title = t('pageTitle', { name: governor.name });
     }
-  }, [governor]);
+  }, [governor, t]);
 
   const loadData = async () => {
     try {
@@ -46,7 +48,7 @@ function GovernorDetail() {
       setGovernor(govResponse.data.governor);
       setBuilds(buildsResponse.data.builds || []);
     } catch (err) {
-      setError('Failed to load governor data');
+      setError(t('errors.failedToLoad'));
       console.error(err);
     } finally {
       setLoading(false);
@@ -64,13 +66,13 @@ function GovernorDetail() {
   };
 
   const handleDeleteBuild = async (buildId) => {
-    if (!window.confirm('Delete this build?')) return;
+    if (!window.confirm(t('confirm.deleteBuild'))) return;
 
     try {
       await buildService.delete(id, buildId);
       loadData();
     } catch (err) {
-      setError('Failed to delete build');
+      setError(t('errors.failedToDelete'));
     }
   };
 
@@ -84,42 +86,42 @@ function GovernorDetail() {
     return (
       <div className="loading">
         <div className="loading-spinner"></div>
-        <span>Loading governor...</span>
+        <span>{t('loading')}</span>
       </div>
     );
   }
 
   if (!governor) {
-    return <div className="error-message">Governor not found</div>;
+    return <div className="error-message">{t('notFound')}</div>;
   }
 
   return (
     <div className="governor-detail">
       <button className="back-btn" onClick={() => navigate('/')}>
-        &larr; Back to Dashboard
+        &larr; {t('backToDashboard')}
       </button>
 
       <div className="governor-header">
         <div className="governor-info">
           <h1>{governor.name}</h1>
-          <span className="vip-badge">VIP {governor.vipLevel}</span>
+          <span className="vip-badge">{t('common:labels.vip')} {governor.vipLevel}</span>
         </div>
         <button className="btn-secondary" onClick={() => setShowEditForm(true)}>
-          Edit Governor
+          {t('editGovernor')}
         </button>
       </div>
 
       {error && <div className="error-message">{error}</div>}
 
       <div className="builds-section">
-        <h2>Builds</h2>
+        <h2>{t('sections.builds')}</h2>
         <div className="builds-grid">
-          {BUILD_TYPES.map(({ troopType, buildType, label }) => {
+          {BUILD_TYPES.map(({ troopType, buildType, labelKey }) => {
             const build = getBuildForType(troopType, buildType);
             return (
               <BuildCard
                 key={`${troopType}-${buildType}`}
-                label={label}
+                label={t(labelKey)}
                 troopType={troopType}
                 buildType={buildType}
                 build={build}

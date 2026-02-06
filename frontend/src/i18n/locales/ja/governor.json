@@ -1,0 +1,48 @@
+{
+  "pageTitle": "{{name}} - 3584 コマンダー",
+  "backToDashboard": "ダッシュボードに戻る",
+  "editGovernor": "総督を編集",
+
+  "sections": {
+    "builds": "ビルド"
+  },
+
+  "buildLabels": {
+    "infantryRally": "歩兵ラリー",
+    "infantryGarrison": "歩兵駐屯",
+    "cavalryRally": "騎兵ラリー",
+    "cavalryGarrison": "騎兵駐屯",
+    "archerRally": "弓兵ラリー",
+    "archerGarrison": "弓兵駐屯",
+    "leadershipGarrison": "統率駐屯"
+  },
+
+  "loading": "総督を読み込み中...",
+  "notFound": "総督が見つかりません",
+
+  "form": {
+    "addTitle": "総督を追加",
+    "editTitle": "総督を編集",
+    "governorName": "総督名",
+    "governorNamePlaceholder": "総督名を入力",
+    "vipLevel": "VIPレベル",
+    "nameRequired": "名前は必須です"
+  },
+
+  "card": {
+    "builds": "{{count}} ビルド",
+    "builds_plural": "{{count}} ビルド",
+    "marches": "{{count}} 行軍",
+    "marches_plural": "{{count}} 行軍"
+  },
+
+  "confirm": {
+    "deleteBuild": "このビルドを削除しますか？"
+  },
+
+  "errors": {
+    "failedToLoad": "総督データの読み込みに失敗しました",
+    "failedToDelete": "ビルドの削除に失敗しました",
+    "failedToSave": "保存に失敗しました"
+  }
+}

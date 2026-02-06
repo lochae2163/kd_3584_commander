@@ -1,4 +1,5 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -15,6 +16,8 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
+    const { t } = this.props;
+
     if (this.state.hasError) {
       return (
         <div style={{
@@ -24,8 +27,8 @@ class ErrorBoundary extends React.Component {
           color: '#fff',
           fontFamily: 'system-ui'
         }}>
-          <h1 style={{ color: '#e94560' }}>Something went wrong</h1>
-          <p style={{ color: '#94a3b8' }}>Please try refreshing the page or going back to the dashboard.</p>
+          <h1 style={{ color: '#e94560' }}>{t('common:errors.somethingWentWrong')}</h1>
+          <p style={{ color: '#94a3b8' }}>{t('common:errors.tryRefreshing')}</p>
           <pre style={{
             background: '#0f3460',
             padding: '1rem',
@@ -47,7 +50,7 @@ class ErrorBoundary extends React.Component {
               cursor: 'pointer'
             }}
           >
-            Go to Dashboard
+            {t('common:buttons.goToDashboard')}
           </button>
         </div>
       );
@@ -57,4 +60,4 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation()(ErrorBoundary);
