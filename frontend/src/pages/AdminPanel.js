@@ -26,6 +26,10 @@ function AdminPanel() {
   // Users state
   const [users, setUsers] = useState([]);
 
+  // Reset password state
+  const [resetModal, setResetModal] = useState({ open: false, userId: null, governorId: '' });
+  const [resetPassword, setResetPassword] = useState('');
+
   useEffect(() => {
     document.title = '3584 Commanders - Admin Panel';
   }, []);
@@ -111,6 +115,22 @@ function AdminPanel() {
       loadWhitelist();
     } catch (err) {
       showMessage('error', err.response?.data?.error || 'Failed to add governor');
+    }
+  };
+
+  const handleResetPassword = async (e) => {
+    e.preventDefault();
+    if (!resetPassword || resetPassword.length < 6) {
+      showMessage('error', 'Password must be at least 6 characters');
+      return;
+    }
+    try {
+      const res = await adminService.resetUserPassword(resetModal.userId, resetPassword);
+      showMessage('success', res.data.message);
+      setResetModal({ open: false, userId: null, governorId: '' });
+      setResetPassword('');
+    } catch (err) {
+      showMessage('error', err.response?.data?.error || 'Failed to reset password');
     }
   };
 
@@ -335,12 +355,13 @@ function AdminPanel() {
                     <th>Role</th>
                     <th>Verified</th>
                     <th>Registered</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   {users.length === 0 ? (
                     <tr>
-                      <td colSpan="5" className="no-data">No registered users found.</td>
+                      <td colSpan="6" className="no-data">No registered users found.</td>
                     </tr>
                   ) : (
                     users.map((user) => (
@@ -356,12 +377,52 @@ function AdminPanel() {
                           </span>
                         </td>
                         <td>{formatDate(user.createdAt)}</td>
+                        <td>
+                          <button
+                            className="btn-reset-password"
+                            onClick={() => {
+                              setResetModal({ open: true, userId: user._id, governorId: user.visibleGovernorId });
+                              setResetPassword('');
+                            }}
+                          >
+                            Reset Password
+                          </button>
+                        </td>
                       </tr>
                     ))
                   )}
                 </tbody>
               </table>
             )}
+          </div>
+        )}
+
+        {/* Reset Password Modal */}
+        {resetModal.open && (
+          <div className="modal-overlay" onClick={() => setResetModal({ open: false, userId: null, governorId: '' })}>
+            <div className="modal" onClick={(e) => e.stopPropagation()}>
+              <h3>Reset Password</h3>
+              <p>Governor ID: <strong>{resetModal.governorId}</strong></p>
+              <form onSubmit={handleResetPassword}>
+                <input
+                  type="password"
+                  placeholder="New password (min 6 characters)"
+                  value={resetPassword}
+                  onChange={(e) => setResetPassword(e.target.value)}
+                  autoFocus
+                />
+                <div className="modal-actions">
+                  <button type="submit" className="btn-add">Reset Password</button>
+                  <button
+                    type="button"
+                    className="btn-remove"
+                    onClick={() => setResetModal({ open: false, userId: null, governorId: '' })}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         )}
       </div>

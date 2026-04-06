@@ -234,6 +234,34 @@ router.post('/whitelist/add', authMiddleware, adminMiddleware, async (req, res) 
 });
 
 /**
+ * POST /api/admin/users/:userId/reset-password
+ * Admin reset a user's password
+ */
+router.post('/users/:userId/reset-password', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const { newPassword } = req.body;
+
+    if (!newPassword || newPassword.length < 6) {
+      return res.status(400).json({ error: 'New password must be at least 6 characters' });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    user.password = newPassword;
+    await user.save();
+
+    res.json({ success: true, message: `Password reset for governor ID: ${user.visibleGovernorId}` });
+  } catch (error) {
+    console.error('Reset password error:', error);
+    res.status(500).json({ error: 'Failed to reset password' });
+  }
+});
+
+/**
  * GET /api/admin/users
  * Get all registered users with their verification status
  */

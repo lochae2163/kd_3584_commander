@@ -397,3 +397,69 @@
     width: 100%;
   }
 }
+
+/* Reset Password Button */
+.btn-reset-password {
+  background: transparent;
+  border: 1px solid #f39c12;
+  color: #f39c12;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-reset-password:hover {
+  background: #f39c12;
+  color: #fff;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1e2a3a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal h3 {
+  margin: 0 0 1rem;
+  color: #e0e6f0;
+}
+
+.modal p {
+  margin: 0 0 1rem;
+  color: #8a9bb0;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #e0e6f0;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}

@@ -64,6 +64,8 @@ export const adminService = {
     api.post('/admin/whitelist/add', { visibleGovernorId, governorName }),
   removeFromWhitelist: (id) => api.delete(`/admin/whitelist/${id}`),
   getUsers: () => api.get('/admin/users'),
+  resetUserPassword: (userId, newPassword) =>
+    api.post(`/admin/users/${userId}/reset-password`, { newPassword }),
 };
 
 // Governor service
